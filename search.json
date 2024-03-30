@@ -72,9 +72,64 @@
   {
     "objectID": "Projects/project1.html",
     "href": "Projects/project1.html",
-    "title": "Client Report - [Insert Project Title]",
+    "title": "Client Report - Project 1: What’s in a name?",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#results",
+    "href": "Projects/project1.html#results",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "",
+    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#hisotrical-name-comparison",
+    "href": "Projects/project1.html#hisotrical-name-comparison",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "HISOTRICAL NAME COMPARISON",
+    "text": "HISOTRICAL NAME COMPARISON\nHow does your name at your birth year compare to its use historically?\nThe analysis revealed that my name was used 2346.5 times in the year of my birth, 1995, which is almost three times the historical average usage of 825.21.\n\n\nRead and format data\n# Include and execute your code here\n\n\n# Filter the data for the name\neduardo_data = df[df['name'] == 'Eduardo']\n\n# Summarize the total counts per year\neduardo_summary = eduardo_data.groupby('year')['Total'].sum().reset_index()\n\n# average usage\naverage_usage = eduardo_summary['Total'].mean()\n\n# Create scatterplot text= \"year\" will display the year on the graph which can a large hard to see. \n# fig = px.scatter(eduardo_summary, x=\"year\", y=\"Total\", text=\"year\", title=\"Usage of the Name 'Eduardo' Over Time\")\n# create trend line\nfig = px.line(eduardo_summary, x=\"year\", y=\"Total\", title=\"Usage of the Name 'Eduardo' Over Time\")\n\n# x-axis tick modifier\nfig.update_xaxes(dtick=10)\n\n# Using an arrow to distinguish the year from years\ntotal_1995 = eduardo_summary[eduardo_summary['year'] == 1995]['Total'].values[0]\nfig.add_annotation(\n    x=1995, y=total_1995,\n    text=\"1995\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=-250,  # Starting point of the arrow\n    ay=0\n)\n\n# Add text annotation for the average usage\n'''\nfig.add_annotation(\n    x=eduardo_summary['year'].min(), y=average_usage,\n    text=f\"Historic yearly average Usage: {average_usage:.2f}\",\n    showarrow=False,\n    xanchor=\"left\",\n    yanchor=\"bottom\"\n)\n'''\n\n# Update plot layout\nfig.update_traces(textposition='top center')\nfig.update_layout(height=800)\n\n# the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#chances-of-guessing-brittanys-age",
+    "href": "Projects/project1.html#chances-of-guessing-brittanys-age",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "CHANCES OF GUESSING BRITTANY’S AGE!",
+    "text": "CHANCES OF GUESSING BRITTANY’S AGE!\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nFor my sample year, I will be using 2015. Based on the average age of death in the US in 2015, which was 77, I am assuming that everyone over the age of 77 is deceased. Therefore, the chance of speaking to someone over 77 years old is zero. I will also be assuming that the raw data represents the total number of times a name was given to a newborn baby. For example, if the total number of times the name Brittany was given to a baby in the year 2000 was 2500, then in the year 2015, there would be 2500 people in the US with the name Brittany that are 15 years old. This assumption does not take into account the possibility of migration or death before the age of 78. To determine the percentage of people named Brittany in each age group, I will use data from 1937 to 2015 and sum up all the totals for the name Brittany in that period. The age group with the highest percentage of answering the phone is 25 years old, which accounts for 9.94% of all people named Brittany in the US. Therefore, I will guess the age of the person on the phone to be 25 years old. However, I will not guess any age above 32 or below 15 because people in those age groups have less than a one percent chance of answering the phone.\n\n\nRead and format data\n# Include and execute your code here\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for a name and and time period - years 1937 to 2015\nbrittany_data = df[(df['name'] == 'Brittany') & (df['year'] &gt;= 1937) & (df['year'] &lt;= 2015)]\n\n# Calculate age in 2015\nbrittany_data.loc[:, 'age_in_2015'] = 2015 - brittany_data['year']\n\n# Calculate the total counts per age\ntotal_counts = brittany_data.groupby('age_in_2015')['Total'].sum()\n\n# Calculate the percentage for each age\ntotal_brittanys = total_counts.sum()\npercentage = (total_counts / total_brittanys) * 100 \npercentage = percentage.reset_index()\n\n# trend line\nfig = px.line(percentage, x='age_in_2015', y='Total', \n             title=\"Percentage of Age for the Name 'Brittany' in 2015\")\nfig.update_xaxes(dtick=5)\n\n# plot layout\nfig.update_traces(textposition='top center')\nfig.update_xaxes(title_text='Age in 2015')\nfig.update_layout(height=800, yaxis_title='Percentage of Total')\n\n# Annotation\nfig.add_annotation(\n    x=25, y=percentage[percentage['age_in_2015'] == 25]['Total'].values[0],\n    text=\"Age 25\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=0,  \n    ay=-50\n)\n\n# Show the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#populary-of-bible-names",
+    "href": "Projects/project1.html#populary-of-bible-names",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "POPULARY OF BIBLE NAMES",
+    "text": "POPULARY OF BIBLE NAMES\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nAccording to my analysis, Mary is the most popular Christian name among the given names - Mary, Martha, Peter and Paul. Paul is the second most popular name among these four. While Martha was the third most popular name until the mid 1950s,when Peter became the third most popular name among the four.After the mid 1950s, Martha was the least popular name. My analysis also indicates that the popularity of these four Christian names has been in decline since the 1960s. In 1950, over 90,000 people had one of these four names, but by 2000, there were only around 14,000 people who had one of these names.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport plotly.express as px\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for the names between 1920 and 2000\nfiltered_data = df[(df['name'].isin(['Mary', 'Martha', 'Peter', 'Paul'])) & \n                   (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n# Get the total counts per year for each name\nsummary = filtered_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create the trendline plot\nfig = px.line(summary, x='year', y='Total', color='name', \n             title=\"Name Usage Comparison of 'Mary', 'Martha', 'Peter', and 'Paul' (1920-2000)\")\n\n# plot layout\nfig.update_layout(height=800)\n\n# Show the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#movies-making-names-popular",
+    "href": "Projects/project1.html#movies-making-names-popular",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "MOVIES MAKING NAMES POPULAR?",
+    "text": "MOVIES MAKING NAMES POPULAR?\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nI selected the movie Titanic and analyzed the usage trend of the names Jack and Rose. According to the graph, the name Rose has decreased in popularity since the early 1950s, but after the release of the movie Titanic, it gained traction and saw a growth rate of 76% from 1997 to 1999. Thus, we can conclude that the movie played a significant role in the popularity of the name Rose. On the other hand, the name Jack was already experiencing growth since 1988, and the release of Titanic did not seem to affect its trajectory. Jack gained popularity in 1987, making it difficult to determine if the movie had any impact on the name. However, it is reasonable to assume that the movie contributed to the popularity of the name Jack in the following years.\n\n\nRead and format data\n# Include and execute your code here\n\n# Filter data for the names.\nnames_data = df[df['name'].isin(['Rose', 'Jack'])]\n\n# Summarize the total counts per year for the names.\nnames_summary = names_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create line chart\nfig = px.line(names_summary, x='year', y='Total', color='name', \n              title=\"Usage of the Names 'Rose' and 'Jack' Over Time\")\n\n# Highlighting the year of Titanic, released in 1997\nfig.add_vline(x=1997, line_width=3, line_dash=\"dash\", line_color=\"red\")\n\n# plot layout\nfig.update_layout(height=800, title_text=\"Usage of the Names 'Rose' and 'Jack' and Their Correlation with Movie Release\")\n\n# Show the plot\nfig.show()",
     "crumbs": [
       "DS250 Projects",
       "Project 1"
