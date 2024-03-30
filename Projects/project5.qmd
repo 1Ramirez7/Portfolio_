@@ -96,7 +96,7 @@ __A. Filter the dataset to respondents that have seen at least one film.__
 #Imports and Files
 import pandas as pd
 import plotly.express as px
-df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")  
+df = pd.read_csv("https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars0.csv")  
 
 column = 'Have you seen any of the 6 films in the Star Wars franchise?'
 # Get unique values in the column
@@ -133,7 +133,7 @@ import pandas as pd
 import plotly.express as px
 
 # data and columns/edits
-df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars0.csv")
 column_renaming = {'Respondents who watched The Phantom Menace': 'The Phantom Menace', 'Respondents who watched Attack of the Clones': 'Attack of the Clones', 'Respondents who watched Revenge of the Sith': 'Revenge of the Sith', 'Respondents who watched A New Hope': 'A New Hope', 'Respondents who watched The Empire Strikes Back': 'The Empire Strikes Back', 'Respondents who watched Return of the Jedi': 'Return of the Jedi'}
 df.rename(columns=column_renaming, inplace=True) # renaming columns
 title_mapping = {'The Phantom Menace': 1, 'Attack of the Clones': 2, 'Revenge of the Sith': 3, 'A New Hope': 4, 'The Empire Strikes Back': 5, 'Return of the Jedi': 6}
@@ -179,7 +179,7 @@ fig.show()
 # imports and data frame
 import pandas as pd
 import plotly.express as px
-df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars0.csv")
 
 # Columns and names for columns/edits
 column_renaming = {'Rank_Star Wars: Episode I  The Phantom Menace': 'The Phantom Menace', 'Rank_Star Wars: Episode II  Attack of the Clones': 'Attack of the Clones', 'Rank_Star Wars: Episode III  Revenge of the Sith': 'Revenge of the Sith', 'Rank_Star Wars: Episode IV  A New Hope': 'A New Hope', 'Rank_Star Wars: Episode V The Empire Strikes Back': 'The Empire Strikes Back', 'Rank_Star Wars: Episode VI Return of the Jedi': 'Return of the Jedi'}
@@ -230,7 +230,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 import graphviz
-file_path = 'C://Users//eduar//Downloads//starwars.csv' 
+file_path = 'https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars.csv' 
 data = pd.read_csv(file_path)
 
 # Filter out missing or no data
@@ -295,7 +295,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 import graphviz
-file_path = 'C://Users//eduar//Downloads//starwars1.csv' 
+file_path = 'https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars1.csv' 
 data = pd.read_csv(file_path)
 
 columns_to_drop = [

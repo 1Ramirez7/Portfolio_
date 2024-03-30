@@ -59,7 +59,8 @@ import numpy as np
 import plotly.express as px
 
 # Load data 
-file_path = "C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.csv"
+file_path = "https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv"
+
 flights_df = pd.read_csv(file_path)
 
 # Replace  missing values with NaN
@@ -96,7 +97,7 @@ import pandas as pd
 import numpy as np
 
 # file path 
-file_path = "C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.csv"
+file_path = "https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv"
 flights_df = pd.read_csv(file_path)
 
 # Replace missing values with NaN
@@ -150,7 +151,7 @@ import numpy as np
 import plotly.express as px
 
 # File path
-file_path = "C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.csv"
+file_path = "https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv"
 flights_df = pd.read_csv(file_path)
 
 # Replace missing values with NaN. It is possible to not use this code since i used it above? I tried but got different numbers. 
@@ -213,7 +214,7 @@ import pandas as pd
 import numpy as np
 
 # data path
-file_path = "C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.csv"
+file_path = "https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv"
 flights_df = pd.read_csv(file_path)
 
 
