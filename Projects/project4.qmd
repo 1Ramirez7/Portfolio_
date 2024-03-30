@@ -51,25 +51,26 @@ I did multiple statistical analysis on the dwellings_ml data(will refer as ‘da
 ```{python}
 # number of Price vs year build SCATTER PLOT graph --------------------- -------------------------------
 import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load 
+import plotly.express as px
 file_path = "C://Users//eduar//Downloads//dwellings_ml.csv"
 df = pd.read_csv(file_path)
 
+# Group by year and calculate the average price
+df_avg = df.groupby('yrbuilt')['sprice'].mean().reset_index()
 
-# scatter plot 
-plt.figure(figsize=(10, 6))
-plt.scatter(df['yrbuilt'], df['sprice'], alpha=0.5, color='skyblue')
+# line plot
+fig = px.line(df_avg, x='yrbuilt', y='sprice', 
+              title='Average Sale Price vs Year Built',
+              labels={'yrbuilt': 'Year Built', 'sprice': 'Average Sale Price (in millions)'}, 
+              color_discrete_sequence=['skyblue'])
 
-# title and labels
-plt.title('Price vs Year Built')
-plt.xlabel('Year Built')
-plt.ylabel('Sale Price (in millions)')
-plt.xticks(rotation=45)
+fig.update_layout(xaxis_tickangle=45)
 
-# plot
-plt.show()
+# Remove hover information
+fig.update_traces(hoverinfo='skip')
+
+fig.show()
+
 
 
 ```
