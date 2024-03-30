@@ -7,7 +7,7 @@ subtitle: "my data science portfolio"
 # Title 1 Header
 ## Title 2 Header
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+
 
 #' ---
 #' title: Palmer Penguins
@@ -19,7 +19,7 @@ subtitle: "my data science portfolio"
 library(palmerpenguins)
 
 #' ## Exploring the data
-#' See @fig-bill-sizes for an exploration of bill sizes by species.
+#' See for an exploration of bill sizes by species.
 
 #| label: fig-bill-sizes
 #| fig-cap: Bill Sizes by Species

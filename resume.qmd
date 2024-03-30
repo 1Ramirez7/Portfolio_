@@ -1,89 +1,90 @@
 ---
 layout: cv
-title: Isaac Newtons's CV
+title: Eduardo I. Ramirez's CV
 ---
-# Isaac Newton
-Physicist, Mathematician, Cambridge professor.
+# Eduardo I. Ramirez
+Financial Economist, Data Scientist, Business Analyst
 
 <div id="webaddress">
-<a href="isaac@applesdofall.org">isaac@applesdofall.org</a>
-| <a href="http://en.wikipedia.org/wiki/Isaac_Newton">My wikipedia page</a>
+<a href="Eduardo.er.ramirez@gmail.com">Eduardo.er.ramirez@gmail.com</a>
+| <a href="https://www.linkedin.com/in/eduardo-ramirez-31198b1b8/">My LinkedIn Profile</a>
 </div>
-
 
 ## Currently
 
-Standing on the shoulders of giants
+Student at Brigham Young University-Idaho, specializing in Financial Economics with a minor in Data Science and Financial Planning.
 
 ### Specialized in
 
-Laws of motion, gravitation, minting coins, disliking [Robert Hooke](http://en.wikipedia.org/wiki/Robert_Hooke)
-
+Business Analytics, Operations Management, Data Analysis
 
 ### Research interests
 
-Cooling, power series, optics, alchemy, planetary motions, apples.
-
+Sales analysis, financial management, business investment opportunities, data-driven decision making
 
 ## Education
 
-`1654-1660`
-__The King's School, Grantham.__
+`Expected Graduation: July 2025`
+__Bachelor of Science in Financial Economics__, Brigham Young University-Idaho, Rexburg ID
 
-`June 1661 - now`
-__Trinity College, Cambridge__
+- Minor in Data Science and Financial Planning
+- Area of interest: Business Analytics, Business Owner, Operations Manager
 
-- Sizar
+## Experience
 
-`1667 - death`
-__Trinity College, Cambridge__
+### Store Manager
+`Jan 2015 - Feb 2017`
+__Petro Consulting Services LLC, Chula Vista, CA__
 
-- Fellow
+- Managed staffing, scheduling, HR needs, and sales analysis.
+- Developed leadership skills, problem-solving under pressure.
 
+### Fleet and IT Manager
+`Feb 2016 - Feb 2017`
+__Petro Consulting Services LLC, Chula Vista, CA__
 
+- Implemented proprietary Fleet card system.
+- Managed technology integration, increased sales and profitability.
 
-## Awards
+### Analytic Research
+`March 2023 - Current`
+__E&J Investments LLC, St Anthony, ID__
 
-`2012`
-President, *Royal Society*, London, UK
+- Analyzed sales, expenses, and profitability of Laundromat equipment.
+- Proposed new investment opportunities and strategies.
 
-Associate, *French Academy of Science*, Paris, France
+## Volunteer Experience
 
+### Full-time Missionary
+`Dec 2017 - Jan 2020`
+__The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa__
 
+- Taught local communities about religious beliefs.
 
-## Publications
+### Volunteer at Homeless Shelter
+`Jan 2020 - Aug 2020`
+__San Diego, California__
 
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+- Organized dinners and essential kits for homeless youth.
 
-### Journals
+### Financial Economics Society Secretary
+`Sep 2022 - Mar 2023`
+__Brigham Young University-Idaho__
 
-`1669`
-Newton Sir I, De analysi per æquationes numero terminorum infinitas. 
+- Administrative support, data entry, and organizational management.
 
-`1669`
-Lectiones opticæ.
+## Skills
 
-etc. etc. etc.
+- Fluent in Spanish, English, and Portuguese.
+- Data Analysis: Excel, R, Stata, SQL, HTML, Python.
+- Management, Leadership, Analytical and Strategic Thinking.
+- Financial Management, Data Presentation.
 
-### Patents
+## Certificates
 
-`2012`
-Infinitesimal calculus for solutions to physics problems, [SMBC](http://www.techdirt.com/articles/20121011/09312820678/if-patents-had-been-around-time-newton.shtml) patent 001
+- Bloomberg Market Concepts, Issued December 2022
+- Spreadsheet Modeling, Issued September 29, 2022
 
+<!-- Footer -->
 
-## Occupation
-
-`1600`
-__Royal Mint__, London
-
-- Warden
-- Minted coins
-
-`1600`
-__Lucasian professor of Mathematics__, Cambridge University
-
-
-
-<!-- ### Footer
-
-Last updated: May 2013 -->
+Last updated: Mar 2024 -->
