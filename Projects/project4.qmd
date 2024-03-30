@@ -323,26 +323,36 @@ print(f"Average of the first 10 values in training X values for sprice: {average
 
 ```{python}
 
-# See the decision tree in a graph ---must run code for model first---------------
-from sklearn.tree import export_graphviz
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
 import graphviz
 
-# Limit the depth of the tree for visualization purposes
+# Load data
+file_path = "https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/dwellings_ml.csv"  
+data = pd.read_csv(file_path)
+
+# Define features and target variable
+features = data.drop(['yrbuilt', 'before1980', 'parcel'], axis=1)
+target = data['before1980']
+
+# Training and testing sets
+X_train, _ , y_train, _ = train_test_split(features, target, test_size=0.34, random_state=76)
+
+# Creating the Decision Tree model 
 decision_tree_model_vis = DecisionTreeClassifier(random_state=42, max_depth=3)
 decision_tree_model_vis.fit(X_train, y_train)
 
-#  show
+# Prepare the visualization
 dot_data = export_graphviz(decision_tree_model_vis, out_file=None, 
                            feature_names=X_train.columns,  
                            class_names=['After 1980', 'Before 1980'],
                            filled=True, rounded=True, 
                            special_characters=True)
 
-# Visualize the graph
+# decision tree picture
 graph = graphviz.Source(dot_data) 
 graph
-
-
 
 ```
 
