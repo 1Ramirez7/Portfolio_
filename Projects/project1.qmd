@@ -1,14 +1,14 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - Project 1: What’s in a name?"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Eduardo Ramirez"
 format:
   html:
     self-contained: true
     page-layout: full
     title-block-banner: true
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     toc-location: body
     number-sections: false
     html-math-method: katex
@@ -25,4 +25,221 @@ execute:
     
 ---
 
-### Paste in a template
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+```
+
+
+## RESULTS
+
+_The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim._
+
+```{python}
+#| label: project data
+#| code-summary: Read and format project data
+# Include and execute your code here
+
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+```
+
+
+## HISOTRICAL NAME COMPARISON
+
+__How does your name at your birth year compare to its use historically?__
+
+_The analysis revealed that my name was used 2346.5 times in the year of my birth, 1995, which is almost three times the historical average usage of 825.21._
+
+```{python}
+#| label: Q1
+#| code-summary: Read and format data
+# Include and execute your code here
+
+
+# Filter the data for the name
+eduardo_data = df[df['name'] == 'Eduardo']
+
+# Summarize the total counts per year
+eduardo_summary = eduardo_data.groupby('year')['Total'].sum().reset_index()
+
+# average usage
+average_usage = eduardo_summary['Total'].mean()
+
+# Create scatterplot text= "year" will display the year on the graph which can a large hard to see. 
+# fig = px.scatter(eduardo_summary, x="year", y="Total", text="year", title="Usage of the Name 'Eduardo' Over Time")
+# create trend line
+fig = px.line(eduardo_summary, x="year", y="Total", title="Usage of the Name 'Eduardo' Over Time")
+
+# x-axis tick modifier
+fig.update_xaxes(dtick=10)
+
+# Using an arrow to distinguish the year from years
+total_1995 = eduardo_summary[eduardo_summary['year'] == 1995]['Total'].values[0]
+fig.add_annotation(
+    x=1995, y=total_1995,
+    text="1995",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=2,
+    ax=-250,  # Starting point of the arrow
+    ay=0
+)
+
+# Add text annotation for the average usage
+'''
+fig.add_annotation(
+    x=eduardo_summary['year'].min(), y=average_usage,
+    text=f"Historic yearly average Usage: {average_usage:.2f}",
+    showarrow=False,
+    xanchor="left",
+    yanchor="bottom"
+)
+'''
+
+# Update plot layout
+fig.update_traces(textposition='top center')
+fig.update_layout(height=800)
+
+# the plot
+fig.show()
+
+```
+
+
+
+## CHANCES OF GUESSING BRITTANY'S AGE!
+
+__If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?__
+
+_For my sample year, I will be using 2015. Based on the average age of death in the US in 2015, which was 77, I am assuming that everyone over the age of 77 is deceased. Therefore, the chance of speaking to someone over 77 years old is zero. 
+I will also be assuming that the raw data represents the total number of times a name was given to a newborn baby. For example, if the total number of times the name Brittany was given to a baby in the year 2000 was 2500, then in the year 2015, there would be 2500 people in the US with the name Brittany that are 15 years old. This assumption does not take into account the possibility of migration or death before the age of 78.
+To determine the percentage of people named Brittany in each age group, I will use data from 1937 to 2015 and sum up all the totals for the name Brittany in that period. The age group with the highest percentage of answering the phone is 25 years old, which accounts for 9.94% of all people named Brittany in the US. Therefore, I will guess the age of the person on the phone to be 25 years old. 
+However, I will not guess any age above 32 or below 15 because people in those age groups have less than a one percent chance of answering the phone._
+
+```{python}
+#| label: Q2
+#| code-summary: Read and format data
+# Include and execute your code here
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+
+# Filter data for a name and and time period - years 1937 to 2015
+brittany_data = df[(df['name'] == 'Brittany') & (df['year'] >= 1937) & (df['year'] <= 2015)]
+
+# Calculate age in 2015
+brittany_data.loc[:, 'age_in_2015'] = 2015 - brittany_data['year']
+
+# Calculate the total counts per age
+total_counts = brittany_data.groupby('age_in_2015')['Total'].sum()
+
+# Calculate the percentage for each age
+total_brittanys = total_counts.sum()
+percentage = (total_counts / total_brittanys) * 100 
+percentage = percentage.reset_index()
+
+# trend line
+fig = px.line(percentage, x='age_in_2015', y='Total', 
+             title="Percentage of Age for the Name 'Brittany' in 2015")
+fig.update_xaxes(dtick=5)
+
+# plot layout
+fig.update_traces(textposition='top center')
+fig.update_xaxes(title_text='Age in 2015')
+fig.update_layout(height=800, yaxis_title='Percentage of Total')
+
+# Annotation
+fig.add_annotation(
+    x=25, y=percentage[percentage['age_in_2015'] == 25]['Total'].values[0],
+    text="Age 25",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=2,
+    ax=0,  
+    ay=-50
+)
+
+# Show the plot
+fig.show()
+
+
+
+```
+
+
+
+## POPULARY OF BIBLE NAMES
+
+__Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?__
+
+_According to my analysis, Mary is the most popular Christian name among the given names - Mary, Martha, Peter and Paul. Paul is the second most popular name among these four. While Martha was the third most popular name until the mid 1950s,when Peter became the third most popular name among the four.After the mid 1950s, Martha was the least popular name. My analysis also indicates that the popularity of these four Christian names has been in decline since the 1960s. In 1950, over 90,000 people had one of these four names, but by 2000, there were only around 14,000 people who had one of these names._
+
+```{python}
+#| label: Q3
+#| code-summary: Read and format data
+# Include and execute your code here
+
+import pandas as pd
+import plotly.express as px
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+
+# Filter data for the names between 1920 and 2000
+filtered_data = df[(df['name'].isin(['Mary', 'Martha', 'Peter', 'Paul'])) & 
+                   (df['year'] >= 1920) & (df['year'] <= 2000)]
+
+# Get the total counts per year for each name
+summary = filtered_data.groupby(['year', 'name'])['Total'].sum().reset_index()
+
+# Create the trendline plot
+fig = px.line(summary, x='year', y='Total', color='name', 
+             title="Name Usage Comparison of 'Mary', 'Martha', 'Peter', and 'Paul' (1920-2000)")
+
+# plot layout
+fig.update_layout(height=800)
+
+# Show the plot
+fig.show()
+
+
+
+```
+
+
+
+## MOVIES MAKING NAMES POPULAR?
+
+__Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__
+
+_I selected the movie Titanic and analyzed the usage trend of the names Jack and Rose. According to the graph, the name Rose has decreased in popularity since the early 1950s, but after the release of the movie Titanic, it gained traction and saw a growth rate of 76% from 1997 to 1999. Thus, we can conclude that the movie played a significant role in the popularity of the name Rose. On the other hand, the name Jack was already experiencing growth since 1988, and the release of Titanic did not seem to affect its trajectory. Jack gained popularity in 1987, making it difficult to determine if the movie had any impact on the name. However, it is reasonable to assume that the movie contributed to the popularity of the name Jack in the following years._
+
+```{python}
+#| label: Q4
+#| code-summary: Read and format data
+# Include and execute your code here
+
+# Filter data for the names.
+names_data = df[df['name'].isin(['Rose', 'Jack'])]
+
+# Summarize the total counts per year for the names.
+names_summary = names_data.groupby(['year', 'name'])['Total'].sum().reset_index()
+
+# Create line chart
+fig = px.line(names_summary, x='year', y='Total', color='name', 
+              title="Usage of the Names 'Rose' and 'Jack' Over Time")
+
+# Highlighting the year of Titanic, released in 1997
+fig.add_vline(x=1997, line_width=3, line_dash="dash", line_color="red")
+
+# plot layout
+fig.update_layout(height=800, title_text="Usage of the Names 'Rose' and 'Jack' and Their Correlation with Movie Release")
+
+# Show the plot
+fig.show()
+
+
+```
+
