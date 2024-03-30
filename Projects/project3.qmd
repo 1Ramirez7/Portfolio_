@@ -25,4 +25,3 @@ execute:
     
 ---
 
-### Paste in a template

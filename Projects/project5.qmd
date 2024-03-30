@@ -1,7 +1,7 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "Client Report - The war with Star Wars"
 subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+author: "Eduardo Ramirez"
 format:
   html:
     self-contained: true
@@ -25,4 +25,318 @@ execute:
     
 ---
 
-### Paste in a template
+
+
+
+# Elevator pitch
+
+I used Excel to streamline data analysis in pandas by simplifying variable names and reorganizing columns. For instance, I moved the variable names from the second row to the first, ensuring clarity in the data structure. In my approach, rows were shifted to align related questions, like pairing "Do you consider yourself a fan of the Star Wars film franchise?" with specific film-viewing queries. This structural edit allowed for better data visualization and analysis, especially when employing Python for deeper insights.
+
+Cleaning data for machine learning, I transformed categorical responses into numerical values, assigning '1' for affirmative responses, '0' for negatives, and '-1' for blanks. This method facilitated an efficient filtering process, identifying respondents who had seen at least one Star Wars film. My code snippets in Python showcase these transformations, crucial for accurate machine learning modeling.
+
+I validated data from GitHub through visual recreations of article charts, revealing trends like the popularity of different Star Wars movies. Finally, in building a predictive model for income levels, my second model outperformed the first by focusing solely on relevant data, removing instances with missing information to enhance accuracy.
+
+
+
+# 1. Pandas: Simplify Column Names
+
+__Shorten the column names and clean them up for easier use with pandas. Provide a table or list that exemplifies how you fixed the names.__
+
+
+__Using excel to edit this file__ 
+
+I used Excel to edit the variable names and shorten them. I also added columns to the first row to move the variable names from the second row to the first row.
+
+I added a row after "Do you consider yourself to be a fan of the Star Wars film franchise?". I filled the new row with the column "Which of the following Star Wars films have you seen? Please select all that apply.", which was originally the next column. Essentially, I moved it back, but all the data is now moved to the right by one column.
+
+I followed the same process for "Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film." For this column, I added a column before it and moved this column to the new column. Now, all data that was below and to the right of that column is moved to the right by two columns.
+
+I did the same for the following: "Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her."
+All data below that column and to the right is moved 3 columns to the right.
+
+Regarding the second row, I removed all response variables. The names of movies and options were moved to the top column. The reason for adding columns was to be able to move these variables to the top column.
+
+The __Data Structure__ tab contains a more detailed report of the data structure and changes made to the data.
+
+
+## New Column Names vs Old Column Names
+
+
+__the following code shows the new column names and the old column names.__
+Now the data set does not have a second row of column names like in the original. 
+
+```{python}
+# New Columns vs Old columns
+import pandas as pd
+# Column names
+columns_1 = ["RespondentID", "Have you seen any of the 6 films in the Star Wars franchise?", "Do you consider yourself to be a fan of the Star Wars film franchise?", "Which of the following Star Wars films have you seen? Please select all that apply.", "The Phantom Menace", "Attack of the Clones", "Revenge of the Sith", "A New Hope", "The Empire Strikes Back", "Return of the Jedi", "Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.", "Star Wars: Episode I  The Phantom Menace", "Star Wars: Episode II  Attack of the Clones", "Star Wars: Episode III  Revenge of the Sith", "Star Wars: Episode IV  A New Hope", "Star Wars: Episode V The Empire Strikes Back", "Star Wars: Episode VI Return of the Jedi", "Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.", "Han Solo", "Luke Skywalker", "Princess Leia Organa", "Anakin Skywalker", "Obi Wan Kenobi", "Emperor Palpatine", "Darth Vader", "Lando Calrissian", "Boba Fett", "C-3P0", "R2 D2", "Jar Jar Binks", "Padme Amidala", "Yoda", "Which character shot first?", "Are you familiar with the Expanded Universe?", "Do you consider yourself to be a fan of the Expanded Universe?", "Do you consider yourself to be a fan of the Star Trek franchise?", "Gender", "Age", "Household Income", "Education", "Location (Census Region)", "missing"]
+columns_2 = ["RespondentID", "Have you seen any of the 6 films in the Star Wars franchise?", "-1", "Do you consider yourself to be a fan of the Star Wars film franchise?", "Which of the following Star Wars films have you seen? Please select all that apply.", "-1", "-1", "-1", "-1", "-1", "Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.", "-1", "-1", "-1", "-1", "-1", "Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "Which character shot first?", "Are you familiar with the Expanded Universe?", "Do you consider yourself to be a fan of the Expanded Universe?", "Do you consider yourself to be a fan of the Star Trek franchise?", "Gender", "Age", "Household Income", "Education", "Location (Census Region)"]
+
+# edit table
+length_diff = len(columns_1) - len(columns_2)
+if length_diff > 0:
+    columns_2.extend([None] * length_diff)
+elif length_diff < 0:
+    columns_1.extend([None] * (-length_diff))
+df_columns = pd.DataFrame({'New Columns w/out second row of column names': columns_1, 'Old Column Names': columns_2})
+df_columns
+```
+
+# 2. Format Data for Machine Learning Usage
+
+__Clean and format the data so that it can be used in a machine learning model. As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.__
+
+The data file contains constant categorical responses with no discrepancies, so I gave the categorical values a numeric value.
+I changed all categorical values to numeric values. Most of the columns were a yes or no answer with missing data, so by default, I assigned '1' to all yes or true answers, and '0' for all no or false answers. I also assigned '-1' to any cell that was empty. In the __Data Structure__ tab are the details of what was done to the data. 
+
+__A. Filter the dataset to respondents that have seen at least one film.__
+
+```{python}
+
+#Imports and Files
+import pandas as pd
+import plotly.express as px
+df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")  
+
+column = 'Have you seen any of the 6 films in the Star Wars franchise?'
+# Get unique values in the column
+unique_values = df[column].dropna().unique()
+tickvals = [0] + [val for val in unique_values if val != 0]
+ticktext = ['No'] + ['Yes' for _ in unique_values if _ != 0]
+
+# Create  histogram
+fig = px.histogram(df, x=column, title=f'Distribution of {column}')
+fig.update_xaxes(type='category', tickvals=tickvals, ticktext=ticktext)
+fig.show()
+
+```
+
+The process for part 2 b-f was done in the __Data structure__ tab. 
+
+
+
+
+
+# 3. GitHub Data Validation Through Visualization
+
+__Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.__
+
+
+## Which 'Star Wars' Movies Have You Seen?
+
+"We then asked respondents which of the films they had seen. With 835 people responding, here’s the probability that someone has seen a given “Star Wars” film given that they have seen any Star Wars film:" - Walt Hickey
+
+```{python}
+
+
+import pandas as pd
+import plotly.express as px
+
+# data and columns/edits
+df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")
+column_renaming = {'Respondents who watched The Phantom Menace': 'The Phantom Menace', 'Respondents who watched Attack of the Clones': 'Attack of the Clones', 'Respondents who watched Revenge of the Sith': 'Revenge of the Sith', 'Respondents who watched A New Hope': 'A New Hope', 'Respondents who watched The Empire Strikes Back': 'The Empire Strikes Back', 'Respondents who watched Return of the Jedi': 'Return of the Jedi'}
+df.rename(columns=column_renaming, inplace=True) # renaming columns
+title_mapping = {'The Phantom Menace': 1, 'Attack of the Clones': 2, 'Revenge of the Sith': 3, 'A New Hope': 4, 'The Empire Strikes Back': 5, 'Return of the Jedi': 6}
+
+# Calculating # of observations and # of observations who didn't watch any movies.
+column_names = list(title_mapping.keys())
+total_observations = len(df)
+rows_with_all_minus_one = df[(df[column_names] == -1).all(axis=1)].shape[0]
+valid_observations = total_observations - rows_with_all_minus_one
+# percentage calculation
+counts = {title: 100 * df[df[title] != -1][title].count() / valid_observations for title in column_names}
+count_df = pd.DataFrame(list(counts.items()), columns=['Movie', 'Percentage'])
+
+# Chart creation and visuals
+fig = px.bar(count_df, x='Percentage', y='Movie', orientation='h', text='Percentage')
+fig.update_traces(texttemplate='%{text:.0f}%', textposition='inside')
+fig.update_xaxes(showticklabels=False) # x-axis tic values
+fig.update_xaxes(title_text='')
+fig.update_yaxes(title_text='')
+fig.update_layout(title_text=f"Which 'Star Wars' Movies Have You Seen?<br><span style='font-size: 80%;'>Of {valid_observations} respondents who have seen any film</span>")
+
+
+# figure
+fig.show()
+
+```
+
+
+"So we can see that “Star Wars: Episode V — The Empire Strikes Back” is the film seen by the most number of people, followed by “Star Wars: Episode VI — Return of the Jedi.” Appallingly, more people reported seeing “Star Wars: Episode I — The Phantom Menace” than the original “Star Wars” (renamed “Star Wars: Episode IV — A New Hope”)." - Walt Hickey
+
+
+
+
+
+
+
+
+## What's the Best 'Star Wars' Movie? 
+
+
+"So, which movie is the best? We asked the subset of 471 respondents who indicated they have seen every “Star Wars” film to rank them from best to worst. From that question, we calculated the share of respondents who rated each film as their favorite." - Walt Hickey
+```{python}
+# imports and data frame
+import pandas as pd
+import plotly.express as px
+df = pd.read_csv("C://Users//eduar//Downloads//starwars0.csv")
+
+# Columns and names for columns/edits
+column_renaming = {'Rank_Star Wars: Episode I  The Phantom Menace': 'The Phantom Menace', 'Rank_Star Wars: Episode II  Attack of the Clones': 'Attack of the Clones', 'Rank_Star Wars: Episode III  Revenge of the Sith': 'Revenge of the Sith', 'Rank_Star Wars: Episode IV  A New Hope': 'A New Hope', 'Rank_Star Wars: Episode V The Empire Strikes Back': 'The Empire Strikes Back', 'Rank_Star Wars: Episode VI Return of the Jedi': 'Return of the Jedi'}
+df.rename(columns=column_renaming, inplace=True) # Rename 
+column_names = list(column_renaming.values())
+
+# Count only observations that watched all six films and filter when rank first.
+check_column = 'Which of the following Star Wars films have you seen? Please select all that apply'
+filtered_df = df[df[check_column] == 6]
+counts = {title: filtered_df[filtered_df[title] == 1][title].count() for title in column_names}
+total_respondents = filtered_df[check_column].count()
+
+# Calculate the percentage for each movie
+percentages = {movie: 100 * count / total_respondents for movie, count in counts.items()}
+percentages_df = pd.DataFrame(list(percentages.items()), columns=['Movie', 'Percentage'])
+
+# Chart creation and visuals
+fig = px.bar(percentages_df, x='Percentage', y='Movie', orientation='h', text='Percentage')
+fig.update_traces(texttemplate='%{text:.0f}%', textposition='inside')
+fig.update_xaxes(showticklabels=False)
+fig.update_xaxes(title_text='')
+fig.update_yaxes(title_text='')
+fig.update_layout(title_text=f"What's the Best 'Star Wars' Movie?<br><span style='font-size: 80%;'>Of {total_respondents} respondents who have seen all six films</span>")
+
+# Show the figure
+fig.show()
+
+```
+
+
+"We can also drill down and find out, generally, how people rate the films. Overall, fans broke into two camps: those who preferred the original three movies and those who preferred the three prequels. People who said “The Empire Strikes Back” was their favorite were also likely to rate “A New Hope” and “Return of the Jedi” higher as well. Those who rated “The Phantom Menace” as the best film were more likely to rate prequels higher." - Walt Hickey
+
+
+
+
+# 4. Predicting Income with Machine Learning
+
+__Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.__
+
+__Model number 1__
+
+The machine learning model achieved an accuracy of approximately 55%. The precision, measuring the ratio of correctly predicted positive observations to the total predicted positives, stands at around 58%, suggestion almost a 50/50 prediction which is not the best. The model struggles somewhat in capturing all positive instances. The F1 score is around 54%. The confusion matrix reveals that the model correctly classified 81 instances of the negative class and 76 instances of the positive class, but misclassified 55 negative instances as positive and 73 positive instances as negative. The model demonstrates some predictive capability, there is room for improvement, particularly in accurately identifying positive instances.
+
+```{python}
+# imports and file path
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+import graphviz
+file_path = 'C://Users//eduar//Downloads//starwars.csv' 
+data = pd.read_csv(file_path)
+
+# Filter out missing or no data
+data = data[data['Have you seen any of the 6 films in the Star Wars franchise?'] != -1]
+columns_to_drop = [
+    'Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.',
+    'Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.', 'RespondentID', 'missing'
+]
+data.drop(columns_to_drop, axis=1, inplace=True)
+
+# target variable
+data['Household Income'] = (data['Household Income'] > 2).astype(int)
+target = data['Household Income']
+features = data.drop('Household Income', axis=1)
+
+# training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.34, random_state=76)
+decision_tree_model = DecisionTreeClassifier(random_state=42)
+decision_tree_model.fit(X_train, y_train)
+predictions = decision_tree_model.predict(X_test)
+accuracy = accuracy_score(y_test, predictions)
+precision = precision_score(y_test, predictions)
+recall = recall_score(y_test, predictions)
+f1 = f1_score(y_test, predictions)
+conf_matrix = confusion_matrix(y_test, predictions)
+
+# results
+print(f"Accuracy: {accuracy}")
+print(f"Precision: {precision}")
+print(f"Recall: {recall}")
+print(f"F1 Score: {f1}")
+print(f"Confusion Matrix:\n{conf_matrix}")
+
+# decision tree
+decision_tree_model_vis = DecisionTreeClassifier(random_state=42, max_depth=3)
+decision_tree_model_vis.fit(X_train, y_train)
+dot_data = export_graphviz(decision_tree_model_vis, out_file=None, 
+                           feature_names=X_train.columns,  
+                           class_names=['High Income', 'Low Income'],  # Adjust these names as needed
+                           filled=True, rounded=True, 
+                           special_characters=True)
+
+# Visualize the graph
+graph = graphviz.Source(dot_data) 
+graph
+
+
+
+```
+
+__Model number 2__
+
+This model has better results because all irrelevant data were removed from the CSV using Excel. In the previous model, I filtered out irrelevant data, but I missed some values like missing income information. The data removal was limited to all observations that did not watch a single Star Wars movie, and to missing data for respondents who don't consider themselves fans. These two groups were chosen because they either did not answer any more questions or all data for all responses was missing after the first question. I also removed all respondents who had missing income data. This makes a big difference because the sample is small, and it makes it easier for the model to not deal with missing income data. Observations that help predict income below 50k can be corrupted if very similar observations have missing income information, so the model will split between missing data and income below 50k. These adjustments help the model to have only two options for income, not having to deal with missing income data that fits both the high and low income categories.
+
+
+```{python}
+# model but remove all who have yet to watch a star wars movie or are not a fan, and all with missing income information. 
+
+# imports and file path
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, export_graphviz
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+import graphviz
+file_path = 'C://Users//eduar//Downloads//starwars1.csv' 
+data = pd.read_csv(file_path)
+
+columns_to_drop = [
+    'Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.',
+    'Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.', 'RespondentID', 'missing'
+]
+data.drop(columns_to_drop, axis=1, inplace=True)
+
+# target variable
+data['Household Income'] = (data['Household Income'] > 2).astype(int)
+target = data['Household Income']
+features = data.drop('Household Income', axis=1)
+X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.34, random_state=76)
+decision_tree_model = DecisionTreeClassifier(random_state=42)
+decision_tree_model.fit(X_train, y_train)
+predictions = decision_tree_model.predict(X_test)
+accuracy = accuracy_score(y_test, predictions)
+precision = precision_score(y_test, predictions)
+recall = recall_score(y_test, predictions)
+f1 = f1_score(y_test, predictions)
+conf_matrix = confusion_matrix(y_test, predictions)
+
+# results
+print(f"Accuracy: {accuracy}")
+print(f"Precision: {precision}")
+print(f"Recall: {recall}")
+print(f"F1 Score: {f1}")
+print(f"Confusion Matrix:\n{conf_matrix}")
+
+# decision tree
+decision_tree_model_vis = DecisionTreeClassifier(random_state=42, max_depth=3)
+decision_tree_model_vis.fit(X_train, y_train)
+dot_data = export_graphviz(decision_tree_model_vis, out_file=None, 
+                           feature_names=X_train.columns,  
+                           class_names=['High Income', 'Low Income'],  # Adjust names
+                           filled=True, rounded=True, 
+                           special_characters=True)
+
+# graph
+graph = graphviz.Source(dot_data) 
+graph
+
+```
+
