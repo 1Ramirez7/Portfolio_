@@ -53,7 +53,7 @@ import sqlite3
 # https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars1.csv
 
 
-sqlite_file = 'data/lahmansbaseballdb.sqlite'
+sqlite_file = 'lahmansbaseballdb.sqlite'
 
 
 con = sqlite3.connect(sqlite_file)
@@ -152,7 +152,7 @@ import pandas as pd
 import sqlite3
 
 # Connect to the SQLite database
-sqlite_file = 'data/lahmansbaseballdb.sqlite'  
+sqlite_file = 'lahmansbaseballdb.sqlite'  
 con = sqlite3.connect(sqlite_file)
 
 # SQL query for average salary of top 10 players in HBP
