@@ -280,7 +280,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-import graphviz
+
 file_path = 'https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars1.csv' 
 data = pd.read_csv(file_path)
 
