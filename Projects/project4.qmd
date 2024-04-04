@@ -164,7 +164,7 @@ __Correlation Matrix__
 
 I did a few correlation Matrices in excel to determined any noticible correlation between the variables in the sample data. The correlation matrix did a great job in determing close correlation between varibales, for exmaple price and live area had a correlation of 0.67. It will be reasonable that homes within an area tend to fall within a similar price range, and different areas could vary by price. This results did not really help me in determining the variables that will best fit the model since all the variables with close correlation were just about the same for before1980 and after 1979 so I ended the correltion matrix analysis. 
 
-![Correlation Matrix for all Variables](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/corr.png)
+![Correlation Matrix for all Variables](https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/Images/corr.png)
 
 
 
@@ -336,7 +336,7 @@ __Regression model that explains 66% of the dependent variable__
 The main justification for the classification model was the result of the regression analysis which resulted in the following regression. 
 
 
-![Regression model](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/decision_tree_full.png)
+![Regression model](https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/Images/decision_tree_full.png)
 
 
 From the regression output, I chose to include quality_C, status_V, gartype_Att, arcstyle_ONE-STORY, stories, and numbaths in my decision tree model because they are statistically significant  of the dependent variable as evidenced by their P-values. The P-values are very close to zero, which strongly rejects the null hypothesis of no effect, indicating that these variables have a significant relationship with the dependent variable.
@@ -373,7 +373,7 @@ __this regression is with only three independent variables__
 
 
 
-![Decision Tree](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/p4.png)
+![Decision Tree](https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/Images/p4.png)
 
 Here, the R-squared value is approximately 0.338, which means that about 33.8% of the variability in the dependent variable can be explained by the model. 
 
