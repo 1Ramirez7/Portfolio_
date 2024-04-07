@@ -1,167 +1,52 @@
 [
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "About me",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "This is my first portfolio that I made. This portfolio was made from a template provided by my Data Science 250 course. The main object of this portfolio is to introduce me to github, and start my project build up. This project is first starting with my Data Science 250 projects, and my resume. This is my first semester (Jan to Apr 2024) working with HTML and github and my second semester working with Python. I’m fairly new to coding and or computer science, but computer science was my career choice up until 9th grade so I’m able to understand many of the coding languages fairly quickly.\n\n\nI made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+    "text": "Financial Economist, Data Scientist, Business Analyst\n\nEduardo.er.ramirez@gmail.com | My LinkedIn Profile | My GitHub Portfolio\n\n\n\nAs a dedicated student at Brigham Young University-Idaho, I am pursuing a Bachelor of Science in Financial Economics, with minors in Data Science and Financial Planning. Specialized in Business Analytics and Operations Management, I am passionate about using data-driven strategies to drive business growth and efficiency.\n\n\n\nExpected Graduation: July 2025\nBachelor of Science in Financial Economics, Brigham Young University-Idaho, Rexburg, ID\n- Minor in Data Science and Financial Planning - Focus: Business Analytics, Business Ownership, Operations Management\n\n\n\n\n\nPetro Consulting Services LLC, Chula Vista, CA\nJan 2015 - Feb 2017 - Managed staffing, scheduling, HR needs, and sales analysis. - Developed leadership skills, problem-solving under pressure.\n\n\n\nPetro Consulting Services LLC, Chula Vista, CA\nFeb 2016 - Feb 2017 - Implemented proprietary Fleet card system. - Managed technology integration, increased sales and profitability.\n\n\n\nE&J Investments LLC, St Anthony, ID\nMarch 2023 - Present - Analyzed sales, expenses, and profitability of Laundromat equipment. - Proposed new investment opportunities and strategies.\n\n\n\n\n\n\nThe Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa\nDec 2017 - Jan 2020 - Taught local communities about religious beliefs.\n\n\n\nSan Diego, California\nJan 2020 - Aug 2020 - Organized dinners and essential kits for homeless youth.\n\n\n\nBrigham Young University-Idaho\nSep 2022 - Mar 2023 - Administrative support, data entry, and organizational management.\n\n\n\n\n\nLanguages: Fluent in Spanish, English, and Portuguese.\nTechnical Skills: Excel, R, Stata, SQL, HTML, Python.\nKey Competencies: Management, Leadership, Analytical and Strategic Thinking.\nSpecializations: Financial Management, Data Presentation.\n\n\n\n\n\nBloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: March 2024"
   },
   {
-    "objectID": "exploration.html#future-works-coming..",
-    "href": "exploration.html#future-works-coming..",
-    "title": "About me",
+    "objectID": "resume.html#profile",
+    "href": "resume.html#profile",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "I made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+    "text": "As a dedicated student at Brigham Young University-Idaho, I am pursuing a Bachelor of Science in Financial Economics, with minors in Data Science and Financial Planning. Specialized in Business Analytics and Operations Management, I am passionate about using data-driven strategies to drive business growth and efficiency."
   },
   {
-    "objectID": "Projects/project1.html",
-    "href": "Projects/project1.html",
-    "title": "Client Report - Project 1: What’s in a name?",
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "Expected Graduation: July 2025\nBachelor of Science in Financial Economics, Brigham Young University-Idaho, Rexburg, ID\n- Minor in Data Science and Financial Planning - Focus: Business Analytics, Business Ownership, Operations Management"
   },
   {
-    "objectID": "Projects/project1.html#results",
-    "href": "Projects/project1.html#results",
-    "title": "Client Report - Project 1: What’s in a name?",
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
+    "text": "Petro Consulting Services LLC, Chula Vista, CA\nJan 2015 - Feb 2017 - Managed staffing, scheduling, HR needs, and sales analysis. - Developed leadership skills, problem-solving under pressure.\n\n\n\nPetro Consulting Services LLC, Chula Vista, CA\nFeb 2016 - Feb 2017 - Implemented proprietary Fleet card system. - Managed technology integration, increased sales and profitability.\n\n\n\nE&J Investments LLC, St Anthony, ID\nMarch 2023 - Present - Analyzed sales, expenses, and profitability of Laundromat equipment. - Proposed new investment opportunities and strategies."
   },
   {
-    "objectID": "Projects/project1.html#hisotrical-name-comparison",
-    "href": "Projects/project1.html#hisotrical-name-comparison",
-    "title": "Client Report - Project 1: What’s in a name?",
-    "section": "HISOTRICAL NAME COMPARISON",
-    "text": "HISOTRICAL NAME COMPARISON\nHow does your name at your birth year compare to its use historically?\nThe analysis revealed that my name was used 2346.5 times in the year of my birth, 1995, which is almost three times the historical average usage of 825.21.\n\n\nRead and format data\n# Include and execute your code here\n\n\n# Filter the data for the name\neduardo_data = df[df['name'] == 'Eduardo']\n\n# Summarize the total counts per year\neduardo_summary = eduardo_data.groupby('year')['Total'].sum().reset_index()\n\n# average usage\naverage_usage = eduardo_summary['Total'].mean()\n\n# Create scatterplot text= \"year\" will display the year on the graph which can a large hard to see. \n# fig = px.scatter(eduardo_summary, x=\"year\", y=\"Total\", text=\"year\", title=\"Usage of the Name 'Eduardo' Over Time\")\n# create trend line\nfig = px.line(eduardo_summary, x=\"year\", y=\"Total\", title=\"Usage of the Name 'Eduardo' Over Time\")\n\n# x-axis tick modifier\nfig.update_xaxes(dtick=10)\n\n# Using an arrow to distinguish the year from years\ntotal_1995 = eduardo_summary[eduardo_summary['year'] == 1995]['Total'].values[0]\nfig.add_annotation(\n    x=1995, y=total_1995,\n    text=\"1995\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=-250,  # Starting point of the arrow\n    ay=0\n)\n\n# Add text annotation for the average usage\n'''\nfig.add_annotation(\n    x=eduardo_summary['year'].min(), y=average_usage,\n    text=f\"Historic yearly average Usage: {average_usage:.2f}\",\n    showarrow=False,\n    xanchor=\"left\",\n    yanchor=\"bottom\"\n)\n'''\n\n# Update plot layout\nfig.update_traces(textposition='top center')\nfig.update_layout(height=800)\n\n# the plot\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#chances-of-guessing-brittanys-age",
-    "href": "Projects/project1.html#chances-of-guessing-brittanys-age",
-    "title": "Client Report - Project 1: What’s in a name?",
-    "section": "CHANCES OF GUESSING BRITTANY’S AGE!",
-    "text": "CHANCES OF GUESSING BRITTANY’S AGE!\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nFor my sample year, I will be using 2015. Based on the average age of death in the US in 2015, which was 77, I am assuming that everyone over the age of 77 is deceased. Therefore, the chance of speaking to someone over 77 years old is zero. I will also be assuming that the raw data represents the total number of times a name was given to a newborn baby. For example, if the total number of times the name Brittany was given to a baby in the year 2000 was 2500, then in the year 2015, there would be 2500 people in the US with the name Brittany that are 15 years old. This assumption does not take into account the possibility of migration or death before the age of 78. To determine the percentage of people named Brittany in each age group, I will use data from 1937 to 2015 and sum up all the totals for the name Brittany in that period. The age group with the highest percentage of answering the phone is 25 years old, which accounts for 9.94% of all people named Brittany in the US. Therefore, I will guess the age of the person on the phone to be 25 years old. However, I will not guess any age above 32 or below 15 because people in those age groups have less than a one percent chance of answering the phone.\n\n\nRead and format data\n# Include and execute your code here\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for a name and and time period - years 1937 to 2015\nbrittany_data = df[(df['name'] == 'Brittany') & (df['year'] &gt;= 1937) & (df['year'] &lt;= 2015)]\n\n# Calculate age in 2015\nbrittany_data.loc[:, 'age_in_2015'] = 2015 - brittany_data['year']\n\n# Calculate the total counts per age\ntotal_counts = brittany_data.groupby('age_in_2015')['Total'].sum()\n\n# Calculate the percentage for each age\ntotal_brittanys = total_counts.sum()\npercentage = (total_counts / total_brittanys) * 100 \npercentage = percentage.reset_index()\n\n# trend line\nfig = px.line(percentage, x='age_in_2015', y='Total', \n             title=\"Percentage of Age for the Name 'Brittany' in 2015\")\nfig.update_xaxes(dtick=5)\n\n# plot layout\nfig.update_traces(textposition='top center')\nfig.update_xaxes(title_text='Age in 2015')\nfig.update_layout(height=800, yaxis_title='Percentage of Total')\n\n# Annotation\nfig.add_annotation(\n    x=25, y=percentage[percentage['age_in_2015'] == 25]['Total'].values[0],\n    text=\"Age 25\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=0,  \n    ay=-50\n)\n\n# Show the plot\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#populary-of-bible-names",
-    "href": "Projects/project1.html#populary-of-bible-names",
-    "title": "Client Report - Project 1: What’s in a name?",
-    "section": "POPULARY OF BIBLE NAMES",
-    "text": "POPULARY OF BIBLE NAMES\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nAccording to my analysis, Mary is the most popular Christian name among the given names - Mary, Martha, Peter and Paul. Paul is the second most popular name among these four. While Martha was the third most popular name until the mid 1950s,when Peter became the third most popular name among the four.After the mid 1950s, Martha was the least popular name. My analysis also indicates that the popularity of these four Christian names has been in decline since the 1960s. In 1950, over 90,000 people had one of these four names, but by 2000, there were only around 14,000 people who had one of these names.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport plotly.express as px\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for the names between 1920 and 2000\nfiltered_data = df[(df['name'].isin(['Mary', 'Martha', 'Peter', 'Paul'])) & \n                   (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n# Get the total counts per year for each name\nsummary = filtered_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create the trendline plot\nfig = px.line(summary, x='year', y='Total', color='name', \n             title=\"Name Usage Comparison of 'Mary', 'Martha', 'Peter', and 'Paul' (1920-2000)\")\n\n# plot layout\nfig.update_layout(height=800)\n\n# Show the plot\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project1.html#movies-making-names-popular",
-    "href": "Projects/project1.html#movies-making-names-popular",
-    "title": "Client Report - Project 1: What’s in a name?",
-    "section": "MOVIES MAKING NAMES POPULAR?",
-    "text": "MOVIES MAKING NAMES POPULAR?\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nI selected the movie Titanic and analyzed the usage trend of the names Jack and Rose. According to the graph, the name Rose has decreased in popularity since the early 1950s, but after the release of the movie Titanic, it gained traction and saw a growth rate of 76% from 1997 to 1999. Thus, we can conclude that the movie played a significant role in the popularity of the name Rose. On the other hand, the name Jack was already experiencing growth since 1988, and the release of Titanic did not seem to affect its trajectory. Jack gained popularity in 1987, making it difficult to determine if the movie had any impact on the name. However, it is reasonable to assume that the movie contributed to the popularity of the name Jack in the following years.\n\n\nRead and format data\n# Include and execute your code here\n\n# Filter data for the names.\nnames_data = df[df['name'].isin(['Rose', 'Jack'])]\n\n# Summarize the total counts per year for the names.\nnames_summary = names_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create line chart\nfig = px.line(names_summary, x='year', y='Total', color='name', \n              title=\"Usage of the Names 'Rose' and 'Jack' Over Time\")\n\n# Highlighting the year of Titanic, released in 1997\nfig.add_vline(x=1997, line_width=3, line_dash=\"dash\", line_color=\"red\")\n\n# plot layout\nfig.update_layout(height=800, title_text=\"Usage of the Names 'Rose' and 'Jack' and Their Correlation with Movie Release\")\n\n# Show the plot\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html",
-    "href": "Projects/project2.html",
-    "title": "Client Report - JSON & Missing",
+    "objectID": "resume.html#volunteer-experience",
+    "href": "resume.html#volunteer-experience",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\n\n# df = pd.read_csv(\"C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.json\")\n# print(df.columns)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa\nDec 2017 - Jan 2020 - Taught local communities about religious beliefs.\n\n\n\nSan Diego, California\nJan 2020 - Aug 2020 - Organized dinners and essential kits for homeless youth.\n\n\n\nBrigham Young University-Idaho\nSep 2022 - Mar 2023 - Administrative support, data entry, and organizational management."
   },
   {
-    "objectID": "Projects/project2.html#airport-delays-analysis-metrics-and-weather-impact",
-    "href": "Projects/project2.html#airport-delays-analysis-metrics-and-weather-impact",
-    "title": "Client Report - JSON & Missing",
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\n\n# df = pd.read_csv(\"C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.json\")\n# print(df.columns)",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
+    "text": "Languages: Fluent in Spanish, English, and Portuguese.\nTechnical Skills: Excel, R, Stata, SQL, HTML, Python.\nKey Competencies: Management, Leadership, Analytical and Strategic Thinking.\nSpecializations: Financial Management, Data Presentation."
   },
   {
-    "objectID": "Projects/project2.html#standardizing-data-types-handling-missing",
-    "href": "Projects/project2.html#standardizing-data-types-handling-missing",
-    "title": "Client Report - JSON & Missing",
-    "section": "1. Standardizing Data Types: Handling Missing",
-    "text": "1. Standardizing Data Types: Handling Missing\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”). In your report include one record example (one row) from your new data, in the raw JSON format. Your example should display the “NaN” for at least one missing value.\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n# Load data \nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\n\nflights_df = pd.read_csv(file_path)\n\n# Replace  missing values with NaN\nflights_df.fillna(value=np.nan, inplace=True)  # Null values\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)  \nflights_df.replace(-999, np.nan, inplace=True)  \n\n# Row with a NaN value\nrow_with_nan = flights_df[flights_df.isna().any(axis=1)].head(1)\n\n# Display row in JSON format\njson_output = row_with_nan.to_json(orient='records', default_handler=str)\njson_output = json_output.replace('null', 'NaN') # maybe skipping a step here\nprint(json_output)\n\n\n[{\"airport_code\":\"ATL\",\"airport_name\":\"Atlanta, GA: Hartsfield-Jackson Atlanta International\",\"month\":\"January\",\"year\":2005.0,\"num_of_flights_total\":35048,\"num_of_delays_carrier\":\"1500+\",\"num_of_delays_late_aircraft\":NaN,\"num_of_delays_nas\":4598,\"num_of_delays_security\":10,\"num_of_delays_weather\":448,\"num_of_delays_total\":8355,\"minutes_delayed_carrier\":116423.0,\"minutes_delayed_late_aircraft\":104415,\"minutes_delayed_nas\":207467.0,\"minutes_delayed_security\":297,\"minutes_delayed_weather\":36931,\"minutes_delayed_total\":465533}]",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#analyzing-airport-delay-performance",
-    "href": "Projects/project2.html#analyzing-airport-delay-performance",
-    "title": "Client Report - JSON & Missing",
-    "section": "2. Analyzing Airport Delay Performance",
-    "text": "2. Analyzing Airport Delay Performance\nWhich airport has the worst delays? Discuss the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.\nTo determine which airport has the worst delays, the metric used “proportion of delayed flights” as the primary metric because it indicates the likelihood of a flight being delayed no matter the airport size. An airport with a higher proportion of delays is generally more problematic for travelers since a larger percentage of flights do not depart on time. Here’s a summary table:\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\n\n# file path \nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n# Replace missing values with NaN\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\nflights_df = flights_df.applymap(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# Convert delay columns to numeric\ndelay_columns = ['num_of_delays_carrier', 'num_of_delays_late_aircraft', \n                 'num_of_delays_nas', 'num_of_delays_security', 'num_of_delays_weather']\nflights_df[delay_columns] = flights_df[delay_columns].apply(pd.to_numeric, errors='coerce')\n\n# Get the total delays per flight\nflights_df = flights_df.assign(total_delays_per_flight = flights_df[delay_columns].sum(axis=1, min_count=1))\n\n# Proportion and average delay time calculations\nsummary_df = (flights_df.groupby('airport_code')\n              .agg(total_flights=('num_of_flights_total', 'sum'),\n                   total_delayed_flights=('total_delays_per_flight', 'sum'),\n                   total_minutes_delayed=('minutes_delayed_total', 'sum'))\n              .assign(proportion_delayed=lambda x: x.total_delayed_flights / x.total_flights,\n                      average_delay_time_hours=lambda x: x.total_minutes_delayed / x.total_delayed_flights / 60)\n              .sort_values(by='average_delay_time_hours', ascending=False)\n              .reset_index())\n\n# Display\nsummary_df.index = summary_df.index + 1\nsummary_df\n\n\n\n\n\n\n\n\n\n\nairport_code\ntotal_flights\ntotal_delayed_flights\ntotal_minutes_delayed\nproportion_delayed\naverage_delay_time_hours\n\n\n\n\n1\nATL\n4430047\n717306.0\n53983926\n0.161918\n1.254321\n\n\n2\nORD\n3597588\n790565.0\n56356129\n0.219749\n1.188098\n\n\n3\nSFO\n1630945\n425609.0\n26550493\n0.260959\n1.039706\n\n\n4\nIAD\n851571\n168476.0\n10283478\n0.197841\n1.017304\n\n\n5\nDEN\n2513974\n458203.0\n25173381\n0.182262\n0.915656\n\n\n6\nSLC\n1403384\n203610.0\n10123371\n0.145085\n0.828657\n\n\n7\nSAN\n917862\n175131.0\n8276248\n0.190803\n0.787625\n\n\n\n\n\n\n\n\nConsidering this data, SFO has the highest proportion of delayed flights at 26.09%, indicating that it has the worst delays among these airports. Despite not having the longest average delay time, the higher chance of any given flight being delayed at SFO makes it more likely for travelers to experience a delay there.",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#optimal-flight-months-delay-analysis",
-    "href": "Projects/project2.html#optimal-flight-months-delay-analysis",
-    "title": "Client Report - JSON & Missing",
-    "section": "3. Optimal Flight Months: Delay Analysis",
-    "text": "3. Optimal Flight Months: Delay Analysis\nWhat is the best month to fly if you want to avoid delays of any length? Discuss the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)\nTo identify the best month to fly to avoid delays, the metric to look at is the “Average Delay per Flight.” This metric provides a measure of how long, on average, flights are delayed during each month, reflecting the overall efficiency of flight operations. From the provided chart below, we can see that September has the lowest average delay per flight, making it the best month to fly to minimize the risk of experiencing a delay.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n# File path\nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n# Replace missing values with NaN. It is possible to not use this code since i used it above? I tried but got different numbers. \nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\n\n# Replace '1500+' with NaN \nfor column in flights_df.columns:\n    if flights_df[column].dtype == object:\n        flights_df[column] = flights_df[column].map(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# define\nmonth_column = 'month' \n# flights_df.dropna(subset=[month_column], inplace=True)\n\n# Convert delay columns to numeric\ndelay_columns = ['num_of_delays_carrier', 'num_of_delays_late_aircraft', \n                 'num_of_delays_nas', 'num_of_delays_security', 'num_of_delays_weather']\nflights_df[delay_columns] = flights_df[delay_columns].apply(pd.to_numeric, errors='coerce')\n\n# Sum delays for each row = total delays per flight\nflights_df['total_delays_per_flight'] = flights_df[delay_columns].sum(axis=1, min_count=1)\n\n# Calculate average delay time per flight for each month\nmonthly_delay = (flights_df.groupby(month_column)\n                 .agg(total_flights=('num_of_flights_total', 'sum'),\n                      total_delayed_flights=('total_delays_per_flight', 'sum'))\n                 .assign(average_delay_per_flight=lambda x: x.total_delayed_flights / x.total_flights)\n                 .reset_index())\n\n# Sort by month\nmonthly_delay.sort_values(month_column, inplace=True)\n\n# Plotting\nfig = px.bar(monthly_delay, x=month_column, y='average_delay_per_flight', \n             labels={'average_delay_per_flight': 'Average Delay per Flight'},\n             title='Average Flight Delay per Month')\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#total-flight-weather-delay-analysis",
-    "href": "Projects/project2.html#total-flight-weather-delay-analysis",
-    "title": "Client Report - JSON & Missing",
-    "section": "4. Total Flight Weather Delay Analysis",
-    "text": "4. Total Flight Weather Delay Analysis\nAccording to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild). You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations: a. 100% of delayed flights in the Weather category are due to weathe. b. 30% of all delayed flights in the Late-Arriving category are due to weather. c. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%.\nThe table presents data on flight delays across four categories: ‘num_of_delays_late_aircraft’, ‘num_of_delays_weather’, ‘num_of_delays_nas’, and ‘weather_delays’. The ‘num_of_delays_weather’ column represents severe weather delays, as per BTS’s categorization. These are delays strictly due to significant weather events. The ‘num_of_delays_late_aircraft’ and ‘num_of_delays_nas’ columns include some delays caused by mild weather, as these are not categorized under ‘Weather’ by BTS. The ‘num_of_delays_late_aircraft’ column likely includes delays where an arriving aircraft was late due to mild weather conditions at either the previous airport or en route.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\n\n# data path\nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n\n# Replace missing values with NaN\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\n\n# Replace '1500+' with NaN \nfor column in flights_df.columns:\n    if flights_df[column].dtype == object:\n        flights_df[column] = flights_df[column].map(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# Convert 'month' column to numeric\nflights_df['month'] = pd.to_numeric(flights_df['month'], errors='coerce')\n\n# Replace missing values in Late-Arriving Aircraft with the mean\nnum_of_delays_late_aircraft_col = 'num_of_delays_late_aircraft'\nflights_df[num_of_delays_late_aircraft_col].fillna(flights_df[num_of_delays_late_aircraft_col].mean(), inplace=True)\n\n# Calculate weather-related delays\nflights_df['weather_delays'] = flights_df['num_of_delays_weather']  # 100% of delays in Weather category\n\n# 30% of Late-Arriving Aircraft delays due to weather\nflights_df['weather_delays'] += flights_df[num_of_delays_late_aircraft_col] * 0.3\n\n# NAS category weather delay calculation\nnas_col = 'num_of_delays_nas'\nflights_df['weather_delays'] += np.where(\n    flights_df['month'].between(4, 8),  # April to August\n    flights_df[nas_col] * 0.4,  # 40% of NAS delays due to weather\n    flights_df[nas_col] * 0.65  # Other months, 65% of NAS delays due to weather\n)\n\n# Display the first 5 rows\nflights_df.head()\n\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\nweather_delays\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nNaN\n2005.0\n35048\nNaN\n1109.104072\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n3769.431222\n\n\n1\nDEN\nDenver, CO: Denver International\nNaN\n2005.0\n12687\n1041\n928.000000\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n1119.150000\n\n\n2\nIAD\nNaN\nNaN\n2005.0\n12381\n414\n1058.000000\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n960.150000\n\n\n3\nORD\nChicago, IL: Chicago O'Hare International\nNaN\n2005.0\n28194\n1197\n2255.000000\n5415\n5\n306\n9178\n88691.0\n160811\n364382.0\n151\n24859\n638894\n4502.250000\n\n\n4\nSAN\nSan Diego, CA: San Diego International\nNaN\n2005.0\n7283\n572\n680.000000\n638\n7\n56\n1952\n27436.0\n38445\n21127.0\n218\n4326\n91552\n674.700000",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Projects/project2.html#flight-delay-weather-analysis",
-    "href": "Projects/project2.html#flight-delay-weather-analysis",
-    "title": "Client Report - JSON & Missing",
-    "section": "5. Flight Delay Weather Analysis",
-    "text": "5. Flight Delay Weather Analysis\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Discuss what you learn from this graph.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n\n# Calculate the total number of flights and weather-related delays for each airport\nairport_delays = flights_df.groupby('airport_code').agg(\n    total_flights=('num_of_flights_total', 'sum'),\n    weather_delays=('weather_delays', 'sum')\n)\n\n# Calculate the proportion of weather-related delays\nairport_delays['weather_delay_proportion'] = airport_delays['weather_delays'] / airport_delays['total_flights']\n\n# Sort by proportion of weather-related delays\nairport_delays = airport_delays.sort_values(by='weather_delay_proportion', ascending=False).reset_index()\n\n# Create a barplot\nfig = px.bar(airport_delays, x='airport_code', y='weather_delay_proportion',\n             title='Proportion of All Flights Delayed by Weather at Each Airport',\n             labels={'weather_delay_proportion': 'Proportion of Weather Delays', 'airport_code': 'Airport Code'})\nfig.show()",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Eduardo I. Ramirez’s CV",
     "section": "",
-    "text": "testing\n\n\n\n Back to top"
+    "text": "Bloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: March 2024"
   },
   {
     "objectID": "Templates/DS350_Template.html",
@@ -259,6 +144,106 @@
     ]
   },
   {
+    "objectID": "Projects/project1.html",
+    "href": "Projects/project1.html",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "",
+    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#results",
+    "href": "Projects/project1.html#results",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "",
+    "text": "The project results are in. It was found that my name was during its peak usage in the year 1995. Given we had all the data of the population for the second task, it was concluded that age 25 had the highest probability for Brittany. The graph results for task 3 did a great job of showing their popularity and provided an interesting trend in the last few decades. Movies can make a difference in name popularity, but a second sample challenges that claim.\n\n\nRead and format project data\n# Include and execute your code here\n\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#hisotrical-name-comparison",
+    "href": "Projects/project1.html#hisotrical-name-comparison",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "HISOTRICAL NAME COMPARISON",
+    "text": "HISOTRICAL NAME COMPARISON\nHow does your name at your birth year compare to its use historically?\nThe analysis revealed that my name was used 2346.5 times in the year of my birth, 1995, which is almost three times the historical average usage of 825.21.\n\n\nRead and format data\n# Include and execute your code here\n\n\n# Filter the data for the name\neduardo_data = df[df['name'] == 'Eduardo']\n\n# Summarize the total counts per year\neduardo_summary = eduardo_data.groupby('year')['Total'].sum().reset_index()\n\n# average usage\naverage_usage = eduardo_summary['Total'].mean()\n\n# Create scatterplot text= \"year\" will display the year on the graph which can a large hard to see. \n# fig = px.scatter(eduardo_summary, x=\"year\", y=\"Total\", text=\"year\", title=\"Usage of the Name 'Eduardo' Over Time\")\n# create trend line\nfig = px.line(eduardo_summary, x=\"year\", y=\"Total\", title=\"Usage of the Name 'Eduardo' Over Time\")\n\n# x-axis tick modifier\nfig.update_xaxes(dtick=10)\n\n# Using an arrow to distinguish the year from years\ntotal_1995 = eduardo_summary[eduardo_summary['year'] == 1995]['Total'].values[0]\nfig.add_annotation(\n    x=1995, y=total_1995,\n    text=\"1995\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=-250,  # Starting point of the arrow\n    ay=0\n)\n\n# Add text annotation for the average usage\n'''\nfig.add_annotation(\n    x=eduardo_summary['year'].min(), y=average_usage,\n    text=f\"Historic yearly average Usage: {average_usage:.2f}\",\n    showarrow=False,\n    xanchor=\"left\",\n    yanchor=\"bottom\"\n)\n'''\n\n# Update plot layout\nfig.update_traces(textposition='top center')\nfig.update_layout(height=800)\n\n# the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#chances-of-guessing-brittanys-age",
+    "href": "Projects/project1.html#chances-of-guessing-brittanys-age",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "CHANCES OF GUESSING BRITTANY’S AGE!",
+    "text": "CHANCES OF GUESSING BRITTANY’S AGE!\nIf you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?\nFor my sample year, I will be using 2015. Based on the average age of death in the US in 2015, which was 77, I am assuming that everyone over the age of 77 is deceased. Therefore, the chance of speaking to someone over 77 years old is zero. I will also be assuming that the raw data represents the total number of times a name was given to a newborn baby. For example, if the total number of times the name Brittany was given to a baby in the year 2000 was 2500, then in the year 2015, there would be 2500 people in the US with the name Brittany that are 15 years old. This assumption does not take into account the possibility of migration or death before the age of 78. To determine the percentage of people named Brittany in each age group, I will use data from 1937 to 2015 and sum up all the totals for the name Brittany in that period. The age group with the highest percentage of answering the phone is 25 years old, which accounts for 9.94% of all people named Brittany in the US. Therefore, I will guess the age of the person on the phone to be 25 years old. However, I will not guess any age above 32 or below 15 because people in those age groups have less than a one percent chance of answering the phone.\n\n\nRead and format data\n# Include and execute your code here\nimport pandas as pd\nimport plotly.express as px\nimport plotly.graph_objects as go\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for a name and and time period - years 1937 to 2015\nbrittany_data = df[(df['name'] == 'Brittany') & (df['year'] &gt;= 1937) & (df['year'] &lt;= 2015)]\n\n# Calculate age in 2015\nbrittany_data.loc[:, 'age_in_2015'] = 2015 - brittany_data['year']\n\n# Calculate the total counts per age\ntotal_counts = brittany_data.groupby('age_in_2015')['Total'].sum()\n\n# Calculate the percentage for each age\ntotal_brittanys = total_counts.sum()\npercentage = (total_counts / total_brittanys) * 100 \npercentage = percentage.reset_index()\n\n# trend line\nfig = px.line(percentage, x='age_in_2015', y='Total', \n             title=\"Percentage of Age for the Name 'Brittany' in 2015\")\nfig.update_xaxes(dtick=5)\n\n# plot layout\nfig.update_traces(textposition='top center')\nfig.update_xaxes(title_text='Age in 2015')\nfig.update_layout(height=800, yaxis_title='Percentage of Total')\n\n# Annotation\nfig.add_annotation(\n    x=25, y=percentage[percentage['age_in_2015'] == 25]['Total'].values[0],\n    text=\"Age 25\",\n    showarrow=True,\n    arrowhead=2,\n    arrowsize=2,\n    ax=0,  \n    ay=-50\n)\n\n# Show the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#populary-of-bible-names",
+    "href": "Projects/project1.html#populary-of-bible-names",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "POPULARY OF BIBLE NAMES",
+    "text": "POPULARY OF BIBLE NAMES\nMary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names. What trends do you notice?\nAccording to my analysis, Mary is the most popular Christian name among the given names - Mary, Martha, Peter and Paul. Paul is the second most popular name among these four. While Martha was the third most popular name until the mid 1950s,when Peter became the third most popular name among the four.After the mid 1950s, Martha was the least popular name. My analysis also indicates that the popularity of these four Christian names has been in decline since the 1960s. In 1950, over 90,000 people had one of these four names, but by 2000, there were only around 14,000 people who had one of these names.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport plotly.express as px\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n# Filter data for the names between 1920 and 2000\nfiltered_data = df[(df['name'].isin(['Mary', 'Martha', 'Peter', 'Paul'])) & \n                   (df['year'] &gt;= 1920) & (df['year'] &lt;= 2000)]\n\n# Get the total counts per year for each name\nsummary = filtered_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create the trendline plot\nfig = px.line(summary, x='year', y='Total', color='name', \n             title=\"Name Usage Comparison of 'Mary', 'Martha', 'Peter', and 'Paul' (1920-2000)\")\n\n# plot layout\nfig.update_layout(height=800)\n\n# Show the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project1.html#movies-making-names-popular",
+    "href": "Projects/project1.html#movies-making-names-popular",
+    "title": "Client Report - Project 1: What’s in a name?",
+    "section": "MOVIES MAKING NAMES POPULAR?",
+    "text": "MOVIES MAKING NAMES POPULAR?\nThink of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?\nI selected the movie Titanic and analyzed the usage trend of the names Jack and Rose. According to the graph, the name Rose has decreased in popularity since the early 1950s, but after the release of the movie Titanic, it gained traction and saw a growth rate of 76% from 1997 to 1999. Thus, we can conclude that the movie played a significant role in the popularity of the name Rose. On the other hand, the name Jack was already experiencing growth since 1988, and the release of Titanic did not seem to affect its trajectory. Jack gained popularity in 1987, making it difficult to determine if the movie had any impact on the name. However, it is reasonable to assume that the movie contributed to the popularity of the name Jack in the following years.\n\n\nRead and format data\n# Include and execute your code here\n\n# Filter data for the names.\nnames_data = df[df['name'].isin(['Rose', 'Jack'])]\n\n# Summarize the total counts per year for the names.\nnames_summary = names_data.groupby(['year', 'name'])['Total'].sum().reset_index()\n\n# Create line chart\nfig = px.line(names_summary, x='year', y='Total', color='name', \n              title=\"Usage of the Names 'Rose' and 'Jack' Over Time\")\n\n# Highlighting the year of Titanic, released in 1997\nfig.add_vline(x=1997, line_width=3, line_dash=\"dash\", line_color=\"red\")\n\n# plot layout\nfig.update_layout(height=800, title_text=\"Usage of the Names 'Rose' and 'Jack' and Their Correlation with Movie Release\")\n\n# Show the plot\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
+  },
+  {
     "objectID": "Projects/project3.html",
     "href": "Projects/project3.html",
     "title": "Client Report - Finding Relationships in Baseball",
@@ -267,6 +252,83 @@
     "crumbs": [
       "DS250 Projects",
       "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html",
+    "href": "Projects/project2.html",
+    "title": "Client Report - JSON & Missing",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\n\n# df = pd.read_csv(\"C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.json\")\n# print(df.columns)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#airport-delays-analysis-metrics-and-weather-impact",
+    "href": "Projects/project2.html#airport-delays-analysis-metrics-and-weather-impact",
+    "title": "Client Report - JSON & Missing",
+    "section": "",
+    "text": "paste your elevator pitch here A SHORT (4-5 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.\n\n\nRead and format project data\n# Include and execute your code here\n\n# df = pd.read_csv(\"C://Users//eduar//OneDrive - BYU-Idaho//2024 Winter//250 DS//flights_missing.json\")\n# print(df.columns)",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#standardizing-data-types-handling-missing",
+    "href": "Projects/project2.html#standardizing-data-types-handling-missing",
+    "title": "Client Report - JSON & Missing",
+    "section": "1. Standardizing Data Types: Handling Missing",
+    "text": "1. Standardizing Data Types: Handling Missing\nFix all of the varied missing data types in the data to be consistent (all missing values should be displayed as “NaN”). In your report include one record example (one row) from your new data, in the raw JSON format. Your example should display the “NaN” for at least one missing value.\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n# Load data \nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\n\nflights_df = pd.read_csv(file_path)\n\n# Replace  missing values with NaN\nflights_df.fillna(value=np.nan, inplace=True)  # Null values\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)  \nflights_df.replace(-999, np.nan, inplace=True)  \n\n# Row with a NaN value\nrow_with_nan = flights_df[flights_df.isna().any(axis=1)].head(1)\n\n# Display row in JSON format\njson_output = row_with_nan.to_json(orient='records', default_handler=str)\njson_output = json_output.replace('null', 'NaN') # maybe skipping a step here\nprint(json_output)\n\n\n[{\"airport_code\":\"ATL\",\"airport_name\":\"Atlanta, GA: Hartsfield-Jackson Atlanta International\",\"month\":\"January\",\"year\":2005.0,\"num_of_flights_total\":35048,\"num_of_delays_carrier\":\"1500+\",\"num_of_delays_late_aircraft\":NaN,\"num_of_delays_nas\":4598,\"num_of_delays_security\":10,\"num_of_delays_weather\":448,\"num_of_delays_total\":8355,\"minutes_delayed_carrier\":116423.0,\"minutes_delayed_late_aircraft\":104415,\"minutes_delayed_nas\":207467.0,\"minutes_delayed_security\":297,\"minutes_delayed_weather\":36931,\"minutes_delayed_total\":465533}]",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#analyzing-airport-delay-performance",
+    "href": "Projects/project2.html#analyzing-airport-delay-performance",
+    "title": "Client Report - JSON & Missing",
+    "section": "2. Analyzing Airport Delay Performance",
+    "text": "2. Analyzing Airport Delay Performance\nWhich airport has the worst delays? Discuss the metric you chose, and why you chose it to determine the “worst” airport. Your answer should include a summary table that lists (for each airport) the total number of flights, total number of delayed flights, proportion of delayed flights, and average delay time in hours.\nTo determine which airport has the worst delays, the metric used “proportion of delayed flights” as the primary metric because it indicates the likelihood of a flight being delayed no matter the airport size. An airport with a higher proportion of delays is generally more problematic for travelers since a larger percentage of flights do not depart on time. Here’s a summary table:\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\n\n# file path \nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n# Replace missing values with NaN\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\nflights_df = flights_df.applymap(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# Convert delay columns to numeric\ndelay_columns = ['num_of_delays_carrier', 'num_of_delays_late_aircraft', \n                 'num_of_delays_nas', 'num_of_delays_security', 'num_of_delays_weather']\nflights_df[delay_columns] = flights_df[delay_columns].apply(pd.to_numeric, errors='coerce')\n\n# Get the total delays per flight\nflights_df = flights_df.assign(total_delays_per_flight = flights_df[delay_columns].sum(axis=1, min_count=1))\n\n# Proportion and average delay time calculations\nsummary_df = (flights_df.groupby('airport_code')\n              .agg(total_flights=('num_of_flights_total', 'sum'),\n                   total_delayed_flights=('total_delays_per_flight', 'sum'),\n                   total_minutes_delayed=('minutes_delayed_total', 'sum'))\n              .assign(proportion_delayed=lambda x: x.total_delayed_flights / x.total_flights,\n                      average_delay_time_hours=lambda x: x.total_minutes_delayed / x.total_delayed_flights / 60)\n              .sort_values(by='average_delay_time_hours', ascending=False)\n              .reset_index())\n\n# Display\nsummary_df.index = summary_df.index + 1\nsummary_df\n\n\n\n\n\n\n\n\n\n\nairport_code\ntotal_flights\ntotal_delayed_flights\ntotal_minutes_delayed\nproportion_delayed\naverage_delay_time_hours\n\n\n\n\n1\nATL\n4430047\n717306.0\n53983926\n0.161918\n1.254321\n\n\n2\nORD\n3597588\n790565.0\n56356129\n0.219749\n1.188098\n\n\n3\nSFO\n1630945\n425609.0\n26550493\n0.260959\n1.039706\n\n\n4\nIAD\n851571\n168476.0\n10283478\n0.197841\n1.017304\n\n\n5\nDEN\n2513974\n458203.0\n25173381\n0.182262\n0.915656\n\n\n6\nSLC\n1403384\n203610.0\n10123371\n0.145085\n0.828657\n\n\n7\nSAN\n917862\n175131.0\n8276248\n0.190803\n0.787625\n\n\n\n\n\n\n\n\nConsidering this data, SFO has the highest proportion of delayed flights at 26.09%, indicating that it has the worst delays among these airports. Despite not having the longest average delay time, the higher chance of any given flight being delayed at SFO makes it more likely for travelers to experience a delay there.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#optimal-flight-months-delay-analysis",
+    "href": "Projects/project2.html#optimal-flight-months-delay-analysis",
+    "title": "Client Report - JSON & Missing",
+    "section": "3. Optimal Flight Months: Delay Analysis",
+    "text": "3. Optimal Flight Months: Delay Analysis\nWhat is the best month to fly if you want to avoid delays of any length? Discuss the metric you chose and why you chose it to calculate your answer. Include one chart to help support your answer, with the x-axis ordered by month. (To answer this question, you will need to remove any rows that are missing the Month variable.)\nTo identify the best month to fly to avoid delays, the metric to look at is the “Average Delay per Flight.” This metric provides a measure of how long, on average, flights are delayed during each month, reflecting the overall efficiency of flight operations. From the provided chart below, we can see that September has the lowest average delay per flight, making it the best month to fly to minimize the risk of experiencing a delay.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n# File path\nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n# Replace missing values with NaN. It is possible to not use this code since i used it above? I tried but got different numbers. \nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\n\n# Replace '1500+' with NaN \nfor column in flights_df.columns:\n    if flights_df[column].dtype == object:\n        flights_df[column] = flights_df[column].map(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# define\nmonth_column = 'month' \n# flights_df.dropna(subset=[month_column], inplace=True)\n\n# Convert delay columns to numeric\ndelay_columns = ['num_of_delays_carrier', 'num_of_delays_late_aircraft', \n                 'num_of_delays_nas', 'num_of_delays_security', 'num_of_delays_weather']\nflights_df[delay_columns] = flights_df[delay_columns].apply(pd.to_numeric, errors='coerce')\n\n# Sum delays for each row = total delays per flight\nflights_df['total_delays_per_flight'] = flights_df[delay_columns].sum(axis=1, min_count=1)\n\n# Calculate average delay time per flight for each month\nmonthly_delay = (flights_df.groupby(month_column)\n                 .agg(total_flights=('num_of_flights_total', 'sum'),\n                      total_delayed_flights=('total_delays_per_flight', 'sum'))\n                 .assign(average_delay_per_flight=lambda x: x.total_delayed_flights / x.total_flights)\n                 .reset_index())\n\n# Sort by month\nmonthly_delay.sort_values(month_column, inplace=True)\n\n# Plotting\nfig = px.bar(monthly_delay, x=month_column, y='average_delay_per_flight', \n             labels={'average_delay_per_flight': 'Average Delay per Flight'},\n             title='Average Flight Delay per Month')\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#total-flight-weather-delay-analysis",
+    "href": "Projects/project2.html#total-flight-weather-delay-analysis",
+    "title": "Client Report - JSON & Missing",
+    "section": "4. Total Flight Weather Delay Analysis",
+    "text": "4. Total Flight Weather Delay Analysis\nAccording to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild). You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations: a. 100% of delayed flights in the Weather category are due to weathe. b. 30% of all delayed flights in the Late-Arriving category are due to weather. c. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%.\nThe table presents data on flight delays across four categories: ‘num_of_delays_late_aircraft’, ‘num_of_delays_weather’, ‘num_of_delays_nas’, and ‘weather_delays’. The ‘num_of_delays_weather’ column represents severe weather delays, as per BTS’s categorization. These are delays strictly due to significant weather events. The ‘num_of_delays_late_aircraft’ and ‘num_of_delays_nas’ columns include some delays caused by mild weather, as these are not categorized under ‘Weather’ by BTS. The ‘num_of_delays_late_aircraft’ column likely includes delays where an arriving aircraft was late due to mild weather conditions at either the previous airport or en route.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\n\n# data path\nfile_path = \"https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/flights_missing.csv\"\nflights_df = pd.read_csv(file_path)\n\n\n# Replace missing values with NaN\nflights_df.replace(r'^\\s*$', np.nan, regex=True, inplace=True)\nflights_df.replace(-999, np.nan, inplace=True)\n\n# Replace '1500+' with NaN \nfor column in flights_df.columns:\n    if flights_df[column].dtype == object:\n        flights_df[column] = flights_df[column].map(lambda x: np.nan if isinstance(x, str) and '+' in x else x)\n\n# Convert 'month' column to numeric\nflights_df['month'] = pd.to_numeric(flights_df['month'], errors='coerce')\n\n# Replace missing values in Late-Arriving Aircraft with the mean\nnum_of_delays_late_aircraft_col = 'num_of_delays_late_aircraft'\nflights_df[num_of_delays_late_aircraft_col].fillna(flights_df[num_of_delays_late_aircraft_col].mean(), inplace=True)\n\n# Calculate weather-related delays\nflights_df['weather_delays'] = flights_df['num_of_delays_weather']  # 100% of delays in Weather category\n\n# 30% of Late-Arriving Aircraft delays due to weather\nflights_df['weather_delays'] += flights_df[num_of_delays_late_aircraft_col] * 0.3\n\n# NAS category weather delay calculation\nnas_col = 'num_of_delays_nas'\nflights_df['weather_delays'] += np.where(\n    flights_df['month'].between(4, 8),  # April to August\n    flights_df[nas_col] * 0.4,  # 40% of NAS delays due to weather\n    flights_df[nas_col] * 0.65  # Other months, 65% of NAS delays due to weather\n)\n\n# Display the first 5 rows\nflights_df.head()\n\n\n\n\n\n\n\n\n\n\nairport_code\nairport_name\nmonth\nyear\nnum_of_flights_total\nnum_of_delays_carrier\nnum_of_delays_late_aircraft\nnum_of_delays_nas\nnum_of_delays_security\nnum_of_delays_weather\nnum_of_delays_total\nminutes_delayed_carrier\nminutes_delayed_late_aircraft\nminutes_delayed_nas\nminutes_delayed_security\nminutes_delayed_weather\nminutes_delayed_total\nweather_delays\n\n\n\n\n0\nATL\nAtlanta, GA: Hartsfield-Jackson Atlanta Intern...\nNaN\n2005.0\n35048\nNaN\n1109.104072\n4598\n10\n448\n8355\n116423.0\n104415\n207467.0\n297\n36931\n465533\n3769.431222\n\n\n1\nDEN\nDenver, CO: Denver International\nNaN\n2005.0\n12687\n1041\n928.000000\n935\n11\n233\n3153\n53537.0\n70301\n36817.0\n363\n21779\n182797\n1119.150000\n\n\n2\nIAD\nNaN\nNaN\n2005.0\n12381\n414\n1058.000000\n895\n4\n61\n2430\nNaN\n70919\n35660.0\n208\n4497\n134881\n960.150000\n\n\n3\nORD\nChicago, IL: Chicago O'Hare International\nNaN\n2005.0\n28194\n1197\n2255.000000\n5415\n5\n306\n9178\n88691.0\n160811\n364382.0\n151\n24859\n638894\n4502.250000\n\n\n4\nSAN\nSan Diego, CA: San Diego International\nNaN\n2005.0\n7283\n572\n680.000000\n638\n7\n56\n1952\n27436.0\n38445\n21127.0\n218\n4326\n91552\n674.700000",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html#flight-delay-weather-analysis",
+    "href": "Projects/project2.html#flight-delay-weather-analysis",
+    "title": "Client Report - JSON & Missing",
+    "section": "5. Flight Delay Weather Analysis",
+    "text": "5. Flight Delay Weather Analysis\nUsing the new weather variable calculated above, create a barplot showing the proportion of all flights that are delayed by weather at each airport. Discuss what you learn from this graph.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport numpy as np\nimport plotly.express as px\n\n\n# Calculate the total number of flights and weather-related delays for each airport\nairport_delays = flights_df.groupby('airport_code').agg(\n    total_flights=('num_of_flights_total', 'sum'),\n    weather_delays=('weather_delays', 'sum')\n)\n\n# Calculate the proportion of weather-related delays\nairport_delays['weather_delay_proportion'] = airport_delays['weather_delays'] / airport_delays['total_flights']\n\n# Sort by proportion of weather-related delays\nairport_delays = airport_delays.sort_values(by='weather_delay_proportion', ascending=False).reset_index()\n\n# Create a barplot\nfig = px.bar(airport_delays, x='airport_code', y='weather_delay_proportion',\n             title='Proportion of All Flights Delayed by Weather at Each Airport',\n             labels={'weather_delay_proportion': 'Proportion of Weather Delays', 'airport_code': 'Airport Code'})\nfig.show()",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 2"
     ]
   },
   {
@@ -314,86 +376,24 @@
     ]
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "About me",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "This is my first portfolio that I made. This portfolio was made from a template provided by my Data Science 250 course. The main object of this portfolio is to introduce me to github, and start my project build up. This project is first starting with my Data Science 250 projects, and my resume. This is my first semester (Jan to Apr 2024) working with HTML and github and my second semester working with Python. I’m fairly new to coding and or computer science, but computer science was my career choice up until 9th grade so I’m able to understand many of the coding languages fairly quickly.\n\n\nI made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
   },
   {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
+    "objectID": "exploration.html#future-works-coming..",
+    "href": "exploration.html#future-works-coming..",
+    "title": "About me",
     "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
+    "text": "I made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
   },
   {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
     "section": "",
-    "text": "#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —\nlibrary(palmerpenguins)\n#’ ## Exploring the data #’ See for an exploration of bill sizes by species.\n#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Financial Economist, Data Scientist, Business Analyst\n\nEduardo.er.ramirez@gmail.com | My LinkedIn Profile\n\n\n\nStudent at Brigham Young University-Idaho, specializing in Financial Economics with a minor in Data Science and Financial Planning.\n\n\nBusiness Analytics, Operations Management, Data Analysis\n\n\n\nSales analysis, financial management, business investment opportunities, data-driven decision making\n\n\n\n\nExpected Graduation: July 2025 Bachelor of Science in Financial Economics, Brigham Young University-Idaho, Rexburg ID\n\nMinor in Data Science and Financial Planning\nArea of interest: Business Analytics, Business Owner, Operations Manager\n\n\n\n\n\n\nJan 2015 - Feb 2017 Petro Consulting Services LLC, Chula Vista, CA\n\nManaged staffing, scheduling, HR needs, and sales analysis.\nDeveloped leadership skills, problem-solving under pressure.\n\n\n\n\nFeb 2016 - Feb 2017 Petro Consulting Services LLC, Chula Vista, CA\n\nImplemented proprietary Fleet card system.\nManaged technology integration, increased sales and profitability.\n\n\n\n\nMarch 2023 - Current E&J Investments LLC, St Anthony, ID\n\nAnalyzed sales, expenses, and profitability of Laundromat equipment.\nProposed new investment opportunities and strategies.\n\n\n\n\n\n\n\nDec 2017 - Jan 2020 The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa\n\nTaught local communities about religious beliefs.\n\n\n\n\nJan 2020 - Aug 2020 San Diego, California\n\nOrganized dinners and essential kits for homeless youth.\n\n\n\n\nSep 2022 - Mar 2023 Brigham Young University-Idaho\n\nAdministrative support, data entry, and organizational management.\n\n\n\n\n\n\nFluent in Spanish, English, and Portuguese.\nData Analysis: Excel, R, Stata, SQL, HTML, Python.\nManagement, Leadership, Analytical and Strategic Thinking.\nFinancial Management, Data Presentation.\n\n\n\n\n\nBloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: Mar 2024 –&gt;"
-  },
-  {
-    "objectID": "resume.html#currently",
-    "href": "resume.html#currently",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Student at Brigham Young University-Idaho, specializing in Financial Economics with a minor in Data Science and Financial Planning.\n\n\nBusiness Analytics, Operations Management, Data Analysis\n\n\n\nSales analysis, financial management, business investment opportunities, data-driven decision making"
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Expected Graduation: July 2025 Bachelor of Science in Financial Economics, Brigham Young University-Idaho, Rexburg ID\n\nMinor in Data Science and Financial Planning\nArea of interest: Business Analytics, Business Owner, Operations Manager"
-  },
-  {
-    "objectID": "resume.html#experience",
-    "href": "resume.html#experience",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Jan 2015 - Feb 2017 Petro Consulting Services LLC, Chula Vista, CA\n\nManaged staffing, scheduling, HR needs, and sales analysis.\nDeveloped leadership skills, problem-solving under pressure.\n\n\n\n\nFeb 2016 - Feb 2017 Petro Consulting Services LLC, Chula Vista, CA\n\nImplemented proprietary Fleet card system.\nManaged technology integration, increased sales and profitability.\n\n\n\n\nMarch 2023 - Current E&J Investments LLC, St Anthony, ID\n\nAnalyzed sales, expenses, and profitability of Laundromat equipment.\nProposed new investment opportunities and strategies."
-  },
-  {
-    "objectID": "resume.html#volunteer-experience",
-    "href": "resume.html#volunteer-experience",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Dec 2017 - Jan 2020 The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa\n\nTaught local communities about religious beliefs.\n\n\n\n\nJan 2020 - Aug 2020 San Diego, California\n\nOrganized dinners and essential kits for homeless youth.\n\n\n\n\nSep 2022 - Mar 2023 Brigham Young University-Idaho\n\nAdministrative support, data entry, and organizational management."
-  },
-  {
-    "objectID": "resume.html#skills",
-    "href": "resume.html#skills",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Fluent in Spanish, English, and Portuguese.\nData Analysis: Excel, R, Stata, SQL, HTML, Python.\nManagement, Leadership, Analytical and Strategic Thinking.\nFinancial Management, Data Presentation."
-  },
-  {
-    "objectID": "resume.html#certificates",
-    "href": "resume.html#certificates",
-    "title": "Eduardo I. Ramirez’s CV",
-    "section": "",
-    "text": "Bloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: Mar 2024 –&gt;"
+    "text": "testing\n\n\n\n Back to top"
   }
 ]
