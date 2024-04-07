@@ -2,89 +2,76 @@
 layout: cv
 title: Eduardo I. Ramirez's CV
 ---
+
 # Eduardo I. Ramirez
 Financial Economist, Data Scientist, Business Analyst
 
 <div id="webaddress">
-<a href="Eduardo.er.ramirez@gmail.com">Eduardo.er.ramirez@gmail.com</a>
-| <a href="https://www.linkedin.com/in/eduardo-ramirez-31198b1b8/">My LinkedIn Profile</a>
+<a href="mailto:Eduardo.er.ramirez@gmail.com">Eduardo.er.ramirez@gmail.com</a> |
+<a href="https://www.linkedin.com/in/eduardo-ramirez-31198b1b8/">My LinkedIn Profile</a> |
+<a href="https://1ramirez7.github.io/Portfolio_/">My GitHub Portfolio</a>
 </div>
 
-## Currently
+## Profile
 
-Student at Brigham Young University-Idaho, specializing in Financial Economics with a minor in Data Science and Financial Planning.
-
-### Specialized in
-
-Business Analytics, Operations Management, Data Analysis
-
-### Research interests
-
-Sales analysis, financial management, business investment opportunities, data-driven decision making
+As a dedicated student at Brigham Young University-Idaho, I am pursuing a Bachelor of Science in Financial Economics, with minors in Data Science and Financial Planning. Specialized in Business Analytics and Operations Management, I am passionate about using data-driven strategies to drive business growth and efficiency.
 
 ## Education
 
-`Expected Graduation: July 2025`
-__Bachelor of Science in Financial Economics__, Brigham Young University-Idaho, Rexburg ID
-
+`Expected Graduation: July 2025`  
+__Bachelor of Science in Financial Economics__, Brigham Young University-Idaho, Rexburg, ID  
 - Minor in Data Science and Financial Planning
-- Area of interest: Business Analytics, Business Owner, Operations Manager
+- Focus: Business Analytics, Business Ownership, Operations Management
 
-## Experience
+## Professional Experience
 
 ### Store Manager
+__Petro Consulting Services LLC, Chula Vista, CA__  
 `Jan 2015 - Feb 2017`
-__Petro Consulting Services LLC, Chula Vista, CA__
-
 - Managed staffing, scheduling, HR needs, and sales analysis.
 - Developed leadership skills, problem-solving under pressure.
 
 ### Fleet and IT Manager
+__Petro Consulting Services LLC, Chula Vista, CA__  
 `Feb 2016 - Feb 2017`
-__Petro Consulting Services LLC, Chula Vista, CA__
-
 - Implemented proprietary Fleet card system.
 - Managed technology integration, increased sales and profitability.
 
 ### Analytic Research
-`March 2023 - Current`
-__E&J Investments LLC, St Anthony, ID__
-
+__E&J Investments LLC, St Anthony, ID__  
+`March 2023 - Present`
 - Analyzed sales, expenses, and profitability of Laundromat equipment.
 - Proposed new investment opportunities and strategies.
 
 ## Volunteer Experience
 
 ### Full-time Missionary
+__The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa__  
 `Dec 2017 - Jan 2020`
-__The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa__
-
 - Taught local communities about religious beliefs.
 
 ### Volunteer at Homeless Shelter
+__San Diego, California__  
 `Jan 2020 - Aug 2020`
-__San Diego, California__
-
 - Organized dinners and essential kits for homeless youth.
 
 ### Financial Economics Society Secretary
+__Brigham Young University-Idaho__  
 `Sep 2022 - Mar 2023`
-__Brigham Young University-Idaho__
-
 - Administrative support, data entry, and organizational management.
 
 ## Skills
 
-- Fluent in Spanish, English, and Portuguese.
-- Data Analysis: Excel, R, Stata, SQL, HTML, Python.
-- Management, Leadership, Analytical and Strategic Thinking.
-- Financial Management, Data Presentation.
+- Languages: Fluent in Spanish, English, and Portuguese.
+- Technical Skills: Excel, R, Stata, SQL, HTML, Python.
+- Key Competencies: Management, Leadership, Analytical and Strategic Thinking.
+- Specializations: Financial Management, Data Presentation.
 
-## Certificates
+## Certifications
 
 - Bloomberg Market Concepts, Issued December 2022
 - Spreadsheet Modeling, Issued September 29, 2022
 
-<!-- Footer -->
+---
 
-Last updated: Mar 2024 -->
+_Last updated: March 2024_
