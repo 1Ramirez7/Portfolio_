@@ -1,5 +1,5 @@
 ---
-title: "Client Report - Sample Name"
+title: "Client Report - Sample only"
 subtitle: "Course DS 250"
 author: "Eduardo Ramirez"
 format:
