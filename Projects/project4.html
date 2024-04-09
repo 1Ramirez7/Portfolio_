@@ -4892,7 +4892,7 @@ vertical-align: -.125em;
 <section id="fine-tunning-the-model-with-outliers" class="level2">
 <h2 class="anchored" data-anchor-id="fine-tunning-the-model-with-outliers">Fine tunning the model with outliers</h2>
 <p><strong>Scatter plots and Bar Charts</strong> I did multiple statistical analysis on the dwellings_ml data(will refer as ‘data’ for rest of report). Some of the statistical researched included OLS’Ss regressions, Correlation matrices, and excel if formulas. The goal of the analysis was to find the best independent variables that will help determine if a home is built before 1980 [(dependent variable)note: all other variables will be refer to as independent variables]. The first part of the analysis was to visualize the data, and so we did by doing some scatter plots. Almost of variables have significant correlation with the dependent variable (‘before1980’ column), and only a few outliers stood out. The ‘Price vs Year Built’ graph shows how there are data points for both before and after 1980. The scatter plot also shows that homes sold for more than 10 million have 100% probability of being sold after 1979.</p>
-<div id="f8cf75c2" class="cell" data-execution_count="1">
+<div id="0c15d70c" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># number of Price vs year build SCATTER PLOT graph --------------------- -------------------------------</span></span>
@@ -4923,7 +4923,7 @@ vertical-align: -.125em;
 </div>
 </div>
 </div>
-<div id="49c751bb" class="cell" data-execution_count="2">
+<div id="d555c4ed" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># price vs year built ---- Bar plot percetage of total between x prices----------------------</span></span>
@@ -4977,7 +4977,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <p>In regard to fine tuning the model, only 1.44% of the total sample size will fall under that criterion, but that is assuming this data represents the population as a whole. The purpose of this model is classified houses as being built ‘before 1980’ or ‘during or after 1980’ and the instructions do not entail this data represents the population as a whole since the given data is not the raw but prepared for the model. I found many independent variables to have similar outliers to where they can 100% explain the dependent variable assuming the data represent the population. I did not continue in this path to find all the independent variables that 100% explain the dependent variable because of my limitations with models, and I decided to assume this data does not represent the population as a whole, but nonetheless I think such data would be great to fine tune a model. It was also hard to determine how they will affect the model, as the samples that 100% explain the dependent variable where a small percentage of the total sample size so it was hard to give them any weight in the determination of the model.</p>
-<div id="a5dc5be9" class="cell" data-execution_count="3">
+<div id="4737c056" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># number of Number of Baths vs year build SCATTER PLOT graph --------------------- -------------------------------</span></span>
@@ -5030,7 +5030,7 @@ vertical-align: -.125em;
 <section id="model-decision" class="level2">
 <h2 class="anchored" data-anchor-id="model-decision">Model decision</h2>
 <p>My final choice for this model was done by doing several OLS regressions, and finding the independent variables with the best fit for the the dependent variable. This included also finding independent variables with good coeffiecient between them to aid in choosing the variables that can also have a statistical significance with each other apart from the dependent variable. By determing the coefficient between independent variables and the dependent vartiable I was able to arrive to this model.</p>
-<div id="a1c22cf7" class="cell" data-execution_count="4">
+<div id="1d69b5da" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># model  ------------------------------------------------------- </span></span>
@@ -5083,7 +5083,7 @@ Confusion Matrix:
  [ 417 4490]]</code></pre>
 </div>
 </div>
-<div id="1261f5a9" class="cell" data-execution_count="5">
+<div id="53aaa4a3" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --------------------- question 1  -----------</span></span>
@@ -5139,7 +5139,7 @@ Confusion Matrix:
 Average of the first 10 values in testing y values: 0.4</code></pre>
 </div>
 </div>
-<div id="ce743b76" class="cell" data-execution_count="6">
+<div id="15b8051e" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># question 2</span></span>
