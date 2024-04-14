@@ -1,41 +1,49 @@
----
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div>
+        <label for="num1">Enter first number:</label>
+        <input type="number" id="num1">
+    </div>
+    <div>
+        <label for="num2">Enter second number:</label>
+        <input type="number" id="num2">
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
 
-# Title 1 Header
-## Title 2 Header
+    <script>
+        function calculate() {
+            // Get the input values
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
 
+            // Perform calculations
+            var sum = num1 + num2;
+            var difference = num1 - num2;
+            var product = num1 * num2;
+            var quotient = num1 / num2;
 
-
-#' ---
-#' title: Palmer Penguins
-#' author: Norah Jones
-#' date: 3/12/23
-#' format: html
-#' ---
-
-library(palmerpenguins)
-
-#' ## Exploring the data
-#' See for an exploration of bill sizes by species.
-
-#| label: fig-bill-sizes
-#| fig-cap: Bill Sizes by Species
-#| warning: false
-library(ggplot2)
-ggplot(data = penguins,
-       aes(x = bill_length_mm,
-           y = bill_depth_mm,
-           group = species)) +
-  geom_point(aes(color = species,
-                 shape = species),
-             size = 3,
-             alpha = 0.8) +
-  labs(title = "Penguin bill dimensions",
-       subtitle = "Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER",
-       x = "Bill length (mm)",
-       y = "Bill depth (mm)",
-       color = "Penguin species",
-       shape = "Penguin species")
+            // Display the results
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<p>Sum: ' + sum + '</p>' +
+                                  '<p>Difference: ' + difference + '</p>' +
+                                  '<p>Product: ' + product + '</p>' +
+                                  '<p>Quotient: ' + quotient + '</p>';
+        }
+    </script>
+</body>
+</html>
