@@ -105,6 +105,13 @@
     "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\n\nCalculator\n\n\n\n\n\nSimple Calculator\n\n\n    &lt;label for=\"num1\"&gt;Enter first number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num1\"&gt;\n&lt;/div&gt;\n&lt;div&gt;\n    &lt;label for=\"num2\"&gt;Enter second number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num2\"&gt;\n&lt;/div&gt;\n&lt;button onclick=\"calculate()\"&gt;Calculate&lt;/button&gt;\n&lt;div id=\"result\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n    function calculate() {\n        // Get the input values\n        var num1 = parseFloat(document.getElementById('num1').value);\n        var num2 = parseFloat(document.getElementById('num2').value);\n\n        // Perform calculations\n        var sum = num1 + num2;\n        var difference = num1 - num2;\n        var product = num1 * num2;\n        var quotient = num1 / num2;\n\n        // Display the results\n        var resultDiv = document.getElementById('result');\n        resultDiv.innerHTML = '&lt;p&gt;Sum: ' + sum + '&lt;/p&gt;' +\n                              '&lt;p&gt;Difference: ' + difference + '&lt;/p&gt;' +\n                              '&lt;p&gt;Product: ' + product + '&lt;/p&gt;' +\n                              '&lt;p&gt;Quotient: ' + quotient + '&lt;/p&gt;';\n    }\n&lt;/script&gt;\n\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "Eduardo I Ramirez\nI’m obtaining a Bachelor of Science in Financial Economics with a minor in Data Science at Brigham Young University-Idaho. The goal of this portfolio is to display a few projects I have made that show my work and capabilities.\nFor any inquiries: Eduardo.ER.Ramirez@gmail.com\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "Projects/project3.html",
     "href": "Projects/project3.html",
     "title": "Client Report - Sample Name",
