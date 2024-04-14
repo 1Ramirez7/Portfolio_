@@ -4,8 +4,17 @@ subtitle: "my data science portfolio"
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Eduardo I Ramirez
+
+I'm obtaining a Bachelor of Science in Financial Economics with a minor in Data Science at Brigham Young University-Idaho. The goal of this portfolio is to display a few projects I have made that show my work and capabilities. 
+
+
+For any inquiries: Eduardo.ER.Ramirez@gmail.com 
+
+
+
+
+
 
 
 
