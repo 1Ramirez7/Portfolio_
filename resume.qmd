@@ -3,7 +3,6 @@ layout: cv
 title: Eduardo I. Ramirez's CV
 ---
 
-# Eduardo I. Ramirez
 Financial Economist, Data Scientist, Business Analyst
 
 <div id="webaddress">
