@@ -32,10 +32,10 @@ You can search by typing in the blue box field by either typing the name of the 
 
 Here is a sample using the company name
 
-![](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/SS/1_searching%20equity.png)
+![](https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/Images/SS/1_searching%20equity.png)
 
 
 Here is a sample using the company stock name
 
-![](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/SS/2_searching%20equity%202.png)
+![](https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/Images/SS/2_searching%20equity%202.png)
 
