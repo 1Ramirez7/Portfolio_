@@ -1,14 +1,14 @@
 ---
-title: "Client Report - Sample Name"
-subtitle: "Course DS 250"
-author: "Eduardo Ramirez"
+title: "Looking up Financial and Ratios"
+subtitle: "Investment Society"
+author: "Eduardo I Ramirez"
 format:
   html:
     self-contained: true
     page-layout: full
     title-block-banner: true
     toc: true
-    toc-depth: 4
+    toc-depth: 3
     toc-location: body
     number-sections: false
     html-math-method: katex
@@ -25,4 +25,17 @@ execute:
     
 ---
 
-__Sample project coming soon__
+# Looking up an Equity - Amazon - AMZN
+
+
+You can search by typing in the blue box field by either typing the name of the company or the stock name.
+
+Here is a sample using the company name
+
+![](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/SS/1_searching%20equity.png)
+
+
+Here is a sample using the company stock name
+
+![](https://github.com/1Ramirez7/Portfolio_/blob/main/Images/SS/2_searching%20equity%202.png)
+
