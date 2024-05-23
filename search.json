@@ -1,5 +1,84 @@
 [
   {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "testing\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "Eduardo I Ramirez\nI’m obtaining a Bachelor of Science in Financial Economics with a minor in Data Science at Brigham Young University-Idaho. The goal of this portfolio is to display a few projects I have made that show my work and capabilities.\nFor any inquiries: Eduardo.ER.Ramirez@gmail.com\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Projects/project3.html",
+    "href": "Projects/project3.html",
+    "title": "Client Report - Sample Name",
+    "section": "",
+    "text": "Sample project coming soon\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html",
+    "href": "Projects/project5.html",
+    "title": "Client Report - Sample Name",
+    "section": "",
+    "text": "Sample project coming soon\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "Bloomberg Templates",
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "Bloomberg Templates",
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "\nSimple Calculator\n",
+    "section": "",
+    "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\n\nCalculator\n\n\n\n\n\nSimple Calculator\n\n\n    &lt;label for=\"num1\"&gt;Enter first number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num1\"&gt;\n&lt;/div&gt;\n&lt;div&gt;\n    &lt;label for=\"num2\"&gt;Enter second number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num2\"&gt;\n&lt;/div&gt;\n&lt;button onclick=\"calculate()\"&gt;Calculate&lt;/button&gt;\n&lt;div id=\"result\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n    function calculate() {\n        // Get the input values\n        var num1 = parseFloat(document.getElementById('num1').value);\n        var num2 = parseFloat(document.getElementById('num2').value);\n\n        // Perform calculations\n        var sum = num1 + num2;\n        var difference = num1 - num2;\n        var product = num1 * num2;\n        var quotient = num1 / num2;\n\n        // Display the results\n        var resultDiv = document.getElementById('result');\n        resultDiv.innerHTML = '&lt;p&gt;Sum: ' + sum + '&lt;/p&gt;' +\n                              '&lt;p&gt;Difference: ' + difference + '&lt;/p&gt;' +\n                              '&lt;p&gt;Product: ' + product + '&lt;/p&gt;' +\n                              '&lt;p&gt;Quotient: ' + quotient + '&lt;/p&gt;';\n    }\n&lt;/script&gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "About me",
+    "section": "",
+    "text": "This is my first portfolio that I made. This portfolio was made from a template provided by my Data Science 250 course. The main object of this portfolio is to introduce me to github, and start my project build up. This project is first starting with my Data Science 250 projects, and my resume. This is my first semester (Jan to Apr 2024) working with HTML and github and my second semester working with Python. I’m fairly new to coding and or computer science, but computer science was my career choice up until 9th grade so I’m able to understand many of the coding languages fairly quickly.\n\n\nI made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+  },
+  {
+    "objectID": "exploration.html#future-works-coming..",
+    "href": "exploration.html#future-works-coming..",
+    "title": "About me",
+    "section": "",
+    "text": "I made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+  },
+  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Eduardo I. Ramirez’s CV",
@@ -49,77 +128,14 @@
     "text": "Certifications\n\nBloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: March 2024"
   },
   {
-    "objectID": "Templates/DS350_Template.html",
-    "href": "Templates/DS350_Template.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "testing\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Projects/project4.html",
-    "href": "Projects/project4.html",
-    "title": "Client Report - Sample only",
-    "section": "",
-    "text": "Sample project coming soon\ntest test\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
     "objectID": "Projects/project1.html",
     "href": "Projects/project1.html",
     "title": "Client Report - Sample Name",
     "section": "",
     "text": "Sample project coming soon\n\n\n\n Back to top",
     "crumbs": [
-      "DS250 Projects",
+      "Bloomberg Templates",
       "Project 1"
-    ]
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#repo-for-all-my-projects",
-    "href": "projects.html#repo-for-all-my-projects",
-    "title": "DS250 Projects",
-    "section": "",
-    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
-    "crumbs": [
-      "DS250 Projects"
-    ]
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "\nSimple Calculator\n",
-    "section": "",
-    "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\n\nCalculator\n\n\n\n\n\nSimple Calculator\n\n\n    &lt;label for=\"num1\"&gt;Enter first number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num1\"&gt;\n&lt;/div&gt;\n&lt;div&gt;\n    &lt;label for=\"num2\"&gt;Enter second number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num2\"&gt;\n&lt;/div&gt;\n&lt;button onclick=\"calculate()\"&gt;Calculate&lt;/button&gt;\n&lt;div id=\"result\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n    function calculate() {\n        // Get the input values\n        var num1 = parseFloat(document.getElementById('num1').value);\n        var num2 = parseFloat(document.getElementById('num2').value);\n\n        // Perform calculations\n        var sum = num1 + num2;\n        var difference = num1 - num2;\n        var product = num1 * num2;\n        var quotient = num1 / num2;\n\n        // Display the results\n        var resultDiv = document.getElementById('result');\n        resultDiv.innerHTML = '&lt;p&gt;Sum: ' + sum + '&lt;/p&gt;' +\n                              '&lt;p&gt;Difference: ' + difference + '&lt;/p&gt;' +\n                              '&lt;p&gt;Product: ' + product + '&lt;/p&gt;' +\n                              '&lt;p&gt;Quotient: ' + quotient + '&lt;/p&gt;';\n    }\n&lt;/script&gt;\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
-    "title": "about me",
-    "section": "",
-    "text": "Eduardo I Ramirez\nI’m obtaining a Bachelor of Science in Financial Economics with a minor in Data Science at Brigham Young University-Idaho. The goal of this portfolio is to display a few projects I have made that show my work and capabilities.\nFor any inquiries: Eduardo.ER.Ramirez@gmail.com\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Projects/project3.html",
-    "href": "Projects/project3.html",
-    "title": "Client Report - Sample Name",
-    "section": "",
-    "text": "Sample project coming soon\n\n\n\n Back to top",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 3"
     ]
   },
   {
@@ -129,38 +145,24 @@
     "section": "",
     "text": "Sample project coming soon\n\n\n\n Back to top",
     "crumbs": [
-      "DS250 Projects",
+      "Bloomberg Templates",
       "Project 2"
     ]
   },
   {
-    "objectID": "Projects/project5.html",
-    "href": "Projects/project5.html",
-    "title": "Client Report - Sample Name",
+    "objectID": "Projects/project4.html",
+    "href": "Projects/project4.html",
+    "title": "Client Report - Sample only",
     "section": "",
-    "text": "Sample project coming soon\n\n\n\n Back to top",
+    "text": "Sample project coming soon\ntest test\n\n\n\n Back to top",
     "crumbs": [
-      "DS250 Projects",
-      "Project 5"
+      "Bloomberg Templates",
+      "Project 4"
     ]
   },
   {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "About me",
-    "section": "",
-    "text": "This is my first portfolio that I made. This portfolio was made from a template provided by my Data Science 250 course. The main object of this portfolio is to introduce me to github, and start my project build up. This project is first starting with my Data Science 250 projects, and my resume. This is my first semester (Jan to Apr 2024) working with HTML and github and my second semester working with Python. I’m fairly new to coding and or computer science, but computer science was my career choice up until 9th grade so I’m able to understand many of the coding languages fairly quickly.\n\n\nI made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
-  },
-  {
-    "objectID": "exploration.html#future-works-coming..",
-    "href": "exploration.html#future-works-coming..",
-    "title": "About me",
-    "section": "",
-    "text": "I made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
-  },
-  {
-    "objectID": "Templates/DS250_Template.html",
-    "href": "Templates/DS250_Template.html",
+    "objectID": "Templates/DS350_Template.html",
+    "href": "Templates/DS350_Template.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "testing\n\n\n\n Back to top"
