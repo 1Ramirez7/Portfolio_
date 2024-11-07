@@ -1,0 +1,214 @@
+[
+  {
+    "objectID": "Templates/DS350_Template.html",
+    "href": "Templates/DS350_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "testing\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "Bloomberg Templates",
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#repo-for-all-my-projects",
+    "href": "projects.html#repo-for-all-my-projects",
+    "title": "DS250 Projects",
+    "section": "",
+    "text": "Project 1\nProject 2\nProject 3\nProject 4\nProject 5",
+    "crumbs": [
+      "Bloomberg Templates",
+      "DS250 Projects"
+    ]
+  },
+  {
+    "objectID": "Projects/project4.html",
+    "href": "Projects/project4.html",
+    "title": "Client Report - Sample only",
+    "section": "",
+    "text": "Sample project coming soon\ntest test\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Projects/project2.html",
+    "href": "Projects/project2.html",
+    "title": "Client Report - Sample Name",
+    "section": "",
+    "text": "Sample project coming soon\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "Eduardo I Ramirez\nI’m obtaining a Bachelor of Science in Financial Economics with a minor in Data Science at Brigham Young University-Idaho. The goal of this portfolio is to display a few projects I have made that show my work and capabilities.\nFor any inquiries: Eduardo.ER.Ramirez@gmail.com\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "\nSimple Calculator\n",
+    "section": "",
+    "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\n\nCalculator\n\n\n\n\n\nSimple Calculator\n\n\n    &lt;label for=\"num1\"&gt;Enter first number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num1\"&gt;\n&lt;/div&gt;\n&lt;div&gt;\n    &lt;label for=\"num2\"&gt;Enter second number:&lt;/label&gt;\n    &lt;input type=\"number\" id=\"num2\"&gt;\n&lt;/div&gt;\n&lt;button onclick=\"calculate()\"&gt;Calculate&lt;/button&gt;\n&lt;div id=\"result\"&gt;&lt;/div&gt;\n\n&lt;script&gt;\n    function calculate() {\n        // Get the input values\n        var num1 = parseFloat(document.getElementById('num1').value);\n        var num2 = parseFloat(document.getElementById('num2').value);\n\n        // Perform calculations\n        var sum = num1 + num2;\n        var difference = num1 - num2;\n        var product = num1 * num2;\n        var quotient = num1 / num2;\n\n        // Display the results\n        var resultDiv = document.getElementById('result');\n        resultDiv.innerHTML = '&lt;p&gt;Sum: ' + sum + '&lt;/p&gt;' +\n                              '&lt;p&gt;Difference: ' + difference + '&lt;/p&gt;' +\n                              '&lt;p&gt;Product: ' + product + '&lt;/p&gt;' +\n                              '&lt;p&gt;Quotient: ' + quotient + '&lt;/p&gt;';\n    }\n&lt;/script&gt;\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "About me",
+    "section": "",
+    "text": "This is my first portfolio that I made. This portfolio was made from a template provided by my Data Science 250 course. The main object of this portfolio is to introduce me to github, and start my project build up. This project is first starting with my Data Science 250 projects, and my resume. This is my first semester (Jan to Apr 2024) working with HTML and github and my second semester working with Python. I’m fairly new to coding and or computer science, but computer science was my career choice up until 9th grade so I’m able to understand many of the coding languages fairly quickly.\n\n\nI made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+  },
+  {
+    "objectID": "exploration.html#future-works-coming..",
+    "href": "exploration.html#future-works-coming..",
+    "title": "About me",
+    "section": "",
+    "text": "I made a few models and projects for my Intermediate Macroeconomics course, and hopefully I can uopload them to this portfolio by the end of the semester. I also made one CFA institute research for a US firm and hope to upload it here as well."
+  },
+  {
+    "objectID": "Projects/project1.html",
+    "href": "Projects/project1.html",
+    "title": "Looking up Financial and Ratios",
+    "section": "",
+    "text": "Looking up an Equity - Amazon - AMZN\nYou can search by typing in the blue box field by either typing the name of the company or the stock name.\nHere is a sample using the company name\n\nHere is a sample using the company stock name\n\nNote: Sometimes searching by stock name can be faster and clear any confusion due to companies having similar or same names.\nIn most BYUI courses, you will always pick ‘US equity’ when looking up a company so all the other options can be ignored for now. Once you understand Bloomberg, then the other options will come in handy.\nSo we select ‘AMZN US Equity’ in this case.\nSecurity Description\nThe next image is a pop-up screen that appears after selecting AMZN US Equity. It will have many options, and many of the Bloomberg functions you will be using in the society and throughout the courses that require the use of Bloomberg will be in this pop-up menu.\n\nUnder Company Overview, we select ‘DES Security Description’ to view the about of a company and other key details. The image below shows what the DES Security Description should look like in your Bloomberg terminal.\nIn this screen, you can find many useful pieces of information about a company, including the tab for ratios.\nNote: once you search an equity or index in the Bloomberg terminal, it will be loaded automatically for any functions you search. Notice when you open a new tab, in the top left you can see “AMAZON.COM INC equity” so any related function you search in Bloomberg will be loaded using the currently loaded equity or index.\n\n\n\nFinacial Analysis of AMZN\nTo view the FA for AMZN, just search ‘FA’ in the blue box. You can do it on the DES page or just open a new tab.\nIf I could recommend any of you to familiarize yourself with any Bloomberg function, this would be one of the main ones and will make your life easier, even for non-financial econ and/or econ courses.\n\nOverview.\n\nIncome Statement\nBalance Sheet\nCash Flow\nRatios\nand my favorite ‘Custom’\n\n\nThis is like the best place to find ratios and specific information about a company.\n\nCreate Custom\nSave it after a few fields have been entered even if you are not done, because leaving that page will delete any unsaved progress.\n\n\nWAY TO MANY OPTIONS IN BLOOMBERG\n\nWhen doing course assignments, explain how you attain the ratios or fields due to ratios having different values.\n\n\nRight click on a field and select ‘definition’.\n\nMost of the time, the definition of a field will let you know if you are looking at the correct field for your research project.\n\nAdd as many fields as needed.\n\nRight next to the ‘’ option, you have the save option.\n\nPick a name for your template and save it.\nPick names that can be easily indentified even semesters later.\nDelete any one time use templates.\n\n\nTo edit a saved template, simply enter a field normally and remember to save.\n\n\nThroughout your courses, you will always be doing repetitive tasks in Excel. So, it will be useful to create an Excel template where you can simply copy and paste from a Bloomberg export Excel file into your model. As you improve your research skills, having an Excel model that automatically performs calculations and predictions on given data will make your student life a lot easier.\n\nMany of the definitions on the Bloomberg Terminal will provide you with the calculations for the function you are using.\n\n\n\npsacer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html",
+    "href": "Projects/project3.html",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "",
+    "text": "In my SQL project, I explored three baseball queries. First, I analyzed the salaries of BYU-Idaho alumni in pro baseball, finding only two players with significant salary differences. Then, I examined batting averages, looking at players with varying numbers of at-bats, from just one in a year to over 100 in their careers, revealing insights from perfect averages to legends like Ty Cobb. Finally, I compared player salaries based on stats like home runs and hit-by-pitches, discovering that factors like doubles have a more significant impact on salaries than home runs.",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#baseball-stats-sql-analysis",
+    "href": "Projects/project3.html#baseball-stats-sql-analysis",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "",
+    "text": "In my SQL project, I explored three baseball queries. First, I analyzed the salaries of BYU-Idaho alumni in pro baseball, finding only two players with significant salary differences. Then, I examined batting averages, looking at players with varying numbers of at-bats, from just one in a year to over 100 in their careers, revealing insights from perfect averages to legends like Ty Cobb. Finally, I compared player salaries based on stats like home runs and hit-by-pitches, discovering that factors like doubles have a more significant impact on salaries than home runs.",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#byu-idaho-players-salaries-query",
+    "href": "Projects/project3.html#byu-idaho-players-salaries-query",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "BYU-Idaho Players’ Salaries Query",
+    "text": "BYU-Idaho Players’ Salaries Query\nWrite an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.\nThe SQL query I conducted revealed that only two baseball players from BYU-Idaho have made it to professional leagues, as indicated by the salary data. These players, identified as ‘lindsma01’ and Steph, show varied salary ranges, with Lindsman earning as high as $4,000,000 in 2014 for team CHA. In contrast, ‘stephga01’ had salaries ranging from $150,000 to $1,025,000. This data highlights the limited number of BYU-Idaho alumni in professional baseball and showcases the considerable salary differences between these two players.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport sqlite3\n\n\n# https://github.com/1Ramirez7/Portfolio_/blob/main/data/lahmansbaseballdb.sqlite\n# https://raw.githubusercontent.com/1Ramirez7/Portfolio_/main/data/starwars1.csv\n\n\nsqlite_file = 'lahmansbaseballdb.sqlite'\n\n\ncon = sqlite3.connect(sqlite_file)\n\nquery = '''\n    SELECT cp.playerID, cp.schoolID, s.salary, s.yearID, s.teamID\n    FROM CollegePlaying cp\n    JOIN Salaries s ON cp.playerID = s.playerID\n    WHERE cp.schoolID = 'idbyuid'\n    ORDER BY s.salary DESC;\n'''\n\ndf = pd.read_sql_query(query, con)\ndf\n\n\n\n\n\n\n\n\n\nplayerID\nschoolID\nsalary\nyearID\nteamID\n\n\n\n\n0\nlindsma01\nidbyuid\n4000000.0\n2014\nCHA\n\n\n1\nlindsma01\nidbyuid\n4000000.0\n2014\nCHA\n\n\n2\nlindsma01\nidbyuid\n3600000.0\n2012\nBAL\n\n\n3\nlindsma01\nidbyuid\n3600000.0\n2012\nBAL\n\n\n4\nlindsma01\nidbyuid\n2800000.0\n2011\nCOL\n\n\n5\nlindsma01\nidbyuid\n2800000.0\n2011\nCOL\n\n\n6\nlindsma01\nidbyuid\n2300000.0\n2013\nCHA\n\n\n7\nlindsma01\nidbyuid\n2300000.0\n2013\nCHA\n\n\n8\nlindsma01\nidbyuid\n1625000.0\n2010\nHOU\n\n\n9\nlindsma01\nidbyuid\n1625000.0\n2010\nHOU\n\n\n10\nstephga01\nidbyuid\n1025000.0\n2001\nSLN\n\n\n11\nstephga01\nidbyuid\n1025000.0\n2001\nSLN\n\n\n12\nstephga01\nidbyuid\n900000.0\n2002\nSLN\n\n\n13\nstephga01\nidbyuid\n900000.0\n2002\nSLN\n\n\n14\nstephga01\nidbyuid\n800000.0\n2003\nSLN\n\n\n15\nstephga01\nidbyuid\n800000.0\n2003\nSLN\n\n\n16\nstephga01\nidbyuid\n550000.0\n2000\nSLN\n\n\n17\nstephga01\nidbyuid\n550000.0\n2000\nSLN\n\n\n18\nlindsma01\nidbyuid\n410000.0\n2009\nFLO\n\n\n19\nlindsma01\nidbyuid\n410000.0\n2009\nFLO\n\n\n20\nlindsma01\nidbyuid\n395000.0\n2008\nFLO\n\n\n21\nlindsma01\nidbyuid\n395000.0\n2008\nFLO\n\n\n22\nlindsma01\nidbyuid\n380000.0\n2007\nFLO\n\n\n23\nlindsma01\nidbyuid\n380000.0\n2007\nFLO\n\n\n24\nstephga01\nidbyuid\n215000.0\n1999\nSLN\n\n\n25\nstephga01\nidbyuid\n215000.0\n1999\nSLN\n\n\n26\nstephga01\nidbyuid\n185000.0\n1998\nPHI\n\n\n27\nstephga01\nidbyuid\n185000.0\n1998\nPHI\n\n\n28\nstephga01\nidbyuid\n150000.0\n1997\nPHI\n\n\n29\nstephga01\nidbyuid\n150000.0\n1997\nPHI",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#top-batting-averages-analyzed",
+    "href": "Projects/project3.html#top-batting-averages-analyzed",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "Top Batting Averages Analyzed",
+    "text": "Top Batting Averages Analyzed\nThis three-part question requires you to calculate batting average (number of hits divided by the number of at-bats)\nWrite an SQL query that provides playerID, yearID, and batting average for players with at least 1 at bat that year. Sort the table from highest batting average to lowest, and then by playerid alphabetically. Show the top 5 results in your report.\nUse the same query as above, but only include players with at least 10 at bats that year. Print the top 5 results.\nNow calculate the batting average for players over their entire careers (all years combined). Only include players with at least 100 at bats, and print the top 5 results.\nThe results presented here are from a series of SQL queries designed to analyze baseball players’ batting averages. Initially, we examined players with at least one at-bat in a given year, sorting them by their batting average. Surprisingly, several players had a perfect average of 1.0, though this likely indicates a very low number of at-bats. Next, the focus shifted to those with a minimum of 10 at-bats, revealing more realistic averages with the highest being around 0.64. Finally, we analyzed career batting averages for players with over 100 at-bats, where historical greats like Ty Cobb emerged with an impressive average of around 0.366. This multi-tiered approach effectively highlights different aspects of batting performance across varying levels of player experience and activity.\n\n\nRead and format data\n# Include and execute your code here\n\nquery_part1 = \"\"\"\nSELECT playerID, yearID, CAST(H AS FLOAT) / AB AS batting_average\nFROM Batting\nWHERE AB &gt; 0\nORDER BY batting_average DESC, playerID\nLIMIT 5;\n\"\"\"\n\ndf_part1 = pd.read_sql_query(query_part1, con)\nprint(df_part1)\n\nquery_part2 = \"\"\"\nSELECT playerID, yearID, CAST(H AS FLOAT) / AB AS batting_average\nFROM Batting\nWHERE AB &gt;= 10\nORDER BY batting_average DESC, playerID\nLIMIT 5;\n\"\"\"\n\ndf_part2 = pd.read_sql_query(query_part2, con)\nprint(df_part2)\n\n\nquery_part3 = \"\"\"\nSELECT playerID, CAST(SUM(H) AS FLOAT) / SUM(AB) AS career_batting_average\nFROM Batting\nGROUP BY playerID\nHAVING SUM(AB) &gt;= 100\nORDER BY career_batting_average DESC\nLIMIT 5;\n\"\"\"\n\ndf_part3 = pd.read_sql_query(query_part3, con)\nprint(df_part3)\n\n\n    playerID  yearID  batting_average\n0   aberal01    1957              1.0\n1  abernte02    1960              1.0\n2  abramge01    1923              1.0\n3  acklefr01    1964              1.0\n4  alanirj01    2019              1.0\n    playerID  yearID  batting_average\n0  nymanny01    1974         0.642857\n1  carsoma01    2013         0.636364\n2  altizda01    1910         0.600000\n3  johnsde01    1975         0.600000\n4  silvech01    1948         0.571429\n    playerID  career_batting_average\n0   cobbty01                0.366299\n1  barnero01                0.359682\n2  hornsro01                0.358497\n3  jacksjo01                0.355752\n4  meyerle01                0.355509",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project3.html#baseball-team-metrics-showdown",
+    "href": "Projects/project3.html#baseball-team-metrics-showdown",
+    "title": "Client Report - Finding Relationships in Baseball",
+    "section": "Baseball Team Metrics Showdown",
+    "text": "Baseball Team Metrics Showdown\nPick any two baseball teams and compare them using a metric of your choice (average salary, home runs, number of wins, etc). Write an SQL query to get the data you need, then make a graph using Plotly Express to visualize the comparison. What do you learn?\nIn this project, I wanted to research more about the salaries of players. It’s quite common for the player with the most home runs to be paid more than others who don’t hit as many home runs. I ran an SQL query to obtain the average salaries of the top 10 players with the most home runs (HR), and the top ten players with the most hit-by-pitches (HBP). The results were not shocking: the average salary for the top ten HR players was $9,911,355.4, and for HBP, it was $4,604,570.79. Why did I decide to use HBP for comparison? Well, players hitting 60-plus home runs are rare, so I wanted to research which baseball statistic correlated more closely with player salaries. I downloaded player stats from the SQL baseball database and prepared the data for regression analysis. First, I used the 2023 consumer price index (CPI) to convert all salary values to 2023 dollars, ensuring players from 1986 and 2015 were evaluated equally, adjusting for inflation. Since salaries are mostly in the millions of dollars, I took the natural log of the salaries and used that as my independent variable, the main variable considered in the regression analysis. I also removed all players with zero salary values, leaving 1811 players in the data set, as having zero values would render the regression analysis meaningless. The regression analysis showed that HBP had the most correlation with a change in player salary. The results indicated that for every unit increase in HBP, the player’s salary increased by $130,082. For every HR unit increase, the salary increased by $19,683. For every triple (3B) unit increase, the salary decreased by $8,430. For every double (2B) unit increase, the salary increased by $67,764. For every stolen base (SB), the salary increased by $39,741. The regression could only explain 15% of the dependent variable, and all the independent variables in the regression, besides HBP, were not statistically significant. In other words, the regression analysis suggested that there are more independent variables that dictate player salaries. HBP was still statistically significant, indicating it is a significant variable in explaining changes in player salaries, but my regression analysis could not identify the other 85% of independent variables that influence salary changes.\nThis research revealed some interesting insights. It showed that home runs are not as significant in determining player salaries as previously thought. It also showed that players with more triples tend to lose salary, while those with more doubles benefit significantly more. Does this suggest that reaching second base is more advantageous than third base? Further statistical research might reveal two classes of 2B players: those who advance to home and those who end up at 3B but don’t make it home. I hypothesize that players who go from 2B to home are of higher quality than those who stop at 3B. It seems that staying in second place or reaching home guarantees a higher salary, while ending up at 3B might lead to a loss in earnings. SB is ranked just below 2B, and HBP is ranked as having the most significant impact on player salaries. Outside of the statistics, I think better players are hit more often by pitches because pitchers recognize their higher likelihood of hitting the ball, especially home runs, so allowing a walk to first base is more strategic. Players who steal bases, in my opinion, are generally better than those who don’t. In conclusion, I believe players who excel at reaching 2B are more successful, which is why 2B has the most impact on a player’s salary compared to other stats. However, my regression analysis could only account for up to 15% of the salary variations, so there are many other factors affecting player salaries, but HBP is definitely one of them.\n\n\nRead and format data\n# Include and execute your code here\n\nimport pandas as pd\nimport sqlite3\n\n# Connect to the SQLite database\nsqlite_file = 'lahmansbaseballdb.sqlite'  \ncon = sqlite3.connect(sqlite_file)\n\n# SQL query for average salary of top 10 players in HBP\nquery_hbp_avg_salary = \"\"\"\nSELECT AVG(salary) as average_salary_hbp\nFROM Salaries\nWHERE playerID IN (\n    SELECT playerID\n    FROM Batting\n    GROUP BY playerID\n    ORDER BY SUM(HBP) DESC\n    LIMIT 10\n);\n\"\"\"\n\n# SQL query for average salary of top 10 players in HR\nquery_hr_avg_salary = \"\"\"\nSELECT AVG(salary) as average_salary_hr\nFROM Salaries\nWHERE playerID IN (\n    SELECT playerID\n    FROM Batting\n    GROUP BY playerID\n    ORDER BY SUM(HR) DESC\n    LIMIT 10\n);\n\"\"\"\n\n# Execute queries and fetch data\navg_salary_hbp = pd.read_sql_query(query_hbp_avg_salary, con)\navg_salary_hr = pd.read_sql_query(query_hr_avg_salary, con)\n\n# Close the database connection\ncon.close()\n\n# Display the results\nprint(\"Average Salary of Top 10 HBP Players:\", avg_salary_hbp.iloc[0, 0])\nprint(\"Average Salary of Top 10 HR Players:\", avg_salary_hr.iloc[0, 0])\n\n\nAverage Salary of Top 10 HBP Players: 5604570.788461538\nAverage Salary of Top 10 HR Players: 9911355.401639344\n\n\nReturning to my initial comparison, although the average salary for the top 10 players in HR and 2B clearly shows that hitting more home runs equates to more money, the statistics indicate that higher 2B numbers result in better salaries. While one player in a league might have the most home runs and be paid the most, multiple players can earn more by achieving higher 2B numbers. If we were all baseball players, we might all aspire to be the top HR hitter, but it is financially smarter to aim for more 2B numbers than to seek glory alone.",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Projects/project5.html",
+    "href": "Projects/project5.html",
+    "title": "Client Report - Sample Name",
+    "section": "",
+    "text": "Sample project coming soon\n\n\n\n Back to top",
+    "crumbs": [
+      "Bloomberg Templates",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "",
+    "text": "Financial Economist, Data Scientist, Business Analyst"
+  },
+  {
+    "objectID": "resume.html#profile",
+    "href": "resume.html#profile",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Profile",
+    "text": "Profile\nAs a dedicated student at Brigham Young University-Idaho, I am pursuing a Bachelor of Science in Financial Economics, with minors in Data Science and Financial Planning. Specialized in Business Analytics and Operations Management, I am passionate about using data-driven strategies to drive business growth and efficiency."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Education",
+    "text": "Education\nExpected Graduation: July 2025\nBachelor of Science in Financial Economics, Brigham Young University-Idaho, Rexburg, ID\n- Minor in Data Science and Financial Planning - Focus: Business Analytics, Business Ownership, Operations Management"
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\nStore Manager\nPetro Consulting Services LLC, Chula Vista, CA\nJan 2015 - Feb 2017 - Managed staffing, scheduling, HR needs, and sales analysis. - Developed leadership skills, problem-solving under pressure.\n\n\nFleet and IT Manager\nPetro Consulting Services LLC, Chula Vista, CA\nFeb 2016 - Feb 2017 - Implemented proprietary Fleet card system. - Managed technology integration, increased sales and profitability.\n\n\nAnalytic Research\nE&J Investments LLC, St Anthony, ID\nMarch 2023 - Present - Analyzed sales, expenses, and profitability of Laundromat equipment. - Proposed new investment opportunities and strategies."
+  },
+  {
+    "objectID": "resume.html#volunteer-experience",
+    "href": "resume.html#volunteer-experience",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Volunteer Experience",
+    "text": "Volunteer Experience\n\nFull-time Missionary\nThe Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa\nDec 2017 - Jan 2020 - Taught local communities about religious beliefs.\n\n\nVolunteer at Homeless Shelter\nSan Diego, California\nJan 2020 - Aug 2020 - Organized dinners and essential kits for homeless youth.\n\n\nFinancial Economics Society Secretary\nBrigham Young University-Idaho\nSep 2022 - Mar 2023 - Administrative support, data entry, and organizational management."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Skills",
+    "text": "Skills\n\nLanguages: Fluent in Spanish, English, and Portuguese.\nTechnical Skills: Excel, R, Stata, SQL, HTML, Python.\nKey Competencies: Management, Leadership, Analytical and Strategic Thinking.\nSpecializations: Financial Management, Data Presentation."
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Eduardo I. Ramirez’s CV",
+    "section": "Certifications",
+    "text": "Certifications\n\nBloomberg Market Concepts, Issued December 2022\nSpreadsheet Modeling, Issued September 29, 2022\n\n\nLast updated: March 2024"
+  },
+  {
+    "objectID": "Templates/DS250_Template.html",
+    "href": "Templates/DS250_Template.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "testing\n\n\n\n Back to top"
+  }
+]

@@ -1,6 +1,6 @@
 project: 
   type: website
-
+  output-dir: docs  
 website:
   title: "Eduardo I Ramirez Data Science Portfolio"
   favicon: Images/favicon.png

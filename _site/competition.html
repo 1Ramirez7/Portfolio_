@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Eduardo I Ramirez Data Science Portfolio - about me</title>
+<title>Eduardo I Ramirez Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">DS250 Projects</span></a>
+<span class="menu-text">Bloomberg Templates</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resume.html"> 
@@ -140,54 +140,71 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#title-1-header" id="toc-title-1-header" class="nav-link active" data-scroll-target="#title-1-header">Title 1 Header</a>
-  <ul class="collapse">
-  <li><a href="#title-2-header" id="toc-title-2-header" class="nav-link" data-scroll-target="#title-2-header">Title 2 Header</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">about me</h1>
-<p class="subtitle lead">my data science portfolio</p>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
+&lt;!DOCTYPE html&gt;
 
 
-</header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Calculator
+</title>
+<style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
 
 
-<section id="title-1-header" class="level1">
-<h1>Title 1 Header</h1>
-<section id="title-2-header" class="level2">
-<h2 class="anchored" data-anchor-id="title-2-header">Title 2 Header</h2>
-<p>#’ — #’ title: Palmer Penguins #’ author: Norah Jones #’ date: 3/12/23 #’ format: html #’ —</p>
-<p>library(palmerpenguins)</p>
-<p>#’ ## Exploring the data #’ See for an exploration of bill sizes by species.</p>
-<p>#| label: fig-bill-sizes #| fig-cap: Bill Sizes by Species #| warning: false library(ggplot2) ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, group = species)) + geom_point(aes(color = species, shape = species), size = 3, alpha = 0.8) + labs(title = “Penguin bill dimensions”, subtitle = “Bill length and depth for Adelie, Chinstrap and Gentoo Penguins at Palmer Station LTER”, x = “Bill length (mm)”, y = “Bill depth (mm)”, color = “Penguin species”, shape = “Penguin species”)</p>
+<h1>
+Simple Calculator
+</h1>
+<div>
+<pre><code>    &lt;label for="num1"&gt;Enter first number:&lt;/label&gt;
+    &lt;input type="number" id="num1"&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;label for="num2"&gt;Enter second number:&lt;/label&gt;
+    &lt;input type="number" id="num2"&gt;
+&lt;/div&gt;
+&lt;button onclick="calculate()"&gt;Calculate&lt;/button&gt;
+&lt;div id="result"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    function calculate() {
+        // Get the input values
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+
+        // Perform calculations
+        var sum = num1 + num2;
+        var difference = num1 - num2;
+        var product = num1 * num2;
+        var quotient = num1 / num2;
+
+        // Display the results
+        var resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = '&lt;p&gt;Sum: ' + sum + '&lt;/p&gt;' +
+                              '&lt;p&gt;Difference: ' + difference + '&lt;/p&gt;' +
+                              '&lt;p&gt;Product: ' + product + '&lt;/p&gt;' +
+                              '&lt;p&gt;Quotient: ' + quotient + '&lt;/p&gt;';
+    }
+&lt;/script&gt;</code></pre>
 
 
-</section>
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
