@@ -34,6 +34,7 @@ _In my SQL project, I explored three baseball queries. First, I analyzed the sal
 
 
 
+
 ## BYU-Idaho Players' Salaries Query
 
 __Write an SQL query to create a new dataframe about baseball players who attended BYU-Idaho. The new table should contain five columns: playerID, schoolID, salary, and the yearID/teamID associated with each salary. Order the table by salary (highest to lowest) and print out the table in your report.__
