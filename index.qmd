@@ -5,8 +5,56 @@ format: html
 # use quarto markdown to 
 ---
 
+# Introduction
 
+**Portfolio Introduction**
+
+This portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.
+
+While many of the projects were completed within a university setting and contain sensitive information that cannot be shared publicly due to academic integrity policies, I have included select projects that highlight my capabilities. These examples illustrate my ability to approach complex problems, analyze data effectively, and communicate insights clearly. Additional projects may require modifications before being made publicly available. 
+
+This portfolio reflects not only my technical expertise but also my commitment to leveraging data science for practical and impactful solutions.
+
+
+
+**CFA Institute Research Challenge: A Transformative Experience**
+
+Participating in the CFA Institute Research Challenge was one of the most rewarding experiences of my academic journey. This competition allowed me to step into the role of a financial research analyst, gaining invaluable hands-on experience in financial analysis, valuation, report writing, and professional ethics. 
+
+As part of a dedicated team, I worked closely with my peers, a faculty advisor, and an industry mentor to analyze a publicly traded company and produce a comprehensive written report and presentation. The process was both challenging and exhilarating, testing my analytical abilities, teamwork, and communication skills in a high-pressure environment.
+
+Through this competition, I improved my ability to:
+- Conduct detailed equity research and financial valuation.
+- Present complex financial findings clearly and persuasively.
+- Collaborate effectively within a team while meeting tight deadlines.
+
+The experience also provided me with a unique opportunity to engage with professionals in the financial industry, receive constructive feedback, and gain insights into real-world applications of finance. Competing at a high level pushed me to grow both personally and professionally, leaving me better prepared to tackle future challenges in my career. 
+
+Overall, the CFA Institute Research Challenge was a transformative experience that deepened my passion for finance and strengthened my readiness for the professional world.
 
 CFA Report word doc download
 
 [Download CFA report](data/CFA.docx)
+
+
+
+**Capital Research for Radius Recycling (RDUS)**
+
+1. **RDUS Capital Structure Analysis:**
+   - Conducted a detailed analysis of RDUS's financial leverage and its impact on earnings per share (EPS).
+   - Assessed scenarios under different economic conditions (recession, current, and boom) to evaluate debt reliance and working capital strategies.
+   - Proposed a shift toward short-term borrowing and asset optimization to improve liquidity.
+- [RDUS Capital Structure Analysis](/Projects/RDUS Capital Structure Analysis.qmd)
+
+2. **RDUS Capital Structure Analysis #2:**
+   - Explored optimal capital structure using the Weighted Average Cost of Capital (WACC) framework.
+   - Evaluated RDUS's current debt-to-equity ratio against industry standards, recommending a reduction in long-term debt.
+   - Highlighted strategies to align with an optimal D/E ratio to lower financial risks and borrowing costs.
+- [RDUS Capital Structure Analysis #2](/Projects/term2.qmd)
+
+3. **RDUS Statistical Research (OLS):**
+   - Performed Ordinary Least Squares (OLS) regression to investigate the relationship between accounts receivable and net income.
+   - Identified key factors affecting RDUS’s profitability, emphasizing the limited explanatory power of receivables on earnings.
+   - Recommended extending credit cautiously, supported by data trends and historical averages. 
+- [RDUS Statistical Research (OLS)](/Projects/term2.qmd)
+

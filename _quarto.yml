@@ -25,12 +25,12 @@ website:
         file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
-      - text: "Data Cleansing"
-        file: cleansing.qmd
-      - text: "Story Telling"
-        file: story_telling.qmd
-      - text: "Machine Learning"
-        file: ml.qmd
+      # - text: "Data Cleansing"
+      #   file: cleansing.qmd
+      # - text: "Story Telling"
+      #   file: story_telling.qmd
+      # - text: "Machine Learning"
+      #   file: ml.qmd
       
   sidebar:
     - title: "Projects"
