@@ -1,0 +1,364 @@
+---
+title: "13CH AD-AS Simulation"
+subtitle: "Macroeconomics"
+author: ""
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
+---
+
+
+# AD-AS Simulation Ch13 - Should do model
+
+# Part 1: Conduct Quantitative Experiments using the AD-AS Model
+
+![13CH Should do Part 1](pictures/13CH_SD_1.png)
+
+
+
+# Part 2: Simulate the Covid-19 Economic Crisis
+![13CH Should do Part 2](pictures/13CH_SD_2.png)
+
+__Part 2.1__ __Use Fred to estimate changes to the model parameters during the Covid-19 economic crisis. You did this already in the Should Do (Ch12) assignment. Update or upgrade your calculations as necessary. Include graphs as needed.__
+
+spacer
+
+__Part 2.2__ __Set the model to a total timeframe of 50 years and use the changes you estimated in part 2.1 to simulate the economy during 2020 and 2021. Set 2020 to be equal to period 5 in the model. Justify your choices and describe the outcome under the three different policy rules.__
+
+The plots below are from the IS curve calibration and the first row is the actual share of output for C, I, and G. The last plot is the actual output compare to potential output during 01/01/2019 - 10/01/2024. The second set of plots are the same but it represents the percent change for each variable during thr same time period. In this scenario we can see how Covid impacted the economy, but we can also see an increase in Government spending which helped bring consumption, investments, and output back form the economic doomday path they where in. In the 2.1 scenario other economic stimulation will need to be done apart from just lowering rates. 
+```{python}
+from macrofunctions import plot_m_vs_period_Q
+# CH 11 Should do Calibration
+plot_m_vs_period_Q("C://Users//User//OneDrive - BYU-Idaho//Desktop//Coding//Macro//Should Do's//macrodata.xlsx", ['C/Y_Q', 'I/Y_Q', 'G/Y_Q', 'Y_actual_Q','C/Y_Q%', 'I/Y_Q%', 'G/Y_Q%', 'Y_actual_Q%'], '01/01/2019', '10/01/2022')
+```
+
+
+__Has both models for CH13 & 12 model combined__
+```{python}
+# Has both models for CH13 & 12 model combined
+
+import pandas as pd
+from macrofunctions import calculate_inflation_stabilization_inflation, calculate_inflation_stabilization_sroutput, calculate_output_stabilization, calculate_taylor_rule_sroutput, calculate_taylor_rule_inflation, update_excel_df,  calculate_y_tilde, calculate_c_inflation, calculate_inflation, calculate_inflation1, calculate_SRY, calculate_Rt, plot_m_vs_period, plot_m_vs_period_Q, CH13_Short_Run_Output
+
+parameters = {
+    'Simulation Period (yrs)': 20,
+    'a': 0.0, 
+    'a(%)': 0.0,
+    'b': 0.68,
+    'r(%)': 2.0,
+    'R(%)': 2.0,
+    'v': 0.076,
+    'o(%)': 0.0,
+    'm': 0.5,
+    'n': 0.5,
+    'pi_bar': 2,
+    'fed_target_initial_inflation': 2.0
+}
+# 2020 =5, 2025 = 10, 2030 = 15, 2035 = 20.
+quantitative_experiments = {
+    'a(%)': [
+        {'new_value': -8, 'time_period': 5, 'length': 1},
+        {'new_value': 8, 'time_period': 6, 'length': 1},
+        {'new_value': 4, 'time_period': 7, 'length': 1},
+        {'new_value': 1, 'time_period': 8, 'length': 1},
+        {'new_value': 1.5, 'time_period': 9, 'length': 1},
+        {'new_value': 2.5, 'time_period': 10, 'length': 1},
+        {'new_value': 0, 'time_period': 11, 'length': 1},
+        {'new_value': .35, 'time_period': 12, 'length': 1},
+        {'new_value': -1.5, 'time_period': 13, 'length': 1},
+        {'new_value': -1, 'time_period': 14, 'length': 1}
+
+    ],
+    'R(%)': [
+        {'new_value': .4, 'time_period': 1, 'length': 1},
+        {'new_value': 1, 'time_period': 2, 'length': 1},
+        {'new_value': 1.83, 'time_period': 3, 'length': 1},
+        {'new_value': 2.16, 'time_period': 4, 'length': 1},
+        {'new_value': .038, 'time_period': 5, 'length': 1},
+        {'new_value': 0.08, 'time_period': 6, 'length': 1},
+        {'new_value': 1.68, 'time_period': 7, 'length': 1},
+        {'new_value': 5.02, 'time_period': 8, 'length': 2},
+        {'new_value': 4.65, 'time_period': 10, 'length': 1},
+        {'new_value': 4, 'time_period': 11, 'length': 1},
+        {'new_value': 2.0, 'time_period': 12, 'length': 1},
+    ]
+} # to add just use the same format & change parameter
+
+# Initialize the DataFrame
+num_periods = parameters['Simulation Period (yrs)'] + 1
+df = pd.DataFrame({
+    'Period': range(num_periods),
+    'a': [parameters['a']] * num_periods,
+    'a(%)': [parameters['a(%)']] * num_periods,
+    'b': [parameters['b']] * num_periods,
+    'r(%)': [parameters['r(%)']] * num_periods,
+    'R(%)': [parameters['R(%)']] * num_periods,  
+    'v': [parameters['v']] * num_periods,  
+    'o(%)': [parameters['o(%)']] * num_periods,
+    'm': [parameters['m']] * num_periods,  
+    'n': [parameters['n']] * num_periods,
+    'pi_bar': [parameters['pi_bar']] * num_periods, 
+    'Inflation Stabilization sroutput': [0.0] * num_periods,
+    'Inflation Stabilization inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Output Stabilization sroutput': [0.0] * num_periods,
+    'Output Stabilization inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Taylor Rule sroutput': [0.0] * num_periods,
+    'Taylor Rule inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Y_tilde': [0.0] * num_periods,
+    'c_inflation': [0.0] * num_periods,
+    'inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'inflation_13CH': [0.0] * num_periods,
+    'SRY': [0.0] * num_periods,
+    'Rt': [0.0] * num_periods
+})
+
+# Convert columns to numeric type explicitly
+numeric_columns = ['a(%)', 'b', 'r(%)', 'R(%)', 'v', 'o(%)', 'm', 'n', 'Inflation Stabilization sroutput', 'Inflation Stabilization inflation', 'Output Stabilization sroutput', 'Output Stabilization inflation', 'Taylor Rule sroutput', 'Taylor Rule inflation', 'Y_tilde', 'c_inflation', 'inflation', 'inflation_13CH', 'SRY', 'Rt']
+df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+
+date_columns = []
+for col in date_columns:
+    df[col] = pd.to_datetime(df[col]).dt.date
+
+# Apply Quantitative Experiments
+for param, changes_list in quantitative_experiments.items():
+    for changes in changes_list:
+        for period in range(changes['time_period'], changes['time_period'] + changes['length']):
+            if period < num_periods:
+                df.at[period, param] = changes['new_value']
+
+# Apply the calculations to each row in the DataFrame
+for i in range(len(df)):
+
+    inflation = calculate_inflation_stabilization_inflation(df, i, parameters['fed_target_initial_inflation']) # inflation stabilization inflation
+    df.at[i, 'Inflation Stabilization inflation'] = inflation
+
+    sroutput = calculate_inflation_stabilization_sroutput(df, i, parameters['fed_target_initial_inflation']) # inflation stabilization sroutput
+    df.at[i, 'Inflation Stabilization sroutput'] = sroutput
+
+    sroutput, inflation = calculate_output_stabilization(df, i, parameters['fed_target_initial_inflation']) # Output Stabilization
+    df.at[i, 'Output Stabilization sroutput'] = sroutput
+    df.at[i, 'Output Stabilization inflation'] = inflation
+
+    sroutput = calculate_taylor_rule_sroutput(df, i, parameters['fed_target_initial_inflation']) # Taylor Rule sroutput
+    df.at[i, 'Taylor Rule sroutput'] = sroutput
+
+    inflation = calculate_taylor_rule_inflation(df, i, parameters['fed_target_initial_inflation']) # Taylor Rule inflation
+    df.at[i, 'Taylor Rule inflation'] = inflation
+
+    # Calculate Y_tilde
+    Y_tilde = calculate_y_tilde(df, i)
+    df.at[i, 'Y_tilde'] = Y_tilde
+
+    # Calculate c_inflation
+    c_inflation = calculate_c_inflation(df, i)
+    df.at[i, 'c_inflation'] = c_inflation
+
+    # Calculate inflation
+    inflation = calculate_inflation(df, i, parameters['fed_target_initial_inflation'])
+    df.at[i, 'inflation'] = inflation
+
+    # 13 class example
+    inflation = calculate_inflation1(df, i, parameters['b'], parameters['m'], parameters['v'], parameters['pi_bar'])
+    df.at[i, 'inflation_13CH'] = inflation
+
+    # 13 class example
+    SRY = calculate_SRY(df, i, parameters['b'], parameters['m'], parameters['v'], parameters['pi_bar'])
+    df.at[i, 'SRY'] = SRY
+
+    # 13 class example
+    Rt = calculate_Rt(df, i, parameters['m'])
+    df.at[i, 'Rt'] = Rt
+
+# update_excel_df("C://Users//eduar//OneDrive - BYU-Idaho//Desktop//Coding//Macro//macrodata.xlsx", df)
+
+# display
+# display(df.head(20))
+plot_m_vs_period(df, ['a(%)', 'R(%)', 'Y_tilde', 'inflation']) # , x_tick_interval=2
+
+
+
+# Example usage of the function
+CH13_Short_Run_Output(df, 0, 20, ['Inflation Stabilization sroutput', 'Output Stabilization sroutput', 'Taylor Rule sroutput'])
+
+# Example usage of the function
+CH13_Short_Run_Output(df, 0, 20, ['Inflation Stabilization inflation', 'Output Stabilization inflation', 'Taylor Rule inflation'])
+
+
+
+```
+
+The situation approach was to take a more aggresive approach to inflation in the economy. The Fisacal policy cause output and inflation to sky rocket in 2021 so I started rasing rates in 2021 and it 2023 my rates where at 5.68 and kept them there for the next 3 years or till 2025. In 2027 rates where back to 2. In 2027 or period 12 output was just above potential, but the recent high rates still had effects for the next two periods (28-29) output shot below potential which can be the recession that was anticipated at the beginning of covid. In the year 2030 the recession is no more, inflation is back at the fed target of 2, output is stabilize or at zero, real interest rates are at 12 and no more crazy shocks with a. I tried to simulate the current situation in the economy by using part 3.1 plots to generate the first set of plots for part 3.2. I got them to be very similar during covid, and in that simulation in the year 2030 things seem to be back to normal but inflation was still above the fed target rate. By taking a more agressive approach to the interest rate, I was able to nring down inflation, to its target and everything else normal by 2030, but it did cost a lot of jobs. 
+__Has both models for CH13 & 12 model combined__
+```{python}
+# Has both models for CH13 & 12 model combined
+
+import pandas as pd
+from macrofunctions import calculate_inflation_stabilization_inflation, calculate_inflation_stabilization_sroutput, calculate_output_stabilization, calculate_taylor_rule_sroutput, calculate_taylor_rule_inflation, update_excel_df,  calculate_y_tilde, calculate_c_inflation, calculate_inflation, calculate_inflation1, calculate_SRY, calculate_Rt, plot_m_vs_period, plot_m_vs_period_Q, CH13_Short_Run_Output
+
+parameters = {
+    'Simulation Period (yrs)': 20,
+    'a': 0.0, 
+    'a(%)': 0.0,
+    'b': 0.68,
+    'r(%)': 2.0,
+    'R(%)': 2.0,
+    'v': 0.076,
+    'o(%)': 0.0,
+    'm': 0.5,
+    'n': 0.5,
+    'pi_bar': 2,
+    'fed_target_initial_inflation': 2.0
+}
+# 2020 =5, 2025 = 10, 2030 = 15, 2035 = 20.
+quantitative_experiments = {
+    'a(%)': [
+        {'new_value': -8, 'time_period': 5, 'length': 1},
+        {'new_value': 8, 'time_period': 6, 'length': 1},
+        {'new_value': 4, 'time_period': 7, 'length': 1},
+        {'new_value': 1, 'time_period': 8, 'length': 1},
+        {'new_value': 1.5, 'time_period': 9, 'length': 1},
+        {'new_value': 2.5, 'time_period': 10, 'length': 1},
+        {'new_value': 0, 'time_period': 11, 'length': 1},
+        {'new_value': .35, 'time_period': 12, 'length': 1},
+        {'new_value': -1.5, 'time_period': 13, 'length': 1},
+        {'new_value': -1, 'time_period': 14, 'length': 1}
+
+    ],
+    'R(%)': [
+        {'new_value': .4, 'time_period': 1, 'length': 1},
+        {'new_value': 1, 'time_period': 2, 'length': 1},
+        {'new_value': 1.83, 'time_period': 3, 'length': 1},
+        {'new_value': 2.16, 'time_period': 4, 'length': 1},
+        {'new_value': .038, 'time_period': 5, 'length': 1},
+        {'new_value': 2, 'time_period': 6, 'length': 1},
+        {'new_value': 4, 'time_period': 7, 'length': 1},
+        {'new_value': 5.68, 'time_period': 8, 'length': 3},
+        {'new_value': 3.6045, 'time_period': 11, 'length': 1}
+    ]
+} # to add just use the same format & change parameter
+
+# Initialize the DataFrame
+num_periods = parameters['Simulation Period (yrs)'] + 1
+df = pd.DataFrame({
+    'Period': range(num_periods),
+    'a': [parameters['a']] * num_periods,
+    'a(%)': [parameters['a(%)']] * num_periods,
+    'b': [parameters['b']] * num_periods,
+    'r(%)': [parameters['r(%)']] * num_periods,
+    'R(%)': [parameters['R(%)']] * num_periods,  
+    'v': [parameters['v']] * num_periods,  
+    'o(%)': [parameters['o(%)']] * num_periods,
+    'm': [parameters['m']] * num_periods,  
+    'n': [parameters['n']] * num_periods,
+    'pi_bar': [parameters['pi_bar']] * num_periods, 
+    'Inflation Stabilization sroutput': [0.0] * num_periods,
+    'Inflation Stabilization inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Output Stabilization sroutput': [0.0] * num_periods,
+    'Output Stabilization inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Taylor Rule sroutput': [0.0] * num_periods,
+    'Taylor Rule inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'Y_tilde': [0.0] * num_periods,
+    'c_inflation': [0.0] * num_periods,
+    'inflation': [parameters['fed_target_initial_inflation']] * num_periods,
+    'inflation_13CH': [0.0] * num_periods,
+    'SRY': [0.0] * num_periods,
+    'Rt': [0.0] * num_periods
+})
+
+# Convert columns to numeric type explicitly
+numeric_columns = ['a(%)', 'b', 'r(%)', 'R(%)', 'v', 'o(%)', 'm', 'n', 'Inflation Stabilization sroutput', 'Inflation Stabilization inflation', 'Output Stabilization sroutput', 'Output Stabilization inflation', 'Taylor Rule sroutput', 'Taylor Rule inflation', 'Y_tilde', 'c_inflation', 'inflation', 'inflation_13CH', 'SRY', 'Rt']
+df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+
+date_columns = []
+for col in date_columns:
+    df[col] = pd.to_datetime(df[col]).dt.date
+
+# Apply Quantitative Experiments
+for param, changes_list in quantitative_experiments.items():
+    for changes in changes_list:
+        for period in range(changes['time_period'], changes['time_period'] + changes['length']):
+            if period < num_periods:
+                df.at[period, param] = changes['new_value']
+
+# Apply the calculations to each row in the DataFrame
+for i in range(len(df)):
+
+    inflation = calculate_inflation_stabilization_inflation(df, i, parameters['fed_target_initial_inflation']) # inflation stabilization inflation
+    df.at[i, 'Inflation Stabilization inflation'] = inflation
+
+    sroutput = calculate_inflation_stabilization_sroutput(df, i, parameters['fed_target_initial_inflation']) # inflation stabilization sroutput
+    df.at[i, 'Inflation Stabilization sroutput'] = sroutput
+
+    sroutput, inflation = calculate_output_stabilization(df, i, parameters['fed_target_initial_inflation']) # Output Stabilization
+    df.at[i, 'Output Stabilization sroutput'] = sroutput
+    df.at[i, 'Output Stabilization inflation'] = inflation
+
+    sroutput = calculate_taylor_rule_sroutput(df, i, parameters['fed_target_initial_inflation']) # Taylor Rule sroutput
+    df.at[i, 'Taylor Rule sroutput'] = sroutput
+
+    inflation = calculate_taylor_rule_inflation(df, i, parameters['fed_target_initial_inflation']) # Taylor Rule inflation
+    df.at[i, 'Taylor Rule inflation'] = inflation
+
+    # Calculate Y_tilde
+    Y_tilde = calculate_y_tilde(df, i)
+    df.at[i, 'Y_tilde'] = Y_tilde
+
+    # Calculate c_inflation
+    c_inflation = calculate_c_inflation(df, i)
+    df.at[i, 'c_inflation'] = c_inflation
+
+    # Calculate inflation
+    inflation = calculate_inflation(df, i, parameters['fed_target_initial_inflation'])
+    df.at[i, 'inflation'] = inflation
+
+    # 13 class example
+    inflation = calculate_inflation1(df, i, parameters['b'], parameters['m'], parameters['v'], parameters['pi_bar'])
+    df.at[i, 'inflation_13CH'] = inflation
+
+    # 13 class example
+    SRY = calculate_SRY(df, i, parameters['b'], parameters['m'], parameters['v'], parameters['pi_bar'])
+    df.at[i, 'SRY'] = SRY
+
+    # 13 class example
+    Rt = calculate_Rt(df, i, parameters['m'])
+    df.at[i, 'Rt'] = Rt
+
+# update_excel_df("C://Users//eduar//OneDrive - BYU-Idaho//Desktop//Coding//Macro//macrodata.xlsx", df)
+
+# display
+# display(df.head(20))
+plot_m_vs_period(df, ['a(%)', 'R(%)', 'Y_tilde', 'inflation'], x_tick_interval=1) # , x_tick_interval=2
+
+```
+
+
+
+# Part 2.3
+
+![13CH Should do Part 2.3](pictures/13CH_SD_2.3.png)
+
+__In response to the crisis, the Fed has gotten creative in its approach to monetary policy. Below are excerpts of their stance on interest rates now and in the near future. Translate these into parameter values n and m. How does changing the parameters of the policy rules affect the behavior of short-run output and inflation? Explain__
+
+__Federal funds rate: The Fed has cut its target for the federal funds rate, the rate banks pay to borrow from each other overnight, by a total of 1.5 percentage points since March 3, 2020, bringing it down to a range of 0% to 0.25%. The federal funds rate is a benchmark for other short-term rates and also affects longer-term rates, so this move is aimed at lowering the cost of borrowing on mortgages, auto loans, home equity loans, and other loans, but it will also reduce the interest income paid to savers.__
+
+__Forward guidance: Using a tool honed during the Great Recession of 2007-2009, the Fed has offered forward guidance on the future path of its key interest rate, saying that rates will remain low "until labor market conditions have reached levels consistent with the Committee's assessments of maximum employment and inflation has risen to 2 percent and is on track to moderately exceed 2 percent for some time." This forward guidance on the overnight rate, updated in September 2020 to reflect the Fed's new monetary policy framework, puts downward pressure on longer-term rates.__
+

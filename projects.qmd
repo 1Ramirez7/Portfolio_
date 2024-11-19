@@ -7,9 +7,52 @@ subtitle: ""
 # Projects
 ## Repo for all my Projects
 
-- [Project 1](/Projects/project1.qmd)
-- [RDUS Capital Structure Analysis](/Projects/RDUS Capital Structure Analysis.qmd)
-- [RDUS Capital Structure Analysis #2](/Projects/term2.qmd)
-- [RDUS Statistical Research (OLS)](/Projects/term2.qmd)
 
+**Capital Research for Radius Recycling (RDUS)**
+
+1. **RDUS Capital Structure Analysis:**
+   - Conducted a detailed analysis of RDUS's financial leverage and its impact on earnings per share (EPS).
+   - Assessed scenarios under different economic conditions (recession, current, and boom) to evaluate debt reliance and working capital strategies.
+   - Proposed a shift toward short-term borrowing and asset optimization to improve liquidity.
+- [RDUS Capital Structure Analysis](/Projects/RDUS Capital Structure Analysis.qmd)
+
+2. **RDUS Capital Structure Analysis #2:**
+   - Explored optimal capital structure using the Weighted Average Cost of Capital (WACC) framework.
+   - Evaluated RDUS's current debt-to-equity ratio against industry standards, recommending a reduction in long-term debt.
+   - Highlighted strategies to align with an optimal D/E ratio to lower financial risks and borrowing costs.
+- [RDUS Capital Structure Analysis #2](/Projects/term2.qmd)
+
+3. **RDUS Statistical Research (OLS):**
+   - Performed Ordinary Least Squares (OLS) regression to investigate the relationship between accounts receivable and net income.
+   - Identified key factors affecting RDUS’s profitability, emphasizing the limited explanatory power of receivables on earnings.
+   - Recommended extending credit cautiously, supported by data trends and historical averages. 
+- [RDUS Statistical Research (OLS)](/Projects/term3.qmd)
+
+**Investment Society Leadership and Financial Research**
+
+2. **Bloomberg Terminal Financial Research:**
+   - Developed comprehensive guides and templates for navigating the Bloomberg Terminal to analyze equities, financial statements, and key ratios.
+   - Regularly lead presentations as the Investment Society President, teaching students how to effectively use Bloomberg for financial data research and decision-making.
+   - Focused on creating efficient workflows, including custom templates for financial analysis and integrating Bloomberg data with Excel for streamlined calculations.
+   - Emphasized the importance of understanding field definitions and methodology to ensure accurate and insightful financial analysis.
+   - Template link is one of the sample Bloomberg templates I made.
+- [Blomberg Template](/Projects/project1.qmd)
+
+**Applied Time Series Research**
+
+1. **China Export Commodities Time Series Analysis:**
+   - Applied time series techniques to analyze trends, seasonality, and irregularities in China's export commodity data from 1990 to the present.
+   - Conducted a classical multiplicative decomposition to distinguish long-term growth patterns, seasonal cycles, and random shocks influenced by macroeconomic events.
+   - Provided actionable insights into optimizing trade strategies by leveraging seasonal trends and mitigating risks from unpredictable disruptions.  
+- [Time Series Reserach on China's Export Commodities](/Projects/project1.qmd)
+
+**Intermediate Macroeconomic Model**
+
+1. **Aggregate Demand–Aggregate Supply model**
+   - Built the Aggregate Demand and Aggregate Supply (AD-AS) model from scratch using advanced calculus and complex mathematical formulations.
+   - Incorporated key parameters like inflation rates, short-run output, and Taylor rule adjustments to simulate dynamic economic behaviors.
+   - Developed functions to compute short-run equilibrium, inflation stabilization, and policy effects, relying on rigorous mathematical foundations.
+   - Simulated scenarios such as the COVID-19 economic crisis to analyze policy responses, including changes in interest rates and fiscal interventions.
+   - Generated visualizations to interpret model outputs and validate theoretical assumptions against real-world data.
+- [Aggregate Demand–Aggregate Supply model](/Projects/13CH AD-AS Simulation.qmd)
 

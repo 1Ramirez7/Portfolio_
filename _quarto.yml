@@ -39,15 +39,18 @@ website:
       contents:
         - text: "Projects"
           file: projects.qmd
-        - text: "Project 1"
-          file: Projects/project1.qmd
         - text: "RDUS Capital Structure Analysis"
           file: Projects/RDUS Capital Structure Analysis.qmd
         - text: "RDUS Capital Structure Analysis #2"
           file: Projects/term2.qmd
         - text: "RDUS Statistical Research (OLS)"
-          file: Projects/term2.qmd
-        - text: "---"
+          file: Projects/term3.qmd
+        - text: "Blomberg Template"
+          file: Projects/project1.qmd
+        - text: "Time Series Reserach on China's Export Commodities"
+          file: Projects/project1.qmd
+        - text: "Aggregate Demand–Aggregate Supply model"
+          file: Projects/13CH AD-AS Simulation.qmd
         #continue the pattern if you need more links
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
 
