@@ -1,12 +1,10 @@
 ---
-title: "about me"
+title: "Edaurdo Ramirez"
 subtitle: "my data science portfolio"
 format: html
 # use quarto markdown to 
 ---
 
-# Title 1 Header
-## Title 2 Header
 
 
 CFA Report word doc download

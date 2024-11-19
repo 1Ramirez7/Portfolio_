@@ -1,10 +1,10 @@
 ---
-title: "DS250 Projects"
-subtitle: "Repo for all my Projects"
+title: "Projects"
+subtitle: ""
 # use quarto markdown to 
 ---
 
-# DS250 Projects
+# Projects
 ## Repo for all my Projects
 
 - [Project 1](/Projects/project1.qmd)
