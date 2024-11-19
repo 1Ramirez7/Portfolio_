@@ -8,3 +8,6 @@ subtitle: "my data science portfolio"
 ## Title 2 Header
 
 
+CFA Report word doc download
+
+[Download CFA report](data/CFA.docx)
