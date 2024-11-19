@@ -26,17 +26,7 @@ subtitle: ""
    - Performed Ordinary Least Squares (OLS) regression to investigate the relationship between accounts receivable and net income.
    - Identified key factors affecting RDUS’s profitability, emphasizing the limited explanatory power of receivables on earnings.
    - Recommended extending credit cautiously, supported by data trends and historical averages. 
-- [RDUS Statistical Research (OLS)](/Projects/term3.qmd)
-
-**Investment Society Leadership and Financial Research**
-
-2. **Bloomberg Terminal Financial Research:**
-   - Developed comprehensive guides and templates for navigating the Bloomberg Terminal to analyze equities, financial statements, and key ratios.
-   - Regularly lead presentations as the Investment Society President, teaching students how to effectively use Bloomberg for financial data research and decision-making.
-   - Focused on creating efficient workflows, including custom templates for financial analysis and integrating Bloomberg data with Excel for streamlined calculations.
-   - Emphasized the importance of understanding field definitions and methodology to ensure accurate and insightful financial analysis.
-   - Template link is one of the sample Bloomberg templates I made.
-- [Blomberg Template](/Projects/project1.qmd)
+- [RDUS Statistical Research (OLS)](/Projects/term2.qmd)
 
 **Applied Time Series Research**
 
@@ -44,7 +34,7 @@ subtitle: ""
    - Applied time series techniques to analyze trends, seasonality, and irregularities in China's export commodity data from 1990 to the present.
    - Conducted a classical multiplicative decomposition to distinguish long-term growth patterns, seasonal cycles, and random shocks influenced by macroeconomic events.
    - Provided actionable insights into optimizing trade strategies by leveraging seasonal trends and mitigating risks from unpredictable disruptions.  
-- [Time Series Reserach on China's Export Commodities](/Projects/project1.qmd)
+- [Time Series Reserach on China's Export Commodities](/Projects/project_1.qmd)
 
 **Intermediate Macroeconomic Model**
 
@@ -55,4 +45,15 @@ subtitle: ""
    - Simulated scenarios such as the COVID-19 economic crisis to analyze policy responses, including changes in interest rates and fiscal interventions.
    - Generated visualizations to interpret model outputs and validate theoretical assumptions against real-world data.
 - [Aggregate Demand–Aggregate Supply model](/Projects/13CH AD-AS Simulation.qmd)
+
+
+**Investment Society Leadership and Financial Research**
+
+2. **Bloomberg Terminal Financial Research:**
+   - Developed comprehensive guides and templates for navigating the Bloomberg Terminal to analyze equities, financial statements, and key ratios.
+   - Regularly lead presentations as the Investment Society President, teaching students how to effectively use Bloomberg for financial data research and decision-making.
+   - Focused on creating efficient workflows, including custom templates for financial analysis and integrating Bloomberg data with Excel for streamlined calculations.
+   - Emphasized the importance of understanding field definitions and methodology to ensure accurate and insightful financial analysis.
+   - Template link is one of the sample Bloomberg templates I made.
+- [Blomberg Template](/Projects/project1.qmd)
 
