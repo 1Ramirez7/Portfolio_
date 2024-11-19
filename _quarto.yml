@@ -13,7 +13,8 @@ website:
     left: "Eduardo I Ramirez 2024©"
     right: 
       - icon: linkedin
-        href: linkedin.com/in/eduardo-ramirez-lds
+        href: www.linkedin.com/in/eduardo-ramirez-lds
+
 
   navbar:
     background: primary
