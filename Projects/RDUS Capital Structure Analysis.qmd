@@ -1,0 +1,249 @@
+---
+title: "RDUS Capital Structure Analysis"
+subtitle: "Course: Financial Economics"
+author: "Eduardo I Ramirez"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 5
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
+---
+
+
+
+
+# Analyzing Firm's Working Capital Policy Trends
+
+Working Capital is in a bad place for RDUS as they are relying more on long-term debt to finance asset requirements and have very little to no cash at all. As shown in the Financial leverage figure. RDUS is already hurting from the amount of debt they have, and the green line suggests they will be better off not taking on debt. Given this scenario, RDUS would be better off keeping a compromise policy by relying more on short-term borrowing, and as suggested in term report 2, for them to sell some of their underperforming assets and focus on improving liquidity.
+
+The figure below has 3 markers for each line. The markers represent 3 scenarios: Recession, current, and boom. The left marker represents RDUS financial leverage during a hypothetical recession, the middle marker is as the economy is now, and the right marker represents a boom in the economy.
+
+```{python}
+import plotly.graph_objects as go
+import numpy as np
+x1_values = [-35170.11, -22987, -10803.89]; y1_values = [-1.262251373, -0.825000897, -0.387750422]
+x2_values = [-35170.11, -22987, -10803.89]; y2_values = [-2.179242006, -1.304741054, -0.430240103]
+m1, b1 = np.polyfit(x1_values, y1_values, 1); m2, b2 = np.polyfit(x2_values, y2_values, 1)
+x1_regression_line = np.linspace(min(x1_values)-60000, max(x1_values)+120000, 100); y1_regression_line = m1 * x1_regression_line + b1
+x2_regression_line = np.linspace(min(x2_values)-60000, max(x2_values)+120000, 100); y2_regression_line = m2 * x2_regression_line + b2
+trace1 = go.Scatter(x=x1_values, y=y1_values, mode='markers', name='', showlegend=False); trace2 = go.Scatter(x=x2_values, y=y2_values, mode='markers', name='', showlegend=False)
+regression_trace1 = go.Scatter(x=x1_regression_line, y=y1_regression_line, mode='lines', name='Proposed'); regression_trace2 = go.Scatter(x=x2_regression_line, y=y2_regression_line, mode='lines', name='Current')
+fig = go.Figure(); fig.add_trace(trace1); fig.add_trace(trace2); fig.add_trace(regression_trace1); fig.add_trace(regression_trace2)
+fig.update_layout(title='Financial leverage: Debt vs No Debt', xaxis_title='Earnings before Interest & Taxes', yaxis_title='Earnings per Share ($)', xaxis=dict(range=[min(x1_values + x2_values)-20000, max(x1_values + x2_values)+60000], zeroline=True, zerolinewidth=2, zerolinecolor='black'), yaxis=dict(range=[min(y1_values + y2_values)-0.5, max(y1_values + y2_values)+2.5], zeroline=True, zerolinewidth=2, zerolinecolor='black'))
+fig.show()
+```
+
+
+
+
+The financial leverage of RDUS would suggest not to take on debt, and consider selling underperforming assets as mentioned in term two report. Later research on this report would support that the economy is heading closer to a recession than a boom so RDUS is better off with no debt. In relation to this project, RDUS is better off using short-term debt and liquidity to finance their working capital, and it will be explained below.
+
+# Current trends in ARS for RDUS
+
+Looking at the Scatterplots below, we can see RDUS and its competitors would benefit from increasing credit, besides NVRI, which is worse off extending credit. RDUS Net Income shows that other things affect it most, compared to CLH, where AR explains 66% of the changes in Net Income.
+
+__Value of Credit Analysis scatterplots for all firms__
+```{python}
+# scatter plot for all firms. Value of credit analysis, ch20 slide 1
+import pandas as pd
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots 
+import numpy as np
+from scipy import stats
+df = pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//1 Final term paper//data//DATAVS.xlsx") 
+companies = ["RDUS", "CLH", "CWST", "NVRI", "RSG", "WM"]
+def linear_regression(x, y):
+    slope, intercept, r, p, stderr = stats.linregress(x, y)
+    return slope, intercept, r**2
+rows, cols = 2, 3
+fig = make_subplots(rows=rows, cols=cols, subplot_titles=companies)
+for i, company in enumerate(companies, 1):
+    row, col = ((i - 1) // cols) + 1, ((i - 1) % cols) + 1
+    x, y = df['11Accounts_Receivable_Trade_' + company], df['9Net_Income_Available_to_Common_' + company]
+    mask = ~np.isnan(x) & ~np.isnan(y)
+    x_filt, y_filt = x[mask], y[mask]
+    slope, intercept, r_squared = linear_regression(x_filt, y_filt)
+    fig.add_trace(go.Scatter(x=x_filt, y=y_filt, mode='markers', name=f'{company} Data'), row=row, col=col)
+    fig.add_trace(go.Scatter(x=x_filt, y=intercept + slope * x_filt, mode='lines', name='Trendline', line=dict(color='red', dash='dash')), row=row, col=col)
+    fig.add_annotation(dict(x=np.max(x_filt), y=np.min(y_filt), text=f'Y = {slope:.2f}X + {intercept:.2f}<br>R² = {r_squared:.2f}', showarrow=False, xref="x"+str(i), yref="y"+str(i)))
+fig.update_layout(height=1000, width=1200, title_text="", showlegend=False)
+fig.show()
+```
+
+We can see RDUS would benefit from extending credit as it tends to benefit when it has more accounts receivables, but the standard deviation is large for both net income and accounts receivables. Two of the lowest markers for RDUS are from the last two quarters of 2023. In Q3, they had NI of -25m and AR of 210m, and in Q4, they had an NI of -17m and AR of 218m. This is not good as their historical average is NI: 19m and AR: 194m, and their average for the 10 lowest quarters of AR from 2016 to 2023 is NI: 8m and AR: 134m. 
+
+__RDUS Value of Credit Analysis Scatter Plot__
+```{python}
+# scatter plot for only one firm. Value of credit analysis, ch20 slide 18
+import pandas as pd
+import plotly.graph_objects as go
+import numpy as np
+from scipy import stats
+df = pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//1 Final term paper//data//DATAVS.xlsx")
+x, y = df['11Accounts_Receivable_Trade_RDUS'], df['9Net_Income_Available_to_Common_RDUS']
+mask = ~np.isnan(x) & ~np.isnan(y)
+x_filt, y_filt = x[mask], y[mask]
+slope, intercept, r_value, p_value, std_err = stats.linregress(x_filt, y_filt)
+std_x, std_y = np.std(x_filt), np.std(y_filt)
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=x_filt, y=y_filt, mode='markers', name='RDUS Data'))
+fig.add_trace(go.Scatter(x=x_filt, y=intercept + slope * x_filt, mode='lines', name='Trendline', line=dict(color='red', dash='dash')))
+fig.update_layout(title='RDUS Scatterplot with Trendline', xaxis_title='Accounts Receivable', yaxis_title='Net Income', showlegend=False, annotations=[dict(x=np.max(x_filt), y=np.min(y_filt), xref='x', yref='y', text=f'Y = {slope:.2f}X + {intercept:.2f}<br>R² = {r_value**2:.2f}<br>St_Dev X:{std_x:.0f} St_Dev Y:{std_y:.0f}', showarrow=False)])
+fig.show()
+```
+
+The linear regression reveals an R-squared of 0.18 with NI as the dependent variable, and AR as the independent variable. The investment in receivables only explains 18% of the changes in Net Income. Based on the investment in receivables research, RDUS can benefit from extending the credit as the scatter plots show NI will go up. Yet, the fact this method only explains 18% of NI, and the last two quarters from 2023, RDUS had higher than average AR, but nearly 200% below the average for NI. The standard deviation for RDUS in this Scatterplot is 24m, but their average for the last two quarters in 2022 is approximately 40m. This shows that RDUS can increase credit, but the 82% not explained by this linear regression is alarming, and extending credit will not help RDUS based on their recent history.
+
+# Permanent Working Capital and Book Leverage
+
+RDUS's permanent working capital needs are increasing, primarily due to its expansion and operational inefficiencies. This increase in permanent working capital needs significantly affects the company's book leverage. To meet these growing working capital requirements, RDUS has been increasingly relying on long-term debt. This is evident from the rising debt-equity ratio and equity multiplier, as highlighted in the term two report. This heightened dependency on debt alters the company's capital structure, making it more leveraged.
+
+The effects of this increased leverage are multifaceted. Firstly, it leads to a higher weighted average cost of capital (WACC), as borrowing costs rise with the increased perception of risk by creditors. This higher WACC, in turn, affects the company's investment decisions and could potentially lower its valuation.
+
+The reliance on debt puts a strain on RDUS's liquidity, as seen in the declining current and quick ratios. This situation implies that the company might struggle to meet its short-term obligations, thereby increasing financial risk.
+
+The shift towards debt financing, while providing necessary funds in the short term, has negative implications for the company's long-term financial health. It increases the risk of financial distress, especially if RDUS is unable to generate sufficient cash flows to service its debt obligations.
+
+__time series graph of Book leverage__
+```{python}
+# time series graph of Book leverage
+import pandas as pd
+import plotly.graph_objects as go
+df = pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//1 Final term paper//data//DATAVS.xlsx")
+q_rdus = df['Q_RDUS'] 
+book_leverage_rdus = df['43Book  Leverage_RDUS']
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=q_rdus, y=book_leverage_rdus, mode='lines+markers', name='Book Leverage'))
+fig.update_layout(title='Relationship of RDUS with Book Leverage', xaxis_title='Quaters', yaxis_title='Book Leverage', legend_title='Variable') # edit text
+fig.show()
+```
+
+RDUS's increasing permanent working capital needs have led to a more leveraged book position, as indicated by its growing reliance on long-term debt. This shift in capital structure not only raises the company's financial risks but also impacts its cost of capital and overall financial flexibility. To mitigate these issues, RDUS might need to explore strategies to improve its operational efficiency, reduce debt, and potentially rebalance its capital structure towards a more sustainable model.
+
+
+# Temporary Cash Surpluses, Marketable Securities, and Idle Cash
+
+Given RDUS's challenging working capital situation and their increasing reliance on long-term debt, it seems possible that temporary cash surpluses might indeed be necessary. These surpluses could serve as a buffer against liquidity constraints, especially since access to marketable securities appears to be limited, likely due to a decrease in such holdings to manage short-term financial obligations.
+
+__Common stock vs last price graph__
+```{python}
+# Common stock vs last price graph 
+import pandas as pd
+import plotly.graph_objects as go
+df=pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//1 Final term paper//data//DATAVS.xlsx")
+q, common_stock, last_price=df['Q_RDUS'],df['25Common Stock_RDUS'],df['24Last Price_RDUS']
+fig=go.Figure()
+fig.add_trace(go.Scatter(x=q,y=common_stock,mode='lines+markers',name='Common Stock'))
+fig.add_trace(go.Scatter(x=q,y=last_price,mode='lines+markers',name='Last Price',yaxis='y2'))
+fig.update_layout(title='Common Stock vs Last Price',xaxis_title='Quarters',yaxis=dict(title='Common Stock (in thousands)',side='left'),yaxis2=dict(title='Last Price',side='right',overlaying='y',showgrid=False),legend_title='Variable')
+fig.show()
+```
+
+RDUS might find itself with idle cash for several reasons, such as conservative cash management practices amidst economic uncertainty or perhaps due to timing differences between cash inflows from operations or financing activities and cash outflows for investments or debt servicing. The recent negative trends in net income and the increase in accounts receivable could indicate a mismatch in the cash conversion cycle, resulting in idle cash.
+
+
+# Analysis of Firm's Receivable Investments
+
+RDUS's investment in receivables, at 11% of total assets for the fourth quarter of 2023, represents a considerable allocation of resources, slightly below the seven-year quarterly average of 14%. This indicates a slight recent decline in the proportion of assets tied up in receivables. Looking at the trend in the days accounts receivable, represented by the blue line, there appears to be significant variability, with some peaks and troughs indicating a fluctuating collection period. It's clear there are cycles where the days receivable increase sharply, suggesting periods where RDUS may struggle to collect payments promptly. This inconsistency could impact liquidity and cash flow management.
+
+__Time Series: Trend and Cycle for RDUS days accounts__
+```{python}
+# time series for RDUS days accounts 
+import pandas as pd
+import plotly.graph_objects as go
+df = pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//1 Final term paper//data//DATAVS.xlsx")
+q_rdus = df['Q_RDUS'] # edit variable
+days_sales_receivables_rdus = df["60Day's sales in receivables_RDUS"] # edit variable
+days_sales_inventory_rdus = df["58Day's sales in inventory_RDUS"] # edit variable
+payable_turnover_rdus = df['62payable turnover_RDUS'] # edit variable
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=q_rdus, y=days_sales_receivables_rdus, mode='lines+markers', name="Receivables")) # edit names/titles
+fig.add_trace(go.Scatter(x=q_rdus, y=days_sales_inventory_rdus, mode='lines+markers', name="Inventory")) # edit names/titles
+fig.add_trace(go.Scatter(x=q_rdus, y=payable_turnover_rdus, mode='lines+markers', name='Payable')) # edit names/titles
+fig.update_layout(title='Time Series line Grpah for RDUS Days accounts variables: Receivables, Inventory, and Payables', xaxis_title='', yaxis=dict(title="Days", side='left'), legend_title='Variable') # edit names/titles
+fig.show()
+
+
+```
+
+
+In contrast, the days accounts payable, denoted by the green line, show less volatility, with generally more stable, albeit still fluctuating, periods indicating the company's payment to its suppliers. The trend seems to be moderately cyclic, with no dramatic spikes similar to those seen in receivables. This relative stability in payables suggests a more consistent approach to managing payables compared to receivables. The firm's strategy for managing payables may reflect an attempt to maintain cash on hand or favorable credit terms with suppliers.
+
+
+
+
+# Future Strategies for Working Capital
+
+__Yield curves and Recession predictions__ 
+
+The 10, and 3 year treasury yield, and the spread between the two which can be refer to as the yield curve between the two. This yield curve is also widely use to project the health of the economy and is usually use to predict recessions. What better example then a few day old post by Yahoo Finance. 
+ "[A 2/10 curve inversion is a time-honored signal of an upcoming recession. Short-term bonds yield more than longer maturities because investors expect interest rates to remain high in the short term as the Federal Reserve battles inflation, while long yields are lower on expectations the central bank will cut interest rates to stimulate a weakening economy.](https://finance.yahoo.com/news/us-treasury-key-yield-curve-153232210.html)"
+
+A normal yield curve indicates a healthy economy, while a flat yield curve (when the spread is almost zero) would signal uncertainty about future economic growth, and an inverted yield curve is where short-term yields are higher than long term yields. An inverted yield curve is a warning sign for economic recession. 
+
+In the graph below we always want the 10 year US treasury note yield (DGS10: royalblue line) to be above the 3 year yield (DTB3: green line). We also want The fed funds rate (FEDFUNDS: purple line) to be below the 10 year yield. 
+
+
+The Recession Indicator (JHDUSRGDPBR) figure has two lines, the spread line represents the spread between the 10-year and the 3-year yields or 10y yield minus the 3-year yield. A high spread correlates with a healthy economy, and a negative spread, like the 2/10 curve example from the quoted article, would signal warnings of inflation. The second line 'JHDUSRGDPBR' is a recession indicator. A 1 in the recession indicator basically means that there would or probably will be a recession in about 4 quarters. For example, looking at the figure, the JHDUS line had a 1 in early 2020, and we were supposed to hit a recession early 2021, or so we thought. We supposedly haven't hit a recession. The yield curve for the 3/10 has been negative since October 2022, so that is a good warning for an economic recession. The Recession Indicator is still at zero, but based on this analysis and to answer the question of the project, RDUS is better off with short-term financing.  
+
+Since October 2022, the 10-year Treasury yield (long-term rate) has been below the 3-year Treasury yield, while the 3-year Treasury yield (short-term rate) has been above the long-term rate. Given that the long-term rate is lower than the current short-term rate, it suggests that interest rates are expected to decrease (the Fed is siding with lowering the rates rather than increasing as well). In such a scenario, it is advantageous for RDUS to finance working capital with short-term debt, with the expectation of refinancing at lower rates in the future. Doing the calculations in the term 4 instructions using the yields for 2023 would also suggest the short-term option to finance working capital.
+
+
+__Spread and recession graphs__
+```{python}
+# ECON 355 yield curve projet with updated data
+import pandas as pd
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+file_path_new = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//381 ECON//IS-MP Simulations//fredgraph.csv"
+df_new = pd.read_csv(file_path_new)
+df_new['DATE'] = pd.to_datetime(df_new['DATE'])
+start_date_new = '2013-01-01'  # edit data
+end_date_new = '2023-12-31'
+mask_new = (df_new['DATE'] >= start_date_new) & (df_new['DATE'] <= end_date_new)
+filtered_df_new = df_new.loc[mask_new]
+file_path = "c://Users//User//OneDrive - BYU-Idaho//BYUI//2023_9 Fall Semester//Econ 355//5 Project  - Yield Curves and Macroeconomic Performance//355ECON Project data.xlsx"
+
+
+df = pd.read_excel(file_path)
+df['Spread Date'] = pd.to_datetime(df['Spread Date'])
+start_date = '2013-01-01' # edit date
+end_date = '2023-12-31'
+mask = (df['Spread Date'] >= start_date) & (df['Spread Date'] <= end_date)
+filtered_df = df.loc[mask]
+fig = make_subplots(rows=1, cols=2, subplot_titles=('Yield Plot', 'Recession Indicator (JHDUSRGDPBR) vs 10 & 3 year note Spread'))
+fig.add_trace(go.Scatter(x=filtered_df_new['DATE'], y=filtered_df_new['DGS10'], name='10-Y Treasury yield', mode='lines', line=dict(color='royalblue')), row=1, col=1)
+fig.add_trace(go.Scatter(x=filtered_df_new['DATE'], y=filtered_df_new['DTB3'], name='3-Y Treasury yield', mode='lines', line=dict(color='green')), row=1, col=1)
+fig.add_trace(go.Scatter(x=filtered_df_new['DATE'], y=filtered_df_new['FEDFUNDS'], name='FEDFUNDS', mode='lines', line=dict(color='purple')), row=1, col=1)
+fig.add_trace(go.Scatter(x=filtered_df['Spread Date'], y=filtered_df['Spread'], name='Spread'), row=1, col=2)
+fig.add_trace(go.Scatter(x=filtered_df['Spread Date'], y=filtered_df['JHDUSRGDPBR'], name='JHDUSRGDPBR'), row=1, col=2)
+fig.update_layout(height=600, width=1200, title_text="")
+fig.show()
+```
+
+RDUS's bad investment decisions and poor capital structure have not put them in a good place, and with the negative yield curve, it is not looking good for the economy. RDUS can explore opportunities like selling underperforming assets, of which they have plenty, as this will help lower their operating costs, decrease expenses, and alleviate some of their debt, as many of their assets are tied to long and short-term debt, as well as contractual obligations. Another opportunity for RDUS is to prepare for bankruptcy and see how to best lower the cost of bankruptcy and maximize the value of their assets before selling.
+
+
+# Conclusion
+
+I found that RDUS's working capital position is weak, largely due to an over-reliance on long-term debt and insufficient cash reserves. This situation suggests that a compromise policy, balancing short-term borrowing with the sale of underperforming assets to improve liquidity, would be more beneficial. The financial leverage analysis indicates that RDUS should avoid further debt, especially with the economic indicators pointing towards a recession. This approach aligns with the company's need to manage working capital more effectively using short-term debt.
+
+Regarding receivables, RDUS would benefit from extending credit as it positively impacts their net income, but the impact is limited, explaining only 18% of net income variations. The trend in accounts receivable indicates inconsistent collection periods, which complicates cash flow management. RDUS’s increasing permanent working capital needs and growing reliance on long-term debt have led to higher financial risks, including a more leveraged book position and a higher weighted average cost of capital.
+
+Considering the yield curve analysis, the economic indicators suggest a looming recession. This scenario makes short-term debt financing more favorable for RDUS, allowing for refinancing at potentially lower rates in the future. To address its poor investment decisions and capital structure, RDUS should consider selling underperforming assets to reduce debt and prepare for a potential economic downturn "possible bankrupcty".

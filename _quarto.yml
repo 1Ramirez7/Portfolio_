@@ -39,27 +39,20 @@ website:
         file: competition.qmd
       
   sidebar:
-    - title: "DS 250 Projects"
+    - title: "Projects"
       style: "docked"
       background: light
       contents:
-        - text: "DS250 Projects"
+        - text: "Projects"
           file: projects.qmd
-        - text: "---"
         - text: "Project 1"
           file: Projects/project1.qmd
-        - text: "---"
-        - text: "Project 2"
-          file: Projects/project2.qmd
-        - text: "---"
-        - text: "Project 3"
-          file: Projects/project3.qmd
-        - text: "---"
-        - text: "Project 4"
-          file: Projects/project4.qmd
-        - text: "---"
-        - text: "Project 5"
-          file: Projects/project5.qmd
+        - text: "RDUS Capital Structure Analysis"
+          file: Projects/RDUS Capital Structure Analysis.qmd
+        - text: "RDUS Capital Structure Analysis #2"
+          file: Projects/term2.qmd
+        - text: "RDUS Statistical Research (OLS)"
+          file: Projects/term2.qmd
         - text: "---"
         #continue the pattern if you need more links
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
