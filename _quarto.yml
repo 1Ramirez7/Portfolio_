@@ -1,6 +1,9 @@
 project: 
   type: website
-  output-dir: docs  
+  output-dir: docs
+  render:
+  - "!extra/"
+  - "!extra/week_08"
 website:
   title: "Eduardo I Ramirez Data Science Portfolio"
   favicon: Images/favicon.png
