@@ -1,0 +1,25 @@
+---
+title: "Solow–Romer Growth Simulator"
+subtitle: "Modeling Long-Run Economic Dynamics"
+author: ""
+image: "brain.png"
+categories: ["Shiny", "R", "Economics", "Visualization"]
+format:
+  html:
+    page-layout: full          # remove the Bootstrap‑column constraint
+    toc: false
+    css: ["../../styles.css",      # keep your existing CSS
+          "../../iframe-full.css"] # file we’ll add next
+---
+
+
+This project demonstrates my ability to design, implement, and scale complex quantitative systems from scratch. Built using R and Shiny, the Solow–Romer Growth Simulator models long-run economic growth with dynamic experiments, user-driven simulations, and real-time visualizations. The app integrates multivariable calculus-based economic theory with advanced data pipelines, modular simulation logic, and custom plot rendering across dozens of macroeconomic variables. It supports user-defined counterfactuals, endogenous modifications, Excel uploads, and downloadable plots—all within a streamlined UI engineered for exploration and analysis. This project strengthen my ability to turn abstract theory into interactive, scalable, and data-driven tools.
+
+
+::: {.full-iframe}
+<iframe
+  src="https://4o85b6-eduardo-ramirez.shinyapps.io/The-Solow-Growth-Model/"
+  allowfullscreen
+></iframe>
+:::
+

@@ -1,1 +1,18 @@
 /* css styles */
+/* ───────────────────────────────────────────────
+   Full‑width wrapper – only this element stretches
+   ─────────────────────────────────────────────── */
+.full-iframe {                       /* the ::: {.full-iframe} wrapper   */
+  position: relative;
+  left: 50%;                        /* put its centre on the column     */
+  width: 100vw;                     /* span the entire viewport width   */
+  margin-left: -50vw;               /* pull it left to the viewport edge*/
+  max-width: none;                  /* ignore Bootstrap max‑width       */
+}
+
+.full-iframe iframe {               /* the actual Shiny app             */
+  width: 100vw;
+  height: calc(100vh - var(--bs-navbar-height, 56px));  /* full height minus navbar */
+  border: 0;
+  overflow: hidden;
+}

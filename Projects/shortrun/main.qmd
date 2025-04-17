@@ -1,0 +1,26 @@
+---
+title: "Macroeconomic Policy Simulator"
+subtitle: "Explore Short-Run Shocks with the AD–AS Framework"
+author: ""
+image: "pie.png"
+categories: ["Shiny", "R", "Economics", "Visualization"]
+format:
+  html:
+    page-layout: full          # remove the Bootstrap‑column constraint
+    toc: false
+    css: ["../../styles.css",      # keep your existing CSS
+          "../../iframe-full.css"] # file we’ll add next
+---
+
+
+
+Seize the cockpit of the economy. This interactive Short‑Run AD–AS Model lets you push fiscal and monetary levers in real time and watch output and inflation respond instantly—no static textbook graphs here. Built as a Shiny app for my Intermediate Macroeconomics course, the tool transforms chapter‑13 formulas into an exploratory sandbox where you can stress‑test policy scenarios, download the underlying data, and export publication‑ready plots in one click.
+
+
+::: {.full-iframe}
+<iframe
+  src="https://4o85b6-eduardo-ramirez.shinyapps.io/The-AD-AS-Short-Run-Model/"
+  allowfullscreen
+></iframe>
+:::
+

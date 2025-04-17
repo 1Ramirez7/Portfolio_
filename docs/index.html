@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -112,20 +172,13 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  </ul>
-</nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-cloud"><div class="category" data-category="RWNvbm9taWNz"><span class="quarto-category-count category-cloud-10">Economics</span></div><div class="category" data-category="Ug=="><span class="quarto-category-count category-cloud-10">R</span></div><div class="category" data-category="U2hpbnk="><span class="quarto-category-count category-cloud-10">Shiny</span></div><div class="category" data-category="VmlzdWFsaXphdGlvbg=="><span class="quarto-category-count category-cloud-10">Visualization</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -135,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -152,94 +205,90 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Portfolio Introduction</strong></p>
 <p>This portfolio was created as part of the Data Science minor at Brigham Young University, showcasing my skills and experiences in three key areas: Data Analysis, Machine Learning, and Data Visualization. Its primary purpose is to demonstrate the knowledge I have gained throughout the program and how I have applied it to real-world data challenges.</p>
 <p>While many of the projects were completed within a university setting and contain sensitive information that cannot be shared publicly due to academic integrity policies, I have included select projects that highlight my capabilities.</p>
-<p><strong>CFA Institute Research Challenge: A Transformative Experience</strong></p>
-<p>Participating in the CFA Institute Research Challenge was one of the most rewarding experiences of my academic journey. This competition allowed me to step into the role of a financial research analyst, gaining invaluable hands-on experience in financial analysis, valuation, report writing, and professional ethics.</p>
-<p>As part of a dedicated team, I worked closely with my peers, a faculty advisor, and an industry mentor to analyze a publicly traded company and produce a comprehensive written report and presentation. The process was both challenging and exhilarating, testing my analytical abilities, teamwork, and communication skills in a high-pressure environment.</p>
-<p>Through this competition, I improved my ability to: - Conduct detailed equity research and financial valuation. - Present complex financial findings clearly and persuasively. - Collaborate effectively within a team while meeting tight deadlines.</p>
-<p>The experience also provided me with a unique opportunity to engage with professionals in the financial industry, receive constructive feedback, and gain insights into real-world applications of finance. Competing at a high level pushed me to grow both personally and professionally, leaving me better prepared to tackle future challenges in my career.</p>
-<p>Overall, the CFA Institute Research Challenge was a transformative experience that deepened my passion for finance and strengthened my readiness for the professional world.</p>
-<p>CFA Report word doc download</p>
-<p><a href="data/CFA.docx">Download CFA report</a></p>
-<p><strong>Capital Research for Radius Recycling (RDUS)</strong></p>
-<ol type="1">
-<li><strong>RDUS Capital Structure Analysis:</strong>
-<ul>
-<li>Conducted a detailed analysis of RDUS’s financial leverage and its impact on earnings per share (EPS).</li>
-<li>Assessed scenarios under different economic conditions (recession, current, and boom) to evaluate debt reliance and working capital strategies.</li>
-<li>Proposed a shift toward short-term borrowing and asset optimization to improve liquidity.</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/RDUS Capital Structure Analysis.html">RDUS Capital Structure Analysis</a></li>
-</ul>
-<ol start="2" type="1">
-<li><strong>RDUS Capital Structure Analysis #2:</strong>
-<ul>
-<li>Explored optimal capital structure using the Weighted Average Cost of Capital (WACC) framework.</li>
-<li>Evaluated RDUS’s current debt-to-equity ratio against industry standards, recommending a reduction in long-term debt.</li>
-<li>Highlighted strategies to align with an optimal D/E ratio to lower financial risks and borrowing costs.</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/term2.html">RDUS Capital Structure Analysis #2</a></li>
-</ul>
-<ol start="3" type="1">
-<li><strong>RDUS Statistical Research (OLS):</strong>
-<ul>
-<li>Performed Ordinary Least Squares (OLS) regression to investigate the relationship between accounts receivable and net income.</li>
-<li>Identified key factors affecting RDUS’s profitability, emphasizing the limited explanatory power of receivables on earnings.</li>
-<li>Recommended extending credit cautiously, supported by data trends and historical averages.</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/term2.html">RDUS Statistical Research (OLS)</a></li>
-</ul>
-<p><strong>Applied Time Series Research</strong></p>
-<ol type="1">
-<li><strong>China Export Commodities Time Series Analysis:</strong>
-<ul>
-<li>Applied time series techniques to analyze trends, seasonality, and irregularities in China’s export commodity data from 1990 to the present.</li>
-<li>Conducted a classical multiplicative decomposition to distinguish long-term growth patterns, seasonal cycles, and random shocks influenced by macroeconomic events.</li>
-<li>Provided actionable insights into optimizing trade strategies by leveraging seasonal trends and mitigating risks from unpredictable disruptions.<br>
-</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/project_1.html">Time Series Reserach on China’s Export Commodities</a></li>
-</ul>
-<p><strong>Intermediate Macroeconomic Model</strong></p>
-<ol type="1">
-<li><strong>Aggregate Demand–Aggregate Supply model</strong>
-<ul>
-<li>Built the Aggregate Demand and Aggregate Supply (AD-AS) model from scratch using advanced calculus and complex mathematical formulations.</li>
-<li>Incorporated key parameters like inflation rates, short-run output, and Taylor rule adjustments to simulate dynamic economic behaviors.</li>
-<li>Developed functions to compute short-run equilibrium, inflation stabilization, and policy effects, relying on rigorous mathematical foundations.</li>
-<li>Simulated scenarios such as the COVID-19 economic crisis to analyze policy responses, including changes in interest rates and fiscal interventions.</li>
-<li>Generated visualizations to interpret model outputs and validate theoretical assumptions against real-world data.</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/13CH AD-AS Simulation.html">Aggregate Demand–Aggregate Supply model</a></li>
-</ul>
-<p><strong>Investment Society Leadership and Financial Research</strong></p>
-<ol start="2" type="1">
-<li><strong>Bloomberg Terminal Financial Research:</strong>
-<ul>
-<li>Developed comprehensive guides and templates for navigating the Bloomberg Terminal to analyze equities, financial statements, and key ratios.</li>
-<li>Regularly lead presentations as the Investment Society President, teaching students how to effectively use Bloomberg for financial data research and decision-making.</li>
-<li>Focused on creating efficient workflows, including custom templates for financial analysis and integrating Bloomberg data with Excel for streamlined calculations.</li>
-<li>Emphasized the importance of understanding field definitions and methodology to ensure accurate and insightful financial analysis.</li>
-<li>Template link is one of the sample Bloomberg templates I made.</li>
-</ul></li>
-</ol>
-<ul>
-<li><a href="./Projects/project1.html">Blomberg Template</a></li>
-</ul>
+
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="U2hpbnklMkNSJTJDRWNvbm9taWNzJTJDVmlzdWFsaXphdGlvbg==" data-listing-file-modified-sort="1744924032116" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
+<a href="./Projects/longrun/main.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./Projects/longrun/brain.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Solow–Romer Growth Simulator
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('U2hpbnk='); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">
+Economics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">
+Visualization
+</div>
+</div>
+<div class="card-text listing-description">
+This project demonstrates my ability to design, implement, and scale complex quantitative systems from scratch. Built using R and Shiny, the Solow–Romer Growth Simulator…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="U2hpbnklMkNSJTJDRWNvbm9taWNzJTJDVmlzdWFsaXphdGlvbg==" data-listing-file-modified-sort="1744924045800" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
+<a href="./Projects/shortrun/main.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./Projects/shortrun/pie.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Macroeconomic Policy Simulator
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('U2hpbnk='); return false;">
+Shiny
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RWNvbm9taWNz'); return false;">
+Economics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">
+Visualization
+</div>
+</div>
+<div class="card-text listing-description">
+Seize the cockpit of the economy.&nbsp;This interactive Short‑Run AD–AS Model lets you push fiscal and monetary levers in real time and watch output and inflation respond…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
