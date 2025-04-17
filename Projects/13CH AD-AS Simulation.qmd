@@ -47,7 +47,7 @@ The plots below are from the IS curve calibration and the first row is the actua
 ```{python}
 from macrofunctions import plot_m_vs_period_Q
 # CH 11 Should do Calibration
-plot_m_vs_period_Q("C://Users//User//OneDrive - BYU-Idaho//Desktop//Coding//Macro//Should Do's//macrodata.xlsx", ['C/Y_Q', 'I/Y_Q', 'G/Y_Q', 'Y_actual_Q','C/Y_Q%', 'I/Y_Q%', 'G/Y_Q%', 'Y_actual_Q%'], '01/01/2019', '10/01/2022')
+plot_m_vs_period_Q("C://Users//eduar//OneDrive - BYU-Idaho//Desktop//Coding//Macro//Should Do's//macrodata.xlsx", ['C/Y_Q', 'I/Y_Q', 'G/Y_Q', 'Y_actual_Q','C/Y_Q%', 'I/Y_Q%', 'G/Y_Q%', 'Y_actual_Q%'], '01/01/2019', '10/01/2022')
 ```
 
 

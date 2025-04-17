@@ -50,7 +50,7 @@ from statsmodels.nonparametric.smoothers_lowess import lowess
 from plotly.subplots import make_subplots
 
 # Load data
-data = pd.read_excel("C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx")
+data = pd.read_excel("C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx")
 
 # function
 def create_scatter_plot_traces(x_column_name, y_column_name, data):
@@ -149,7 +149,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from statsmodels.regression.linear_model import OLS
 import statsmodels.api as sm
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
 df = pd.read_excel(file_path)
 X = df[['Total Asset Turnover', 'Return on Assets', 'PPE to Asset ratio', 'Market to Book ratio', 'Depreciation to Asset ratio', 
         'Return on Equity', 'Current ratio', 'Dividend Pay Out ratio']]
@@ -244,7 +244,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from statsmodels.regression.linear_model import OLS
 import statsmodels.api as sm
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
 df = pd.read_excel(file_path)
 X = df[['Total Asset Turnover', 'Return on Assets', 'PPE to Asset ratio', 'Market to Book ratio', 'Depreciation to Asset ratio', 
         'Return on Equity', 'Current ratio', 'Dividend Pay Out ratio']]
@@ -320,7 +320,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 from statsmodels.regression.linear_model import OLS
 
 # data from Excel
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
 df = pd.read_excel(file_path)
 X = df[['Total Asset Turnover', 'Return on Assets', 'PPE to Asset ratio', 
         'Market to Book ratio', 'Depreciation to Asset ratio', 
@@ -369,7 +369,7 @@ from statsmodels.regression.linear_model import OLS
 import statsmodels.api as sm
 
 # Load
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
 df = pd.read_excel(file_path)
 X = df[['Total Asset Turnover', 'Return on Assets', 'PPE to Asset ratio', 
         'Market to Book ratio', 'Depreciation to Asset ratio', 
@@ -418,7 +418,7 @@ __tested for Linear Regression, Ridge Regression, Lasso Regression and Random Fo
 import pandas as pd
 
 # Load the provided Excel file
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//regression_log.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//regression_log.xlsx"
 
 data = pd.read_excel(file_path)
 
@@ -488,7 +488,7 @@ import pandas as pd
 import statsmodels.api as sm
 
 # Load the data
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//data1.xlsx"
 data = pd.read_excel(file_path)
 
 # Columns to exclude
@@ -567,7 +567,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load the data
-file_path = "C://Users//User//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//regression_log.xlsx"
+file_path = "C://Users//eduar//OneDrive - BYU-Idaho//BYUI//2024_1 Winter//455 ECON//3 Term paper//regression_log.xlsx"
 data = pd.read_excel(file_path)
 
 # Iterate through each column in the DataFrame
