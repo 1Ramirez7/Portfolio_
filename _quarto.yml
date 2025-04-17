@@ -1,12 +1,15 @@
 project: 
   type: website
-  output-dir: docs  
+  output-dir: docs
+  render:
+  - "*.qmd"
+  - "!readme.md"
+  - "!gitpushnotes.md"
 website:
   title: "Eduardo I Ramirez Data Science Portfolio"
   favicon: Images/favicon.png
   back-to-top-navigation: true
   repo-url: https://1ramirez7.github.io/Portfolio_
-  #repo-actions: [issue] #if you want to allow others to report issues on your site uncomment this line
 
   page-footer: 
     border: true

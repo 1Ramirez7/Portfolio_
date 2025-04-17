@@ -1,76 +1,153 @@
 ---
-layout: cv
-title: Eduardo I. Ramirez's CV
+format: 
+  pdf: 
+    documentclass: article
+    geometry:
+      - top=12mm
+      - left=16mm
+      - right=16mm
+      - bottom=5mm
+      - heightrounded
+    fontfamily: libertinus
+    colorlinks: true
+    fontsize: '16'
+    include-in-header: 
+      text: |
+        \usepackage{multicol}
+        \usepackage{lipsum}
+        \usepackage{hyperref}
+        \pagestyle{empty}
+        \setlength{\multicolsep}{2pt plus 1.0pt minus 0.75pt}% 50% of original values
+        \setlength{\columnsep}{3em}
 ---
 
-Financial Economist, Data Scientist, Business Analyst
+<!-- TITLE -->
+\begin{center}
+{\fontsize{35}{50}\selectfont \textbf{Eduardo I. Ramirez}}
+\end{center}
 
-<div id="webaddress">
-<a href="mailto:Eduardo.er.ramirez@gmail.com">Eduardo.er.ramirez@gmail.com</a> |
-<a href="https://www.linkedin.com/in/eduardo-ramirez-31198b1b8/">My LinkedIn Profile</a> |
-<a href="https://1ramirez7.github.io/Portfolio_/">My GitHub Portfolio</a>
-</div>
+<!-- CONTACT INFO -->
+\begin{center}
+Eduardo.er.ramirez@gmail.com \quad | \quad \href{https://linkedin.com/in/eduardo-ramirez-31198b1b8}{linkedin.com/in/ramirez-eduardo1} \quad | \quad \href{https://1ramirez7.github.io/Portfolio_}{1ramirez7.github.io}
+\end{center}
+\vspace{12pt}
 
-## Profile
+<!-- PROFILE -->
+\begin{large}
+  {\bf PROFILE}
+  \vspace{3pt}
+  \hrule
+\end{large}
+Dedicated student at Brigham Young University-Idaho pursuing a Bachelor of Science in Financial Economics with minors in Data Science and Financial Planning. Passionate about leveraging data-driven strategies for business growth and efficiency.
 
-As a dedicated student at Brigham Young University-Idaho, I am pursuing a Bachelor of Science in Financial Economics, with minors in Data Science and Financial Planning. Specialized in Business Analytics and Operations Management, I am passionate about using data-driven strategies to drive business growth and efficiency.
+\vspace{7pt}
 
-## Education
+<!-- EDUCATION -->
+\begin{large}
+  {\bf EDUCATION}
+  \vspace{3pt}
+  \hrule
+  \begin{multicols}{2}
+    \begin{flushleft}{\bf Brigham Young University-Idaho}\end{flushleft}
+    \begin{flushright}Rexburg, ID\end{flushright}
+  \end{multicols}
+  \vspace{-0.17cm}
+  \begin{multicols}{2}
+    \begin{flushleft}B.Sc. Financial Economics \textit{(Expected July 2025)}\end{flushleft}
+    \begin{flushright}Minor: Data Science, Financial Planning\end{flushright}
+  \end{multicols}
+\end{large}
 
-`Expected Graduation: July 2025`  
-__Bachelor of Science in Financial Economics__, Brigham Young University-Idaho, Rexburg, ID  
-- Minor in Data Science and Financial Planning
-- Focus: Business Analytics, Business Ownership, Operations Management
+\vspace{7pt}
 
-## Professional Experience
+<!-- EXPERIENCE -->
+\begin{large}{\bf PROFESSIONAL EXPERIENCE}
+\vspace{3pt}
+\hrule
 
-### Store Manager
-__Petro Consulting Services LLC, Chula Vista, CA__  
-`Jan 2015 - Feb 2017`
-- Managed staffing, scheduling, HR needs, and sales analysis.
-- Developed leadership skills, problem-solving under pressure.
+  \begin{multicols}{2}
+    \begin{flushleft}{\bf Analytic Research}\end{flushleft}
+    \begin{flushright}St Anthony, ID\end{flushright}
+  \end{multicols}
+  \vspace{-0.17cm}
+  \begin{multicols}{2}
+    \begin{flushleft}\text{E\&J Investments LLC}\end{flushleft}
+    \begin{flushright}Mar 2023 - Present\end{flushright}
+  \end{multicols}
+\end{large}
+\vspace{-0.16cm}
+- Conducted financial analyses and identified investment opportunities, enhancing strategic decision-making and profitability.
 
-### Fleet and IT Manager
-__Petro Consulting Services LLC, Chula Vista, CA__  
-`Feb 2016 - Feb 2017`
-- Implemented proprietary Fleet card system.
-- Managed technology integration, increased sales and profitability.
+\vspace{7pt}
 
-### Analytic Research
-__E&J Investments LLC, St Anthony, ID__  
-`March 2023 - Present`
-- Analyzed sales, expenses, and profitability of Laundromat equipment.
-- Proposed new investment opportunities and strategies.
+\begin{large}
+  \begin{multicols}{2}
+    \begin{flushleft}{\bf Fleet and IT Manager}\end{flushleft}
+    \begin{flushright}Chula Vista, CA\end{flushright}
+  \end{multicols}
+  \vspace{-0.17cm}
+  \begin{multicols}{2}
+    \begin{flushleft}\text{Petro Consulting Services LLC}\end{flushleft}
+    \begin{flushright}Feb 2016 - Feb 2017\end{flushright}
+  \end{multicols}
+\end{large}
+\vspace{-0.16cm}
+- Implemented proprietary fleet management and IT solutions, significantly improving operational efficiency and sales performance.
 
-## Volunteer Experience
+\vspace{7pt}
 
-### Full-time Missionary
-__The Church of Jesus Christ of Latter-Day Saints, Cape Verde, Africa__  
-`Dec 2017 - Jan 2020`
-- Taught local communities about religious beliefs.
+\begin{large}
+  \begin{multicols}{2}
+    \begin{flushleft}{\bf Store Manager}\end{flushleft}
+    \begin{flushright}Chula Vista, CA\end{flushright}
+  \end{multicols}
+  \vspace{-0.17cm}
+  \begin{multicols}{2}
+    \begin{flushleft}\text{Petro Consulting Services LLC}\end{flushleft}
+    \begin{flushright}Jan 2015 - Feb 2017\end{flushright}
+  \end{multicols}
+\end{large}
+\vspace{-0.16cm}
+- Managed staffing, scheduling, HR operations, and sales analytics, demonstrating leadership under pressure.
 
-### Volunteer at Homeless Shelter
-__San Diego, California__  
-`Jan 2020 - Aug 2020`
-- Organized dinners and essential kits for homeless youth.
+\vspace{7pt}
 
-### Financial Economics Society Secretary
-__Brigham Young University-Idaho__  
-`Sep 2022 - Mar 2023`
-- Administrative support, data entry, and organizational management.
+<!-- VOLUNTEER EXPERIENCE -->
+\begin{large}{\bf VOLUNTEER EXPERIENCE}
+\vspace{3pt}
+\hrule
+\end{large}
+- Secretary, Financial Economics Society, BYU-Idaho \hfill (Sep 2022 - Mar 2023)
+- Full-time Missionary, Cape Verde, Africa \hfill (Dec 2017 - Jan 2020)
+- Volunteer, Homeless Shelter, San Diego, CA \hfill (Jan 2020 - Aug 2020)
 
-## Skills
+\vspace{7pt}
 
-- Languages: Fluent in Spanish, English, and Portuguese.
-- Technical Skills: Excel, R, Stata, SQL, HTML, Python.
-- Key Competencies: Management, Leadership, Analytical and Strategic Thinking.
-- Specializations: Financial Management, Data Presentation.
+<!-- SKILLS -->
+\begin{large}{\bf SKILLS}
+  \vspace{3pt}
+  \hrule
+\end{large}
+\vspace{6pt}
+- \textbf{Languages}: Spanish, English, Portuguese
 
-## Certifications
+- \textbf{Technical Skills}: Excel, R, Stata, SQL, HTML, Python
 
-- Bloomberg Market Concepts, Issued December 2022
-- Spreadsheet Modeling, Issued September 29, 2022
+- \textbf{Competencies}: Management, Leadership, Strategic Thinking, Data Analysis
 
----
+\vspace{7pt}
 
-_Last updated: March 2024_
+<!-- CERTIFICATIONS -->
+\begin{large}{\bf CERTIFICATIONS}
+  \vspace{3pt}
+  \hrule
+\end{large}
+- Bloomberg Market Concepts \hfill Dec 2022
+
+- Spreadsheet Modeling \hfill Sep 2022
+
+\vspace{7pt}
+
+\begin{center}
+\textit{Last updated: March 2024}
+\end{center}
