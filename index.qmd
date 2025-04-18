@@ -13,7 +13,7 @@ about:
       href: "https://github.com/1Ramirez7"
     - text: LinkedIn
       icon: linkedin
-      href: "https://www.linkedin.com/in/ramirez-eduardo1/"
+      href: "https://www.linkedin.com/in/ramirez-eduardo1"
     - text: Resume
       icon: file-text
       href: "resume.pdf"

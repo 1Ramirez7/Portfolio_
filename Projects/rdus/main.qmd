@@ -1,11 +1,11 @@
 ---
 title: "RDUS Capital Structure Analysis"
 subtitle: ""
+author: ""
 image: "charts.png"
-categories: ["CFA report", "Equity Research", "RDUS"]
+categories: ["Report", "Equity",  "Research"]
 format: 
   html:
-    embed-resources: true
     toc: false
 editor: source 
 ---
