@@ -2,10 +2,6 @@ project:
   resources: ["images"]
   type: website
   output-dir: docs
-  render:
-  - "*.qmd"
-  - "!readme.md"
-  - "!gitpushnotes.md"
 
 
 website:

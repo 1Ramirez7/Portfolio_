@@ -31,6 +31,7 @@ about:
 
 
 
+
 # Some of Eduardo’s Projects
 
 This portfolio is a collection of models, experiments, and tools that reflect my deep dive into quantitative financial economics and data-driven simulation.Below you’ll find interactive tools, models, and experiments I've built to explore everything from growth dynamics to forecasting. Feel free to explore, connect with me on GitHub, email or LinkedIn, and reach out if you'd like to collaborate.
