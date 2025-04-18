@@ -12,3 +12,7 @@ Also like a commit or two ago I made a python .venv folder and added .Rprofile a
 Commit # 71
 
 Deleted automatic files and re render site
+
+commit # 79
+
+I ran into list rendering issues so I remove projects files not structure for the new listing format. It seems to have fix the issue. I also switch my portfolio_ name to 1ramirez7.github.io because that is what I'm supposed to use for my portfolio

@@ -6,13 +6,13 @@ project:
   - "!readme.md"
   - "!gitpushnotes.md"
 
-#freeze: auto
 
 website:
   title: "Eduardo Ramirez"
   favicon: Images/favicon.png
+  site-url: https://1ramirez7.github.io/
   back-to-top-navigation: true
-  repo-url: https://1ramirez7.github.io/Portfolio_
+  repo-url: https://github.com/1Ramirez7/1ramirez7.github.io
 
   page-footer: 
     border: true
@@ -28,37 +28,13 @@ website:
     right:
       - text: "Home"
         file: index.qmd
-      - text: "Projects"
-        file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
       
-  sidebar:
-    - title: "Projects"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Projects"
-          file: projects.qmd
-        - text: "RDUS Capital Structure Analysis"
-          file: projects/RDUS Capital Structure Analysis.qmd
-        - text: "RDUS Capital Structure Analysis #2"
-          file: projects/rdus/main.qmd
-        - text: "RDUS Statistical Research (OLS)"
-          file: projects/term3.qmd
-        - text: "Blomberg Template"
-          file: projects/project1.qmd
-        - text: "Aggregate Demand–Aggregate Supply model"
-          file: projects/13CH AD-AS Simulation.qmd
-        #continue the pattern if you need more links
-        #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
-
 format:  
   html:
-    theme: #see this link to customize the theme with css (https://quarto.org/docs/output-formats/html-themes.html#dark-mode)
-      light: flatly # more themes can be found [here](https://quarto.org/docs/output-formats/html-themes.html)
+    theme: #(https://quarto.org/docs/output-formats/html-themes.html)
+      light: flatly 
       dark: darkly
-      #light: cosmo
-      #dark: [cosmo, theme-dark.scss]
     css: styles.css
     toc: true

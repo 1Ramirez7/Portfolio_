@@ -1,10 +1,16 @@
 ---
+title: ""
 page-layout: full
 resources: resume.pdf
 format:
   html:
-    page-layout: full
     toc: false
+listing:
+  contents: projects
+  sort: "date desc"
+  type: grid # default table grid
+  categories: cloud 
+  feed: true
 about: 
     template: marquee
     links: 
@@ -13,24 +19,15 @@ about:
       href: "https://github.com/1Ramirez7"
     - text: LinkedIn
       icon: linkedin
-      href: "https://www.linkedin.com/in/ramirez-eduardo1"
+      href: https://www.linkedin.com/in/ramirez-eduardo1/
     - text: Resume
       icon: file-text
       href: "resume.pdf"
     - text: Email
       icon: envelope
       href: mailto:eduardo.er.ramirez@Gmail.com
-listing: # https://quarto.org/docs/websites/website-listings.html
-  contents:
-    - "projects/longrun/*.qmd"
-    - "Projects/shortrun/*.qmd"
-    - "projects/china/*.qmd"
-  sort: "date desc"
-  type: grid
-  categories: unnumbered 
-  feed: true
+      # https://quarto.org/docs/websites/website-listings.html
 ---
-
 
 
 
@@ -38,4 +35,5 @@ listing: # https://quarto.org/docs/websites/website-listings.html
 # Some of Eduardo’s Projects
 
 This portfolio is a collection of models, experiments, and tools that reflect my deep dive into quantitative financial economics and data-driven simulation.Below you’ll find interactive tools, models, and experiments I've built to explore everything from growth dynamics to forecasting. Feel free to explore, connect with me on GitHub, email or LinkedIn, and reach out if you'd like to collaborate.
+
 
