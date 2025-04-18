@@ -5,6 +5,9 @@ project:
   - "*.qmd"
   - "!readme.md"
   - "!gitpushnotes.md"
+
+#freeze: auto
+
 website:
   title: "Eduardo Ramirez"
   favicon: Images/favicon.png
@@ -16,7 +19,7 @@ website:
     left: "Eduardo Ramirez 2025©"
     right: 
       - icon: linkedin
-        href: www.linkedin.com/in/eduardo-ramirez-lds
+        href: "www.linkedin.com/in/eduardo-ramirez-lds"
 
 
   navbar:

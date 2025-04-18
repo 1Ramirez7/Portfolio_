@@ -25,9 +25,6 @@ listing: # https://quarto.org/docs/websites/website-listings.html
     - "projects/longrun/*.qmd"
     - "Projects/shortrun/*.qmd"
     - "projects/china/*.qmd"
-    - "projects/rdus/*.qmd"
-    - "projects/longrun/*.qmd"
-    - "Projects/shortrun/*.qmd"
   sort: "date desc"
   type: grid
   categories: unnumbered 

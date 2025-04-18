@@ -11,8 +11,6 @@ editor: source
 ---
 
 
-
-
 ## Radius Reclycling Inc (RDUS) Capital Structure
 _At the beginning of 2021, Radius Recycling (RDUS) exhibited a promising upward trajectory in earnings, with fluctuations throughout the year. Yet, by the end of 2022, despite making strategic capital investments in acquiring ten new properties, their sales did not reflect the anticipated growth from these investments. From Q2 of 2023, a noticeable decline in revenue became evident. This downturn, potentially a result of the prevailing economic conditions, might suggest a future recovery, thus positioning RDUS's stock, currently trading near the lower Bollinger bands, as a potentially undervalued asset. A deeper examination into their capital structure reveals a dramatic shift: the EPS growth rate soared by 4027% from 2021 to 2022, yet it plateaued with a mere 2% increase in 2023. The first quarter of 2024 marked a concerning trend with a -115% decline in growth._
 
