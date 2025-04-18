@@ -2,6 +2,10 @@ project:
   resources: ["images"]
   type: website
   output-dir: docs
+  render:
+  - "*.qmd"
+  - "!readme.md"
+  - "!gitpushnotes.md"
 
 
 website:
@@ -19,6 +23,19 @@ website:
         file: index.qmd
       - text: "My Resume"
         file: resume.qmd
+      - text: "GitHub"
+        icon: github
+        href: "https://github.com/1Ramirez7"
+      - text: LinkedIn
+        icon: linkedin
+        href: https://www.linkedin.com/in/ramirez-eduardo1/
+      - text: Resume
+        icon: file-text
+        href: "resume.pdf"
+      - text: Email
+        icon: envelope
+        href: mailto:eduardo.er.ramirez@Gmail.com
+        # https://quarto.org/docs/websites/website-listings.html
       
   page-footer: 
     border: true
