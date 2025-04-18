@@ -13,7 +13,7 @@ about:
       href: "https://github.com/1Ramirez7"
     - text: LinkedIn
       icon: linkedin
-      href: https://www.linkedin.com/in/ramirez-eduardo1/
+      href: "https://www.linkedin.com/in/ramirez-eduardo1/"
     - text: Resume
       icon: file-text
       href: "resume.pdf"
@@ -22,9 +22,10 @@ about:
       href: mailto:eduardo.er.ramirez@Gmail.com
 listing: # https://quarto.org/docs/websites/website-listings.html
   contents:
-    - "Projects/longrun/*.qmd"
+    - "projects/longrun/*.qmd"
     - "Projects/shortrun/*.qmd"
-    - "Projects/china/*.qmd"
+    - "projects/china/*.qmd"
+    - "projects/rdus/*.qmd"
   sort: "date desc"
   type: grid
   categories: unnumbered 

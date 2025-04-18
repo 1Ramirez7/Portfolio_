@@ -2,9 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/Projects/longrun/main.html",
-      "/Projects/shortrun/main.html",
-      "/Projects/china/main.html"
+      "/projects/longrun/main.html",
+      "/projects/china/main.html",
+      "/projects/rdus/main.html"
     ]
   }
 ]

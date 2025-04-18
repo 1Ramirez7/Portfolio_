@@ -29,12 +29,6 @@ website:
         file: projects.qmd
       - text: "My Resume"
         file: resume.qmd
-      # - text: "Data Cleansing"
-      #   file: cleansing.qmd
-      # - text: "Story Telling"
-      #   file: story_telling.qmd
-      # - text: "Machine Learning"
-      #   file: ml.qmd
       
   sidebar:
     - title: "Projects"
@@ -44,15 +38,15 @@ website:
         - text: "Projects"
           file: projects.qmd
         - text: "RDUS Capital Structure Analysis"
-          file: Projects/RDUS Capital Structure Analysis.qmd
+          file: projects/RDUS Capital Structure Analysis.qmd
         - text: "RDUS Capital Structure Analysis #2"
-          file: Projects/term2.qmd
+          file: projects/term2.qmd
         - text: "RDUS Statistical Research (OLS)"
-          file: Projects/term3.qmd
+          file: projects/term3.qmd
         - text: "Blomberg Template"
-          file: Projects/project1.qmd
+          file: projects/project1.qmd
         - text: "Aggregate Demand–Aggregate Supply model"
-          file: Projects/13CH AD-AS Simulation.qmd
+          file: projects/13CH AD-AS Simulation.qmd
         #continue the pattern if you need more links
         #copy paste from title and keep it indented to sidebar to add additonal sidebar navigation for other pages
 
