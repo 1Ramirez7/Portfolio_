@@ -26,3 +26,9 @@ commit # 87
 I'm still having that issue.
 
 I tested removing the about section, remove added freeze. I don't know what can be causing this issue.
+
+
+commit # 89 
+
+commit 88 fix it, I ran a whole bunch of clean cache things. did not chamge any code that wasnt already change before. 
+I noticed on some of the json and other file changes, when I added new listing folders, since I name them the same main.qmd I noticed github was not picking up the whole file change.so it say i only change projects/china to projects/rdus but kept the old projects/china/main.qmd.  I probably need tp have different names for them to avoid id issues. 

@@ -12,6 +12,8 @@ editor: source
 
 ## Introduction
 
+
+
 ### Objective
 
 In today's global economy, analyzing time series data is essential for predicting trends, understanding seasonality, and identifying unexpected shocks. The objective of this analysis is to explore China's export commodities over time, using time series analysis techniques to gain insights that can aid in strategic planning and effective decision-making.
