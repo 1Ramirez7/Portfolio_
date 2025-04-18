@@ -14,7 +14,7 @@ format:
 
 
 
-Seize the cockpit of the economy. This interactive Short‑Run AD–AS Model lets you push fiscal and monetary levers in real time and watch output and inflation respond instantly—no static textbook graphs here. Built as a Shiny app for my Intermediate Macroeconomics course, the tool transforms chapter‑13 formulas into an exploratory sandbox where you can stress‑test policy scenarios, download the underlying data, and export publication‑ready plots in one click.
+This interactive Short‑Run AD–AS Model lets you push fiscal and monetary levers in real time and watch output and inflation respond instantly—no static textbook graphs here. Built as a Shiny app for my Intermediate Macroeconomics course, the tool transforms AD-AS formulas into an exploratory sandbox where you can stress‑test policy scenarios, download the underlying data, and export publication‑ready plots in one click.
 
 
 ::: {.full-iframe}
