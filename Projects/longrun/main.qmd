@@ -8,8 +8,7 @@ format:
   html:
     page-layout: full          # remove the Bootstrap‑column constraint
     toc: false
-    css: ["../../styles.css",      # keep your existing CSS
-          "../../iframe-full.css"] # file we’ll add next
+    css: ["../../styles.css"]     # keep your existing CSS
 ---
 
 

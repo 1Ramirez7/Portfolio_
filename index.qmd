@@ -10,7 +10,6 @@ listing:
   sort: "date desc"
   type: grid # default table grid
   categories: cloud 
-  feed: true
 about: 
     template: marquee
     links: 
