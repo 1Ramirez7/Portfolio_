@@ -17,9 +17,6 @@ about:
     - text: Resume
       icon: file-text
       href: "resume.pdf"
-    - text: Instagram
-      icon: instagram
-      href: "https://www.instagram.com/ramirez18.20"
     - text: Email
       icon: envelope
       href: mailto:eduardo.er.ramirez@Gmail.com
@@ -27,6 +24,7 @@ listing: # https://quarto.org/docs/websites/website-listings.html
   contents:
     - "Projects/longrun/*.qmd"
     - "Projects/shortrun/*.qmd"
+    - "Projects/china/*.qmd"
   sort: "date desc"
   type: grid
   categories: unnumbered 

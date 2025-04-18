@@ -51,8 +51,6 @@ website:
           file: Projects/term3.qmd
         - text: "Blomberg Template"
           file: Projects/project1.qmd
-        - text: "Time Series Reserach on China's Export Commodities"
-          file: Projects/project_1.qmd
         - text: "Aggregate Demand–Aggregate Supply model"
           file: Projects/13CH AD-AS Simulation.qmd
         #continue the pattern if you need more links

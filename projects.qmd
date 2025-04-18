@@ -34,7 +34,7 @@ subtitle: ""
    - Applied time series techniques to analyze trends, seasonality, and irregularities in China's export commodity data from 1990 to the present.
    - Conducted a classical multiplicative decomposition to distinguish long-term growth patterns, seasonal cycles, and random shocks influenced by macroeconomic events.
    - Provided actionable insights into optimizing trade strategies by leveraging seasonal trends and mitigating risks from unpredictable disruptions.  
-- [Time Series Reserach on China's Export Commodities](/Projects/project_1.qmd)
+- [Time Series Reserach on China's Export Commodities](/Projects/china/main.qmd)
 
 **Intermediate Macroeconomic Model**
 
