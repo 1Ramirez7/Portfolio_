@@ -16,3 +16,7 @@ Deleted automatic files and re render site
 commit # 79
 
 I ran into list rendering issues so I remove projects files not structure for the new listing format. It seems to have fix the issue. I also switch my portfolio_ name to 1ramirez7.github.io because that is what I'm supposed to use for my portfolio
+
+commit # 85 
+
+I did rename my portfolio and I think that is what cause the issue because my github url change so I needed to also update it on R Studio
