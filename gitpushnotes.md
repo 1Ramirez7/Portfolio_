@@ -20,3 +20,9 @@ I ran into list rendering issues so I remove projects files not structure for th
 commit # 85 
 
 I did rename my portfolio and I think that is what cause the issue because my github url change so I needed to also update it on R Studio
+
+commit # 87 
+
+I'm still having that issue.
+
+I tested removing the about section, remove added freeze. I don't know what can be causing this issue.
