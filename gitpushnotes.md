@@ -32,3 +32,9 @@ commit # 89
 
 commit 88 fix it, I ran a whole bunch of clean cache things. did not chamge any code that wasnt already change before. 
 I noticed on some of the json and other file changes, when I added new listing folders, since I name them the same main.qmd I noticed github was not picking up the whole file change.so it say i only change projects/china to projects/rdus but kept the old projects/china/main.qmd.  I probably need tp have different names for them to avoid id issues. 
+
+
+commit # 90
+
+I'm going to move away from having same name files, and I will make a _metadata.yml to specify listing names for each project. 
+This allows to keep unique names and allows to have other qmd files in that folder. 

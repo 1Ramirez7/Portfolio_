@@ -3,9 +3,9 @@
     "listing": "/index.html",
     "items": [
       "/projects/china/chinatime.html",
-      "/projects/longrun/main.html",
-      "/projects/rdus/main.html",
-      "/projects/shortrun/main.html"
+      "/projects/longrun/lrsolow.html",
+      "/projects/rdus/rdusequity.html",
+      "/projects/shortrun/ad_as_sr_model.html"
     ]
   }
 ]

@@ -1,0 +1,18 @@
+# projects/project1/_metadata.yml
+
+
+projects/china:
+  listing:
+    contents: chinatime.qmd
+
+projects/longrun:
+  listing:
+    contents: lrsolow.qmd
+    
+projects/rdus:
+  listing:
+    contents: rdusequity.qmd
+
+projects/shortrun:
+  listing:
+    contents: ad_as_sr_model.qmd
