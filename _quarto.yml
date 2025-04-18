@@ -1,4 +1,5 @@
 project: 
+  resources: ["images"]
   type: website
   output-dir: docs
   render:
@@ -9,18 +10,10 @@ project:
 
 website:
   title: "Eduardo Ramirez"
-  favicon: Images/favicon.png
+  favicon: images/favicon.png
   site-url: https://1ramirez7.github.io/
   back-to-top-navigation: true
   repo-url: https://github.com/1Ramirez7/1ramirez7.github.io
-
-  page-footer: 
-    border: true
-    left: "Eduardo Ramirez 2025©"
-    right: 
-      - icon: linkedin
-        href: "www.linkedin.com/in/eduardo-ramirez-lds"
-
 
   navbar:
     background: primary
@@ -31,6 +24,13 @@ website:
       - text: "My Resume"
         file: resume.qmd
       
+  page-footer: 
+    border: true
+    left: "Eduardo Ramirez 2025©"
+    right: 
+      - icon: linkedin
+        href: "www.linkedin.com/in/eduardo-ramirez-lds"
+
 format:  
   html:
     theme: #(https://quarto.org/docs/output-formats/html-themes.html)
@@ -38,3 +38,5 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+
+
