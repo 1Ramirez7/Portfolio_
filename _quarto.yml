@@ -40,7 +40,7 @@ website:
         - text: "RDUS Capital Structure Analysis"
           file: projects/RDUS Capital Structure Analysis.qmd
         - text: "RDUS Capital Structure Analysis #2"
-          file: projects/term2.qmd
+          file: projects/rdus/main.qmd
         - text: "RDUS Statistical Research (OLS)"
           file: projects/term3.qmd
         - text: "Blomberg Template"
