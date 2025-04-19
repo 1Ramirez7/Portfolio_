@@ -16,3 +16,7 @@ projects/rdus:
 projects/shortrun:
   listing:
     contents: ad_as_sr_model.qmd
+    
+projects/bloomberg:
+  listing:
+    contents: cert_part_cfa_bloon.qmd

@@ -1,0 +1,99 @@
+---
+title: "Applied Financial Economics Portfolio"
+subtitle: "Undergraduate highlights in analysis, certification & leadership"
+image: "bullbear.png"          # portfolio banner
+categories: ["Portfolio", "Finance", "Economics", "Research"]
+format:
+  html:
+    page-layout: full
+    toc: false
+    code-fold: false               # no code in this doc
+editor: source
+---
+
+
+
+<!-- ======= 1 ‑‑‑‑‑ Bloomberg Credentials =========================== -->
+## Bloomberg Terminal Certifications  
+
+<div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+
+<div style="flex: 1; min-width: 300px;">
+### Bloomberg Market Concepts (BMC)
+[![BMC Certificate](files/bmc.png){width=100%}](https://portal.bloombergforeducation.com/certificates/x1kqKV3F56tmAnQmexKVbbTY)
+<br>
+<small><em>Issued: 2022‑12</em><br>
+Completed on the Bloomberg Terminal at <ins>[University Name]</ins>.</small>
+</div>
+
+<div style="flex: 1; min-width: 300px;">
+### ESG Certificate
+[![ESG Certificate](files/esg.png){width=100%}](https://portal.bloombergforeducation.com/certificates/Ku16x72zWhNsn8vP4mtgwe4Z)
+<br>
+<small><em>Issued: 2025‑04</em><br>
+Covered ESG frameworks, disclosure scoring, & materiality under SASB and GRI.</small>
+</div>
+
+</div>
+
+
+
+
+
+
+---
+
+<!-- ======= 2 ‑‑‑‑‑ Bloomberg Global Trading Challenge ============== -->
+## Bloomberg Global Trading Challenge — Team Performance  
+
+::: {.callout-note}
+**Result**: **Top 11% worldwide** — *Rank 265 / 2 520 teams*  
+**Return**: +10.0 % over six weeks (long/short U.S. equities & FX)
+:::
+
+**My role**: Team captain & macro strategist  
+- Built PY‑based factor screen → daily watch‑list  
+- Set risk caps (5 % vol‑adj) & maintained order discipline  
+- Debriefed trades to the Investment Society weekly
+
+[Challenge leaderboard ⬈](files/byui_rank.png)  
+
+
+
+---
+
+<!-- ======= 3 ‑‑‑‑‑ Investment Society Leadership =================== -->
+## Investment Society Leadership Roles 
+
+| Role | Semester | Key Contributions |
+|------|----------|-------------------|
+| President | 2024 F | Led 30‑member society; organised 12 workshops incl. “Intro to Options on Bloomberg” |
+| Bloomberg Specialist | 2024 F | On‑boarded 70 % of new members to Terminal functions (EQS, WEI, RV) |
+| Vice President | 2023 F | Coordinated sector teams for student‑run fund |
+| Secretary | 2023 S | Digitised meeting minutes; built Airtable CRM |
+
+---
+
+<!-- ======= 4 ‑‑‑‑‑ Valuation & Analytics Models ==================== -->
+## Proprietary Valuation Models  
+
+### Dupont ROE Decomposition Template  
+`dupont_model.xlsx` – dynamic 5‑year driver input → rolling ROE bridge.  
+![Dupont screenshot](files/comingsoon.png){width=450}
+
+### Bloomberg‑Style EQS Screener  
+`eqs_screen.R` – replicates `EQS` output in R using **tidyquant**, **rvest**.  
+
+add eqs model here (link if shiny app is hosted)
+
+---
+
+<!-- ======= 5 ‑‑‑‑‑ CFA Institute Research Challenge ================ -->
+## CFA Institute Research Challenge — *Radius Health (RDUS)*  
+
+
+---
+
+
+git rm -r --cached .
+rm -rf .quarto
