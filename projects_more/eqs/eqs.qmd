@@ -3,6 +3,7 @@ title: "Equity Research Rank Model"
 subtitle: "Mirrors Bloombergs EQS Rank Functions"
 image: "cargo.png"
 categories: ["Equity", "Bloomberg"]
+listing: false
 format:
   html:
     page-layout: full

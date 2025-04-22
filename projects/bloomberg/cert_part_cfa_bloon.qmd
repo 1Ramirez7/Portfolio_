@@ -61,7 +61,7 @@ During this time I obtain the Bloomberg BMC and ESG certificates, led and encour
 
 
 **My role**: Team captain & macro strategist  
-- Built Equity Research‑based factor scren [eqs](eqs/eqs.qmd)
+- Built Equity Research‑based factor scren [eqs](../../projects_more/eqs/eqs.qmd)
 - Dupont ROE model to identify undervalued stocks
 - Debriefed trades to the Investment Society weekly
 
@@ -95,6 +95,3 @@ add eqs model here (link if shiny app is hosted)
 
 ---
 
-
-git rm -r --cached .
-rm -rf .quarto

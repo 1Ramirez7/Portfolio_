@@ -1,4 +1,4 @@
-# projects/project1/_metadata.yml
+# https://quarto.org/docs/websites/website-listings.html
 
 
 projects/china:
@@ -20,5 +20,8 @@ projects/shortrun:
 projects/bloomberg:
   listing:
     contents: cert_part_cfa_bloon.qmd
-    exclude: eqs/**
+
+
+
+
 
