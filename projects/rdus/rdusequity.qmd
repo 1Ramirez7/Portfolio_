@@ -8,6 +8,9 @@ format:
   html:
     toc: false
 editor: source 
+freeze: true
+execute:
+  cache: true
 ---
 
 
