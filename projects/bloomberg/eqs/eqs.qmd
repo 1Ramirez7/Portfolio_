@@ -1,0 +1,61 @@
+---
+title: "Equity Research Rank Model"
+subtitle: "Mirrors Bloombergs EQS Rank Functions"
+image: "cargo.png"
+categories: ["Equity", "Bloomberg"]
+format:
+  html:
+    page-layout: full
+    toc: false
+    css:
+      - "https://raw.githubusercontent.com/1Ramirez7/1ramirez7.github.io/main/styles.css"
+editor: source
+---
+
+
+
+
+**EQS Rank Model** is a Shiny app that expands on Bloomberg’s Equity Search function (EQS). This model is made to rank equities based on financial metrics and/or ratios chosen by the user.
+
+This model has the ability to upload an Excel file with stock information. The model comes with a default Excel file loaded with the following variables: Ticker, Sector, Price, BVPS, PE, Alpha:M-1, and Beta:M-1.
+
+**Select Variables for Ranking:** This allows the user to select the variables they want to rank by. For example: PE, Alpha:M-1, and Beta:M-1.
+
+**Filter by Sector:** The model ranks by sector since financial metrics and ratios vary by sector, which can corrupt the rankings.
+
+**Exclude obs. w/:** This excludes any stock with missing or zero values (recommended).
+
+**Number of Results:** Number of observations to display.
+
+**Show:** *Top* shows the top-ranked stocks, *Bottom* shows the bottom-ranked stocks.
+
+**Variable: variable_name:** This is the rank setting for the selected variable used in the ranking calculations.
+
+**Weight for variable_name:** This is the weight for the selected variable. The total weight for all ranking variables must equal 1 or 100. This model is not dummy-proof, so the results will be off if the weights do not equal 1 or 100.
+
+**Order for variable_name:** The options are 'Low' and 'High'. *Low* treats the lowest value as the best rank. *High* treats the highest value as the best rank. So, for example, if ranking value stocks, then rank by low PE. If ranking high-volatility stocks, then rank by high Beta.
+
+
+
+
+
+::: {.full-iframe}
+<iframe
+  src="https://4o85b6-eduardo-ramirez.shinyapps.io/EQS_Rank_Model/"
+  allowfullscreen
+></iframe>
+:::
+
+
+
+
+**Work in progress**
+
+
+I’m currently working on adding support for multiple ranking criteria, with the ability to calculate an overall rank based on newly created ranking variables. This will make it easier to evaluate how equities perform across different financial metrics such as liquidity, days receivable, and others. The final overall rank will highlight the equities that best meet the selected criteria, helping identify value, growth, or GARP stocks more effectively.
+
+I also plan to integrate recent price data using the open-source `yfinance` library. This will allow the app to rank equities based on recent price changes—from the biggest losers to the top gainers.
+
+This Shiny app already replicates features found in many paid platforms, but I’m building it to fully customize my screening process and have everything in one place. It also removes the need for monthly subscriptions to data providers, since everything is powered by free, open-source tools.
+
+

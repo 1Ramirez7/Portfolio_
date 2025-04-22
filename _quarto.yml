@@ -7,7 +7,7 @@ project:
   - "!readme.md"
   - "!gitpushnotes.md"
 
-freeze: auto
+#freeze: auto
 
 website:
   title: "Eduardo Ramirez"
