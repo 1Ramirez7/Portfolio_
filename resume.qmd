@@ -17,7 +17,7 @@ format:
         \usepackage{lipsum}
         \usepackage{hyperref}
         \pagestyle{empty}
-        \setlength{\multicolsep}{2pt plus 1.0pt minus 0.75pt}% 50% of original values
+        \setlength{\multicolsep}{2pt plus 1.0pt minus 0.75pt}
         \setlength{\columnsep}{3em}
 ---
 
@@ -28,126 +28,159 @@ format:
 
 <!-- CONTACT INFO -->
 \begin{center}
-Eduardo.er.ramirez@gmail.com \quad | \quad \href{https://linkedin.com/in/eduardo-ramirez-31198b1b8}{linkedin.com/in/ramirez-eduardo1} \quad | \quad \href{https://1ramirez7.github.io/Portfolio_}{1ramirez7.github.io}
+Eduardo.er.ramirez@gmail.com \quad | \quad \href{https://linkedin.com/in/eduardo-ramirez-31198b1b8}{linkedin.com/in/eduardo-ramirez-eduardo1} \quad | \quad \href{https://1ramirez7.github.io/}{Portfolio: 1ramirez7.github.io}
 \end{center}
 \vspace{12pt}
 
 <!-- PROFILE -->
 \begin{large}
-  {\bf PROFILE}
-  \vspace{3pt}
-  \hrule
+{\bf PROFILE}
+\vspace{3pt}
+\hrule
 \end{large}
 Dedicated student at Brigham Young University-Idaho pursuing a Bachelor of Science in Financial Economics with minors in Data Science and Cluster in Statistics. Passionate about leveraging data-driven strategies for business growth and efficiency.
 
-\vspace{7pt}
+\vspace{4pt}
 
 <!-- EDUCATION -->
 \begin{large}
-  {\bf EDUCATION}
-  \vspace{3pt}
-  \hrule
-  \begin{multicols}{2}
-    \begin{flushleft}{\bf Brigham Young University-Idaho}\end{flushleft}
-    \begin{flushright}Rexburg, ID\end{flushright}
-  \end{multicols}
-  \vspace{-0.17cm}
-  \begin{multicols}{2}
-    \begin{flushleft}B.Sc. Financial Economics \textit{(Expected July 2025)}\end{flushleft}
-    \begin{flushright}Minor: Data Science, Cluster: Statistics\end{flushright}
-  \end{multicols}
+{\bf EDUCATION}
+\vspace{3pt}
+\hrule
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Brigham Young University-Idaho}\end{flushleft}
+  \begin{flushright}Rexburg, ID\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}B.Sc. Financial Economics \textit{(Expected July 2025)}\end{flushleft}
+  \begin{flushright}Minor: Data Science, Cluster: Statistics\end{flushright}
+\end{multicols}
 \end{large}
 
-\vspace{7pt}
+\vspace{4pt}
 
 <!-- EXPERIENCE -->
-\begin{large}{\bf PROFESSIONAL EXPERIENCE}
+\begin{large}
+{\bf PROFESSIONAL EXPERIENCE}
 \vspace{3pt}
 \hrule
-
-  \begin{multicols}{2}
-    \begin{flushleft}{\bf Analytic Research}\end{flushleft}
-    \begin{flushright}St Anthony, ID\end{flushright}
-  \end{multicols}
-  \vspace{-0.17cm}
-  \begin{multicols}{2}
-    \begin{flushleft}\text{E\&J Investments LLC}\end{flushleft}
-    \begin{flushright}Mar 2023 - Present\end{flushright}
-  \end{multicols}
 \end{large}
-\vspace{-0.16cm}
+
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Economics Tutor}\end{flushleft}
+  \begin{flushright}Rexburg, ID\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}\text{Brigham Young University-Idaho}\end{flushleft}
+  \begin{flushright}Jul 2024 -- Present\end{flushright}
+\end{multicols}
+- Tutored undergraduate students in core economics courses, boosting exam scores and concept mastery.
+
+\vspace{4pt}
+
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Teaching Assistant -- Investment Analysis}\end{flushleft}
+  \begin{flushright}Rexburg, ID\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}\text{Brigham Young University-Idaho}\end{flushleft}
+  \begin{flushright}Sep 2024 -- Dec 2024\end{flushright}
+\end{multicols}
+- Assisted faculty with lectures, grading, and student consultations on equity valuation projects.
+
+\vspace{4pt}
+
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Teaching Assistant -- Microeconomics}\end{flushleft}
+  \begin{flushright}Rexburg, ID\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}\text{Brigham Young University-Idaho}\end{flushleft}
+  \begin{flushright}Sep 2023 -- Dec 2023\end{flushright}
+\end{multicols}
+- Led review sessions and graded problem sets for intermediate microeconomic theory.
+
+\vspace{4pt}
+
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Analytic Research}\end{flushleft}
+  \begin{flushright}St Anthony, ID\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}\text{E\&J Investments LLC}\end{flushleft}
+  \begin{flushright}Mar 2023 -- Mar 2024\end{flushright}
+\end{multicols}
 - Conducted financial analyses and identified investment opportunities, enhancing strategic decision-making and profitability.
 
-\vspace{7pt}
+\vspace{4pt}
 
-\begin{large}
-  \begin{multicols}{2}
-    \begin{flushleft}{\bf Fleet and IT Manager}\end{flushleft}
-    \begin{flushright}Chula Vista, CA\end{flushright}
-  \end{multicols}
-  \vspace{-0.17cm}
-  \begin{multicols}{2}
-    \begin{flushleft}\text{Petro Consulting Services LLC}\end{flushleft}
-    \begin{flushright}Feb 2016 - Feb 2017\end{flushright}
-  \end{multicols}
-\end{large}
-\vspace{-0.16cm}
+\begin{multicols}{2}
+  \begin{flushleft}{\bf Store Manager}\end{flushleft}
+  \begin{flushright}Chula Vista, CA\end{flushright}
+\end{multicols}
+\vspace{-0.17cm}
+\begin{multicols}{2}
+  \begin{flushleft}\text{Petro Consulting Services LLC}\end{flushleft}
+  \begin{flushright}Jan 2015 -- Feb 2017\end{flushright}
+\end{multicols}
 - Implemented proprietary fleet management and IT solutions, significantly improving operational efficiency and sales performance.
 
-\vspace{7pt}
-
-\begin{large}
-  \begin{multicols}{2}
-    \begin{flushleft}{\bf Store Manager}\end{flushleft}
-    \begin{flushright}Chula Vista, CA\end{flushright}
-  \end{multicols}
-  \vspace{-0.17cm}
-  \begin{multicols}{2}
-    \begin{flushleft}\text{Petro Consulting Services LLC}\end{flushleft}
-    \begin{flushright}Jan 2015 - Feb 2017\end{flushright}
-  \end{multicols}
-\end{large}
-\vspace{-0.16cm}
 - Managed staffing, scheduling, HR operations, and sales analytics, demonstrating leadership under pressure.
 
-\vspace{7pt}
+\vspace{4pt}
 
 <!-- VOLUNTEER EXPERIENCE -->
-\begin{large}{\bf VOLUNTEER EXPERIENCE}
+\begin{large}
+{\bf VOLUNTEER EXPERIENCE}
 \vspace{3pt}
 \hrule
 \end{large}
-- Secretary, Financial Economics Society, BYU-Idaho \hfill (Sep 2022 - Mar 2023)
-- Full-time Missionary, Cape Verde, Africa \hfill (Dec 2017 - Jan 2020)
-- Volunteer, Homeless Shelter, San Diego, CA \hfill (Jan 2020 - Aug 2020)
+- Secretary, Investment Society, BYU-Idaho \hfill (May 2022 -- Aug 2022)
 
-\vspace{7pt}
+- President, Investment Society, BYU-Idaho \hfill (Sep 2022 -- Dec 2022; Sep 2024 -- Apr 2025)
+
+- Bloomberg Specialist, Investment Society, BYU-Idaho \hfill (Sep 2023 -- Apr 2024)
+
+- Full-time Missionary, Cape Verde, Africa \hfill (Dec 2017 -- Jan 2020)
+
+- Volunteer, Homeless Shelter, San Diego, CA \hfill (Jan 2020 -- Aug 2020)
+
+\vspace{4pt}
 
 <!-- SKILLS -->
-\begin{large}{\bf SKILLS}
-  \vspace{3pt}
-  \hrule
+\begin{large}
+{\bf SKILLS}
+\vspace{3pt}
+\hrule
 \end{large}
-\vspace{6pt}
+\vspace{4pt}
 - \textbf{Languages}: Spanish, English, Portuguese
 
-- \textbf{Technical Skills}: Excel, R, Stata, SQL, HTML, Python
+- \textbf{Technical Skills}: Excel, R, Stata, SQL, HTML, Python, Quarto, JS, Shiny, Tableau
 
 - \textbf{Competencies}: Management, Leadership, Strategic Thinking, Data Analysis
 
-\vspace{7pt}
+\vspace{4pt}
 
 <!-- CERTIFICATIONS -->
-\begin{large}{\bf CERTIFICATIONS}
-  \vspace{3pt}
-  \hrule
+\begin{large}
+{\bf CERTIFICATIONS}
+\vspace{3pt}
+\hrule
 \end{large}
 - Bloomberg Market Concepts \hfill Dec 2022
 
+- Environmental Social Governance, Bloomberg \hfill Apr 2025
+
 - Spreadsheet Modeling \hfill Sep 2022
 
-\vspace{7pt}
+\vspace{4pt}
 
 \begin{center}
-\textit{Last updated: March 2024}
+\textit{Last updated: May 2025}
 \end{center}
