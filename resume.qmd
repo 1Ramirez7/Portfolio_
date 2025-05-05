@@ -38,7 +38,7 @@ Eduardo.er.ramirez@gmail.com \quad | \quad \href{https://linkedin.com/in/eduardo
   \vspace{3pt}
   \hrule
 \end{large}
-Dedicated student at Brigham Young University-Idaho pursuing a Bachelor of Science in Financial Economics with minors in Data Science and Financial Planning. Passionate about leveraging data-driven strategies for business growth and efficiency.
+Dedicated student at Brigham Young University-Idaho pursuing a Bachelor of Science in Financial Economics with minors in Data Science and Cluster in Statistics. Passionate about leveraging data-driven strategies for business growth and efficiency.
 
 \vspace{7pt}
 
@@ -54,7 +54,7 @@ Dedicated student at Brigham Young University-Idaho pursuing a Bachelor of Scien
   \vspace{-0.17cm}
   \begin{multicols}{2}
     \begin{flushleft}B.Sc. Financial Economics \textit{(Expected July 2025)}\end{flushleft}
-    \begin{flushright}Minor: Data Science, Financial Planning\end{flushright}
+    \begin{flushright}Minor: Data Science, Cluster: Statistics\end{flushright}
   \end{multicols}
 \end{large}
 
