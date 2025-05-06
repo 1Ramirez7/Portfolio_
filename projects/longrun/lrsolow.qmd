@@ -1,5 +1,5 @@
 ---
-title: "Solow–Romer Growth Simulator"
+title: "Interactive Solow‑Romer Growth Simulator (Shiny, R)"
 subtitle: "Modeling Long-Run Economic Dynamics"
 author: ""
 image: "brain.png"
@@ -12,7 +12,63 @@ format:
 ---
 
 
-This project demonstrates my ability to design, implement, and scale complex quantitative systems from scratch. Built using R and Shiny, the Solow–Romer Growth Simulator models long-run economic growth with dynamic experiments, user-driven simulations, and real-time visualizations. The app integrates multivariable calculus-based economic theory with advanced data pipelines, modular simulation logic, and custom plot rendering across dozens of macroeconomic variables. It supports user-defined counterfactuals, endogenous modifications, Excel uploads, and downloadable plots—all within a streamlined UI engineered for exploration and analysis. This project strengthen my ability to turn abstract theory into interactive, scalable, and data-driven tools.
+
+
+Eduardo engineered an interactive Solow‑Romer growth simulator that lets users test how savings, depreciation, population growth, R&D effort, and productivity shocks shape capital deepening and long‑run output. The app supports four independent experiment tabs plus a counterfactual, turning the classic model into a powerful classroom and policy sandbox.
+
+---
+
+#### Key engineering achievements
+
+| Focus | Highlights |
+|-------|------------|
+| **Modular stack** | `simulate_solow()` (~200 LOC) computes Δk, TFP, factor returns, logs, and auxiliary flows period‑by‑period, then feeds tidy results to the UI. |
+| **Dynamic experiments** | Reusable helpers build four DT tables with add/delete buttons, Excel upload, and reactive storage—analysts can batch‑load hundreds of parameter overrides without touching code. |
+| **Endogenous shock layer** | A second helper lets users overwrite core state variables (A, L, k, K, Y, Δk) for one‑off regime‑switch scenarios. |
+| **Data integration** | Reads multi‑sheet World Bank workbooks, filters any country‑year window, converts the average savings rate into a slider, and re‑simulates instantly. |
+
+---
+
+#### Visual analytics & UX
+
+* Ten high‑resolution ggplot dashboards—capital (K), output (Y), efficiency units (k), Δk/k, MPL, MPK, and log‑scales.  
+* Visibility toggles add counterfactual, 2nd‑, 3rd‑, and 4th‑scenario lines without clutter.  
+* One‑click downloads: ZIP of all PNGs and CSV of results.  
+* Custom **bslib** theme, responsive widths, and intelligent point‑thinning keep plots crisp for horizons up to 150 periods.
+
+---
+
+#### Economic rigor
+
+* Implements the Solow steady‑state \(k^\*\) with R&D spill‑ins \((z\ell)\) and iterates growth with full accumulation dynamics.  
+* Calculates MPL and MPK from the Cobb‑Douglas form, plus logs and percent changes—demonstrating clear command of calculus‑driven macro metrics.
+
+---
+
+#### Software craftsmanship
+
+* Version‑tagged comments (`v2.3`, `v4.1`, etc.) track evolution.  
+* Defensive input validation, informative modals, and namespaced modules prevent UI clashes.  
+* Codebase is deployment‑ready for **shinyapps.io** or **RStudio Connect**.
+
+---
+
+#### Technologies showcased
+
+| Domain | Evidence |
+|--------|----------|
+| **Advanced R** | functional helpers, vectorized math, tidy data |
+| **Shiny** | dynamic tabsets, DT tables, file I/O, downloads |
+| **Data viz** | ggplot2 with consistent theming and legend control |
+| **Macro growth theory** | Solow‑Romer mechanics, marginal analysis |
+| **Data integration** | Excel ingestion via `rio`, reactive UI updates |
+
+---
+
+**Employer takeaway**
+
+Eduardo translates complex growth theory into an elegant, data‑driven web tool—showcasing deep economics knowledge, production‑level R/Shiny skills, and clean software design.
+
 
 
 ::: {.full-iframe}

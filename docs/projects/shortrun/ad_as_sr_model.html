@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Macroeconomic Policy Simulator</h1>
-<p class="subtitle lead">Explore Short-Run Shocks with the AD–AS Framework</p>
+<p class="subtitle lead">Short‑Run AD‑AS Framework Simulator (Shiny, R)</p>
   <div class="quarto-categories">
     <div class="quarto-category">Shiny</div>
     <div class="quarto-category">R</div>
@@ -143,13 +143,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This interactive Short‑Run AD–AS Model lets you push fiscal and monetary levers in real time and watch output and inflation respond instantly—no static textbook graphs here. Built as a Shiny app for my Intermediate Macroeconomics course, the tool transforms AD-AS formulas into an exploratory sandbox where you can stress‑test policy scenarios, download the underlying data, and export publication‑ready plots in one click.</p>
+<p>Eduardo built a full‑stack Shiny application that stress‑tests the short‑run Aggregate‑Demand/Aggregate‑Supply framework. The tool simulates inflation, output gaps, Taylor‑rule dynamics, and nominal interest‑rate paths across 5 – 100 periods, comparing up to four simultaneous policy or shock scenarios against a counterfactual baseline.</p>
+<hr>
+<section id="key-engineering-achievements" class="level4">
+<h4 class="anchored" data-anchor-id="key-engineering-achievements">Key engineering achievements</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Focus</th>
+<th>Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Modular architecture</strong></td>
+<td>Business math lives in <code>simulate_solow()</code> and <code>mathformulas.R</code>; UI logic stays clean and reactive.</td>
+</tr>
+<tr class="even">
+<td><strong>Experiment engine</strong></td>
+<td>Helper factories generate four independent DT tables with add/delete buttons, Excel uploads, and reactive storage—users can queue complex exogenous‑shock schedules in seconds.</td>
+</tr>
+<tr class="odd">
+<td><strong>Endogenous overrides</strong></td>
+<td>A parallel helper lets users overwrite core variables (inflation, output, Taylor‑rule paths) for single‑period “what‑if” adjustments.</td>
+</tr>
+<tr class="even">
+<td><strong>Math‑explanation module</strong></td>
+<td>A namespaced module renders MathJax equations with live numeric substitution for any selected period—perfect for teaching or model auditing.</td>
+</tr>
+<tr class="odd">
+<td><strong>Reactive plot cache</strong></td>
+<td>All ggplot objects are stored in a <code>reactiveValues</code> list, rendered on demand, and zipped to PNGs for download.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="visual-analytics-ux" class="level4">
+<h4 class="anchored" data-anchor-id="visual-analytics-ux">Visual analytics &amp; UX</h4>
+<ul>
+<li>Ten high‑resolution ggplot panels: inflation &amp; output under three policy rules, nominal rate, demand‑shock parameters, etc.<br>
+</li>
+<li>Toggle switches layer counterfactual, 2nd‑, 3rd‑, and 4th‑scenario lines without cluttering the view.<br>
+</li>
+<li>Custom <strong>bslib</strong> theme, centered titles, and point‑thinning keep plots readable even for long horizons.<br>
+</li>
+<li>CSV export of any simulation plus one‑click ZIP of all plots.</li>
+</ul>
+<hr>
+</section>
+<section id="economic-rigor" class="level4">
+<h4 class="anchored" data-anchor-id="economic-rigor">Economic rigor</h4>
+<ul>
+<li>Implements full short‑run dynamics: inflation Phillips curve, output gap equations, Taylor‑rule feedback, and nominal rate composition.<br>
+</li>
+<li>AS/AD schematic (placeholder) ready for diagrammatic extensions.<br>
+</li>
+<li>Multivariable‑calculus‑based formulas embedded with step‑by‑step numeric substitution.</li>
+</ul>
+<hr>
+</section>
+<section id="software-craftsmanship" class="level4">
+<h4 class="anchored" data-anchor-id="software-craftsmanship">Software craftsmanship</h4>
+<ul>
+<li>Version‑tagged comments (<code>v0.1</code> – <code>v4.3</code>) document iterative development.<br>
+</li>
+<li>Defensive validation (modals for missing experiments), informative tooltips, and namespaced UI modules prevent conflicts.<br>
+</li>
+<li>Production‑ready for <strong>shinyapps.io</strong> or <strong>RStudio Connect</strong> deployment.</li>
+</ul>
+<hr>
+</section>
+<section id="technologies-showcased" class="level4">
+<h4 class="anchored" data-anchor-id="technologies-showcased">Technologies showcased</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Advanced R</strong></td>
+<td>reactive programming, functional helpers, tidy data</td>
+</tr>
+<tr class="even">
+<td><strong>Shiny</strong></td>
+<td>dynamic tabsets, DT tables, file I/O, downloads</td>
+</tr>
+<tr class="odd">
+<td><strong>Data viz</strong></td>
+<td>ggplot2 with thematic consistency and legend control</td>
+</tr>
+<tr class="even">
+<td><strong>Macroeconomics</strong></td>
+<td>short‑run AD‑AS mechanics, Taylor‑rule feedback</td>
+</tr>
+<tr class="odd">
+<td><strong>Software design</strong></td>
+<td>modular sources, version control markers</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Employer takeaway</strong></p>
+<p>Eduardo translates complex short‑run macro theory into an elegant, interactive web tool—demonstrating deep economics expertise, polished R/Shiny craftsmanship, and clean, maintainable code.</p>
 <div class="full-iframe">
 <iframe src="https://4o85b6-eduardo-ramirez.shinyapps.io/The-AD-AS-Short-Run-Model/" allowfullscreen="">
 </iframe>
 </div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

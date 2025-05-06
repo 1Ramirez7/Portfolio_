@@ -8,7 +8,7 @@
 
 <meta name="author" content="">
 
-<title>Solow–Romer Growth Simulator – Eduardo Ramirez</title>
+<title>Interactive Solow‑Romer Growth Simulator (Shiny, R) – Eduardo Ramirez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Solow–Romer Growth Simulator</h1>
+<h1 class="title">Interactive Solow‑Romer Growth Simulator (Shiny, R)</h1>
 <p class="subtitle lead">Modeling Long-Run Economic Dynamics</p>
   <div class="quarto-categories">
     <div class="quarto-category">Shiny</div>
@@ -142,13 +142,121 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project demonstrates my ability to design, implement, and scale complex quantitative systems from scratch. Built using R and Shiny, the Solow–Romer Growth Simulator models long-run economic growth with dynamic experiments, user-driven simulations, and real-time visualizations. The app integrates multivariable calculus-based economic theory with advanced data pipelines, modular simulation logic, and custom plot rendering across dozens of macroeconomic variables. It supports user-defined counterfactuals, endogenous modifications, Excel uploads, and downloadable plots—all within a streamlined UI engineered for exploration and analysis. This project strengthen my ability to turn abstract theory into interactive, scalable, and data-driven tools.</p>
+<p>Eduardo engineered an interactive Solow‑Romer growth simulator that lets users test how savings, depreciation, population growth, R&amp;D effort, and productivity shocks shape capital deepening and long‑run output. The app supports four independent experiment tabs plus a counterfactual, turning the classic model into a powerful classroom and policy sandbox.</p>
+<hr>
+<section id="key-engineering-achievements" class="level4">
+<h4 class="anchored" data-anchor-id="key-engineering-achievements">Key engineering achievements</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Focus</th>
+<th>Highlights</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Modular stack</strong></td>
+<td><code>simulate_solow()</code> (~200 LOC) computes Δk, TFP, factor returns, logs, and auxiliary flows period‑by‑period, then feeds tidy results to the UI.</td>
+</tr>
+<tr class="even">
+<td><strong>Dynamic experiments</strong></td>
+<td>Reusable helpers build four DT tables with add/delete buttons, Excel upload, and reactive storage—analysts can batch‑load hundreds of parameter overrides without touching code.</td>
+</tr>
+<tr class="odd">
+<td><strong>Endogenous shock layer</strong></td>
+<td>A second helper lets users overwrite core state variables (A, L, k, K, Y, Δk) for one‑off regime‑switch scenarios.</td>
+</tr>
+<tr class="even">
+<td><strong>Data integration</strong></td>
+<td>Reads multi‑sheet World Bank workbooks, filters any country‑year window, converts the average savings rate into a slider, and re‑simulates instantly.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="visual-analytics-ux" class="level4">
+<h4 class="anchored" data-anchor-id="visual-analytics-ux">Visual analytics &amp; UX</h4>
+<ul>
+<li>Ten high‑resolution ggplot dashboards—capital (K), output (Y), efficiency units (k), Δk/k, MPL, MPK, and log‑scales.<br>
+</li>
+<li>Visibility toggles add counterfactual, 2nd‑, 3rd‑, and 4th‑scenario lines without clutter.<br>
+</li>
+<li>One‑click downloads: ZIP of all PNGs and CSV of results.<br>
+</li>
+<li>Custom <strong>bslib</strong> theme, responsive widths, and intelligent point‑thinning keep plots crisp for horizons up to 150 periods.</li>
+</ul>
+<hr>
+</section>
+<section id="economic-rigor" class="level4">
+<h4 class="anchored" data-anchor-id="economic-rigor">Economic rigor</h4>
+<ul>
+<li>Implements the Solow steady‑state (k^*) with R&amp;D spill‑ins ((z)) and iterates growth with full accumulation dynamics.<br>
+</li>
+<li>Calculates MPL and MPK from the Cobb‑Douglas form, plus logs and percent changes—demonstrating clear command of calculus‑driven macro metrics.</li>
+</ul>
+<hr>
+</section>
+<section id="software-craftsmanship" class="level4">
+<h4 class="anchored" data-anchor-id="software-craftsmanship">Software craftsmanship</h4>
+<ul>
+<li>Version‑tagged comments (<code>v2.3</code>, <code>v4.1</code>, etc.) track evolution.<br>
+</li>
+<li>Defensive input validation, informative modals, and namespaced modules prevent UI clashes.<br>
+</li>
+<li>Codebase is deployment‑ready for <strong>shinyapps.io</strong> or <strong>RStudio Connect</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="technologies-showcased" class="level4">
+<h4 class="anchored" data-anchor-id="technologies-showcased">Technologies showcased</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Advanced R</strong></td>
+<td>functional helpers, vectorized math, tidy data</td>
+</tr>
+<tr class="even">
+<td><strong>Shiny</strong></td>
+<td>dynamic tabsets, DT tables, file I/O, downloads</td>
+</tr>
+<tr class="odd">
+<td><strong>Data viz</strong></td>
+<td>ggplot2 with consistent theming and legend control</td>
+</tr>
+<tr class="even">
+<td><strong>Macro growth theory</strong></td>
+<td>Solow‑Romer mechanics, marginal analysis</td>
+</tr>
+<tr class="odd">
+<td><strong>Data integration</strong></td>
+<td>Excel ingestion via <code>rio</code>, reactive UI updates</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Employer takeaway</strong></p>
+<p>Eduardo translates complex growth theory into an elegant, data‑driven web tool—showcasing deep economics knowledge, production‑level R/Shiny skills, and clean software design.</p>
 <div class="full-iframe">
 <iframe src="https://4o85b6-eduardo-ramirez.shinyapps.io/The-Solow-Growth-Model/" allowfullscreen="">
 </iframe>
 </div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
