@@ -1,10 +1,45 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "Cover Letter – Financial Analyst I"
+subtitle: "Hill International · San Diego, CA"
+format:
+  html:
+    self-contained: true
+    page-layout: article   # keeps standard margins for a letter
+    toc: false
+    number-sections: false
+    html-math-method: katex
+execute:
+  warning: false
+  cache: false
+editor:
+  markdown:
+    wrap: sentence
 ---
 
-# Title 1 Header
-## Title 2 Header
 
+
+
+Eduardo I. Ramirez
+[eduardo.er.ramirez@gmail.com](mailto:eduardo.er.ramirez@gmail.com) · (858) 858-9343
+
+May 9, 2025
+
+Hiring Manager
+Hill International – San Diego Office
+
+Dear Hiring Manager,
+
+I am writing to apply for the **Financial Analyst I** position at Hill International. As a Financial Economics senior at Brigham Young University–Idaho (B.S. expected July 2025) with hands-on experience building financial models and dashboards, I am excited to contribute my analytical skills and project mindset to a firm renowned for protecting client interests throughout the construction project lifecycle.
+
+In my academic and project work I have **designed end-to-end financial and [economic simulations](https://1ramirez7.github.io/projects/longrun/lrsolow.html) in R/Shiny** and **conducted [time-series](https://1ramirez7.github.io/projects/china/chinatime.html) forecasting of international trade flows**—projects that demanded rigorous data cleaning, multi-scenario modeling, and clear presentation of insights to non-technical stakeholders. While serving as an **Analytic Research Intern at E\&J Investments**, I evaluated investment opportunities, delivering recommendations that improved strategic decision-making. These experiences sharpened my **advanced Excel and financial modeling abilities** and familiarized me with SQL-based financial systems, aligning directly with the analytical support and forecasting responsibilities outlined in your posting.
+
+Hill International’s need for analysts who can **juggle multiple concurrent projects** mirrors my own workload at BYU-Idaho, where I simultaneously tutored economics students, assisted faculty on equity-valuation coursework, and led the university’s Investment Society. Balancing these commitments honed my ability to **prioritize deliverables, communicate findings concisely, and collaborate across teams**—skills critical to meeting your clients’ budget-execution and reporting deadlines.
+
+I am eager to bring my quantitative toolkit, Bloomberg certification, and San Diego roots to Hill International’s growing West-Coast operation. I welcome the opportunity to discuss how my background in financial analysis and data-driven decision support can help your team exceed client expectations.
+
+Thank you for your time and consideration.
+
+Sincerely,
+
+Eduardo I. Ramirez
 

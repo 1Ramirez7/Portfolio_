@@ -10,7 +10,7 @@ project:
 #freeze: auto
 
 website:
-  title: "Eduardo Ramirez"
+  title: "Eduardo'S Portfolio"
   favicon: images/favicon.png
   site-url: https://1ramirez7.github.io/
   back-to-top-navigation: true

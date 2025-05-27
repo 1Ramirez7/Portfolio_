@@ -12,6 +12,18 @@ format:
 ---
 
 
+# Table of Contents
+
+- [Shiny app](#shiny-app)
+
+- [How to use this app](#how-to-use-this-app)
+
+
+
+
+
+
+
 
 
 Eduardo engineered an interactive Solow‑Romer growth simulator that lets users test how savings, depreciation, population growth, R&D effort, and productivity shocks shape capital deepening and long‑run output. The app supports four independent experiment tabs plus a counterfactual, turning the classic model into a powerful classroom and policy sandbox.
@@ -70,6 +82,13 @@ Eduardo engineered an interactive Solow‑Romer growth simulator that lets users
 Eduardo translates complex growth theory into an elegant, data‑driven web tool—showcasing deep economics knowledge, production‑level R/Shiny skills, and clean software design.
 
 
+
+# How to use this app 
+
+
+
+
+# Shiny App
 
 ::: {.full-iframe}
 <iframe

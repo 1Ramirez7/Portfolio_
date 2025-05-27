@@ -9,7 +9,7 @@ listing:
   contents: projects
   sort: "date desc"
   type: grid # default table grid
-  categories: cloud 
+  categories: true # numbered, unnumbered, cloud 
 about: 
     template: marquee
     links: 
